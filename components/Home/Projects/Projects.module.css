@@ -1,0 +1,60 @@
+.modal:focus {
+  outline: 0;
+}
+
+.thumbnails {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.preview {
+  width: 90%;
+  margin: 4% auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.5s;
+}
+
+.preview:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  margin-top: 2%;
+  padding: 0 2%;
+}
+
+.githubLink, .githubLink:hover {
+  color: black;
+}
+
+.demoLink, .demoLink:hover {
+  color: rgb(88, 88, 88)
+}
+
+.demoLink, .githubLink, .devpostLink {
+  margin: 0 2%;
+}
+
+.screenshot {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 8px;
+  width: 85%;
+  height: 90%;
+  display: block;
+}
+
+.projects__tag {
+  margin-top: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.filter {
+  float: right;
+  width: 128px;
+}
+
+.devpostIcon {
+  width: 2.05em;
+}

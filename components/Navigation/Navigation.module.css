@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #505050;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 15px -4px gray;
+  margin: 0 30%;
+  margin-top: 16px;
+}
+
+.navlink {
+  color: white;
+  padding-bottom: 5%;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.item {
+  padding-bottom: -1%;
+  font-family: "Geomanist"
+}
+
+.navlink:hover {
+  background-color: white;
+  border-radius: 15px;
+  color: #505050;
+  animation: colorize 0.5s;
+}
+
+@keyframes colorize {
+  from {
+    background-color: #505050;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: #505050;
+  }
+}

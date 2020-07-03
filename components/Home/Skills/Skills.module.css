@@ -1,0 +1,18 @@
+.type {
+  margin-top: 2%;
+  text-align: center;
+  color: gray;
+  letter-spacing: 0.5em;
+  font-size: 90%;
+}
+
+.icon {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.section {
+  padding: 0 4%;
+  margin-bottom: 2%;
+  text-align: center;
+}

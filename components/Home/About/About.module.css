@@ -1,0 +1,15 @@
+.portrait {
+  width: 90%;
+  display: block;
+  margin-top: 32px;
+}
+
+.greeting {
+  font-weight: bold;
+  font-size: 180%;
+  margin-top: 12%;
+}
+
+.github {
+  margin-top: 8%;
+}

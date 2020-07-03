@@ -1,0 +1,30 @@
+.title {
+  font-weight: 700;
+  color: #505050
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2px;
+  width: 12em;
+  margin-bottom: 16px;
+}
+
+.position {
+  margin-top: -2%;
+}
+
+.experience {
+  padding: 2% 0;
+}
+
+.info {
+  padding: 0 4%;
+}
+
+.line {
+  width: 10%;
+  border-width: 4px;
+  margin-left: 0;
+}

@@ -1,0 +1,75 @@
+.container {
+  background-color: #fffefb;
+  padding-top: 2%;
+  margin-bottom: 1.5%;
+  padding-bottom: 6%;
+}
+
+.name {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 26%;
+  margin-bottom: -14%;
+}
+
+.apple {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 26%;
+}
+
+.icons {
+  text-align: center;
+  padding: 2%;
+}
+
+.icon, .resume, .arrow {
+  transition: ease-in-out 0.2s all;
+}
+
+.icon {
+  display: inline-block;
+  margin: 4%;
+  color: black;
+}
+
+.icon:hover {
+  color: black;
+  display:inline-block;
+  transform: scale(1.2);
+}
+
+.resume {
+  position: relative;
+  display: inline-block;
+  margin: 4%;
+  top: -0.6em;
+  letter-spacing: 0.25em;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 80%;
+  padding: 1.4%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+  color: black;
+}
+
+.resume:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.arrow {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  margin-top: 12px;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}

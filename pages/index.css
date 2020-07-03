@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web|Roboto+Mono|Mada:400,600');
+
+h2 {
+  font-weight: 600;
+  color: #565656;
+}
+
+body {
+  font-family: "Geomanist";
+  background-color: #f7f7f7;
+  font-weight: normal;
+}
+
+body, html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Geomanist";
+  src: url("/fonts/hinted-Geomanist-Medium.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Geomanist";
+  src: url("/fonts/hinted-Geomanist-Ultra.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Geomanist";
+  src: url("/fonts/hinted-Geomanist-Regular.ttf");
+  font-weight: 400;
+}
+
+p {
+  font-size: 100%;
+  color: #505050;
+}
+
+.subtitle {
+  font-weight: 900;
+  font-size: 150%;
+  margin-bottom: -1%;
+  text-transform: uppercase;
+  font-weight: 700
+}
+
+.underline-me {
+  color: #505050;
+  text-decoration: underline
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+@media all and (max-width: 768px) {
+  .icon-container {
+    margin-bottom: 2%;
+  }
+}
+
+.section-container {
+  background-color: #fffefb;
+  padding-top: 10%;
+}
+
+a[title="GitHub profile"], .react-github-calendar__meta, .react-github-calendar__title {
+  display: none;
+}
