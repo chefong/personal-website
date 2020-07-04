@@ -8,7 +8,6 @@ import { Element } from 'react-scroll';
 import { projectsText } from '../../../content';
 import { selectProjectOptions, projects } from '../../../constants';
 import { filterProject } from '../../../helpers';
-import devpost from '../../../assets/imgs/projects/devpost.svg';
 
 const { Option } = Select;
 
@@ -46,9 +45,9 @@ function Projects() {
               .filter(project => filterProject(project, projectOption))
               .map(project => {
                 const {
-                  image,
+                  imagePath,
                   name,
-                  screenshot,
+                  screenshotPath,
                   text,
                   githubLink,
                   demoLink,
@@ -60,7 +59,7 @@ function Projects() {
                     <Zoom>
                       <input
                         type="image"
-                        src={image}
+                        src={imagePath}
                         className={styles.preview}
                         onClick={e => handleProjectModalView(e, name)}
                         aria-label="project-modal"
@@ -76,7 +75,7 @@ function Projects() {
                       >
                         <div className="row justify-content-center">
                           <img
-                            src={screenshot}
+                            src={screenshotPath}
                             alt="name"
                             className={styles.screenshot}
                           />
@@ -91,7 +90,7 @@ function Projects() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <FontAwesomeIcon icon={['fab', 'github']} size="2x"/>
+                                <FontAwesomeIcon icon={['fab', 'github']} />
                               </a>
                           }
                           {
@@ -102,7 +101,7 @@ function Projects() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img className={styles.devpostIcon} src={devpost} alt=""/>
+                                <img className={styles.devpostIcon} src="/imgs/projects/devpost.svg" alt=""/>
                               </a>
                           }
                           {
@@ -113,7 +112,7 @@ function Projects() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <FontAwesomeIcon icon={faGlobeAmericas} size="2x" classname={styles.demoIcon}/>
+                                <FontAwesomeIcon icon={faGlobeAmericas} classname={styles.demoIcon}/>
                               </a>
                           }
                         </div>

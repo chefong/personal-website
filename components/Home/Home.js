@@ -2,7 +2,7 @@ import React from 'react';
 import Title from './Title/Title';
 import About from './About/About';
 import Skills from './Skills/Skills';
-// import Projects from './Projects/Projects';
+import Projects from './Projects/Projects';
 // import Experience from './Experience/Experience';
 
 function Home() {
@@ -11,8 +11,8 @@ function Home() {
       <Title/>
       <About/>
       <Skills/>
-      {/* <Projects/>
-      <Experience/> */}
+      <Projects/>
+      {/* <Experience/> */}
     </div>
   )
 }

@@ -69,3 +69,7 @@ input:focus, button:focus {
 a[title="GitHub profile"], .react-github-calendar__meta, .react-github-calendar__title {
   display: none;
 }
+
+.ant-modal-content {
+  font-family: "Geomanist";
+}

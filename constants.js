@@ -1,18 +1,6 @@
 import { skillsText, projectsText, experienceText } from './content';
 
 // Projects images
-// import patch from './static/imgs/projects/patch.png';
-// import patchSC from './static/imgs/projects/patchModal.png';
-// import cheaterBeater from './static/imgs/projects/cheaterBeater.png';
-// import cheaterBeaterSC from './static/imgs/projects/cheaterBeaterModal.png';
-// import birdie from './static/imgs/projects/birdie.png';
-// import birdieGIF from './static/imgs/projects/birdieModal.gif';
-// import stockOverflow from './static/imgs/projects/stockOverflow.png';
-// import stockOverflowGIF from './static/imgs/projects/stockOverflowModal.gif';
-// import baut from './static/imgs/projects/baut.png';
-// import bautSC from './static/imgs/projects/bautModal.png';
-// import skancare from './static/imgs/projects/skancare.png';
-// import skancareSC from './static/imgs/projects/skancareModal.png';
 // import joyride from './static/imgs/projects/joyride.png';
 // import joyrideSC from './static/imgs/projects/joyrideModal.png';
 // import bandsonmap from './static/imgs/projects/bandsonmap.png';
@@ -159,125 +147,125 @@ export const skillsSection = [
   }
 ];
 
-// export const projects = [
-//   {
-//     name: "Patch",
-//     image: patch,
-//     screenshot: patchSC,
-//     text: projectsText.patch,
-//     githubLink: "https://github.com/willshiao/patch",
-//     demoLink: null,
-//     devpostLink: "https://devpost.com/software/patch-8bg6x2",
-//     isHackathonWinner: true,
-//     isHackathon: true,
-//     isSchool: false,
-//     isPersonal: false
-//   },
-//   {
-//     name: "Cheater Beater",
-//     image: cheaterBeater,
-//     screenshot: cheaterBeaterSC,
-//     text: projectsText.cheaterBeater,
-//     githubLink: "https://github.com/willshiao/CheaterBeater",
-//     demoLink: null,
-//     devpostLink: "https://devpost.com/software/cheaterbeater",
-//     isHackathonWinner: true,
-//     isHackathon: true,
-//     isSchool: false,
-//     isPersonal: false
-//   },
-//   {
-//     name: "birdie",
-//     image: birdie,
-//     screenshot: birdieGIF,
-//     text: projectsText.birdie,
-//     githubLink: "https://github.com/chefong/birdie",
-//     demoLink: null,
-//     devpostLink: null,
-//     isHackathonWinner: false,
-//     isHackathon: false,
-//     isSchool: true,
-//     isPersonal: false
-//   },
-//   {
-//     name: "stock overflow",
-//     image: stockOverflow,
-//     screenshot: stockOverflowGIF,
-//     text: projectsText.stockOverflow,
-//     githubLink: null,
-//     demoLink: null,
-//     devpostLink: null,
-//     isHackathonWinner: false,
-//     isHackathon: false,
-//     isSchool: true,
-//     isPersonal: false
-//   },
-//   {
-//     name: "baut",
-//     image: baut,
-//     screenshot: bautSC,
-//     text: projectsText.baut,
-//     githubLink: "https://github.com/KirbyDownB/GEICOChatBot",
-//     demoLink: null,
-//     devpostLink: null,
-//     isHackathonWinner: true,
-//     isHackathon: true,
-//     isSchool: false,
-//     isPersonal: false
-//   },
-//   {
-//     name: "skancare",
-//     image: skancare,
-//     screenshot: skancareSC,
-//     text: projectsText.skancare,
-//     githubLink: "https://github.com/jshin029/skancare",
-//     demoLink: null,
-//     devpostLink: "https://devpost.com/software/skancare",
-//     isHackathonWinner: true,
-//     isHackathon: true,
-//     isSchool: false,
-//     isPersonal: false
-//   },
-//   {
-//     name: "joyride",
-//     image: joyride,
-//     screenshot: joyrideSC,
-//     text: projectsText.joyride,
-//     githubLink: "https://github.com/ericong18/joyride",
-//     demoLink: null,
-//     devpostLink: "https://devpost.com/software/carpuul",
-//     isHackathonWinner: true,
-//     isHackathon: true,
-//     isSchool: false,
-//     isPersonal: false
-//   },
-//   {
-//     name: "bandsonmap",
-//     image: bandsonmap,
-//     screenshot: bandsonmapGIF,
-//     text: projectsText.bandsonmap,
-//     githubLink: "https://github.com/ericong18/bandsonmap",
-//     demoLink: "https://bandsonmap.firebaseapp.com",
-//     devpostLink: null,
-//     isHackathonWinner: false,
-//     isHackathon: false,
-//     isSchool: false,
-//     isPersonal: true
-//   },
-//   {
-//     name: "rshell",
-//     image: rshell,
-//     screenshot: rshellGIF,
-//     text: projectsText.rshell,
-//     githubLink: "https://github.com/ericong18/rshell",
-//     demoLink: null,
-//     devpostLink: null,
-//     isHackathonWinner: false,
-//     isHackathon: false,
-//     isSchool: true,
-//     isPersonal: false
-//   }
-// ];
+export const projects = [
+  {
+    name: "Patch",
+    imagePath: "/imgs/projects/patch.png",
+    screenshotPath: "/imgs/projects/patchModal.png",
+    text: projectsText.patch,
+    githubLink: "https://github.com/willshiao/patch",
+    demoLink: null,
+    devpostLink: "https://devpost.com/software/patch-8bg6x2",
+    isHackathonWinner: true,
+    isHackathon: true,
+    isSchool: false,
+    isPersonal: false
+  },
+  {
+    name: "Cheater Beater",
+    imagePath: "/imgs/projects/cheaterBeater.png",
+    screenshotPath: "/imgs/projects/cheaterBeaterModal.png",
+    text: projectsText.cheaterBeater,
+    githubLink: "https://github.com/willshiao/CheaterBeater",
+    demoLink: null,
+    devpostLink: "https://devpost.com/software/cheaterbeater",
+    isHackathonWinner: true,
+    isHackathon: true,
+    isSchool: false,
+    isPersonal: false
+  },
+  {
+    name: "birdie",
+    imagePath: "/imgs/projects/birdie.png",
+    screenshotPath: "/imgs/projects/birdieModal.gif",
+    text: projectsText.birdie,
+    githubLink: "https://github.com/chefong/birdie",
+    demoLink: null,
+    devpostLink: null,
+    isHackathonWinner: false,
+    isHackathon: false,
+    isSchool: true,
+    isPersonal: false
+  },
+  {
+    name: "stock overflow",
+    imagePath: "/imgs/projects/stockOverflow.png",
+    screenshotPath: "/imgs/projects/stockOverflowModal.gif",
+    text: projectsText.stockOverflow,
+    githubLink: null,
+    demoLink: null,
+    devpostLink: null,
+    isHackathonWinner: false,
+    isHackathon: false,
+    isSchool: true,
+    isPersonal: false
+  },
+  {
+    name: "baut",
+    imagePath: "/imgs/projects/baut.png",
+    screenshotPath: "/imgs/projects/bautModal.png",
+    text: projectsText.baut,
+    githubLink: "https://github.com/KirbyDownB/GEICOChatBot",
+    demoLink: null,
+    devpostLink: null,
+    isHackathonWinner: true,
+    isHackathon: true,
+    isSchool: false,
+    isPersonal: false
+  },
+  {
+    name: "skancare",
+    imagePath: "/imgs/projects/skancare.png",
+    screenshotPath: "/imgs/projects/skancareModal.png",
+    text: projectsText.skancare,
+    githubLink: "https://github.com/jshin029/skancare",
+    demoLink: null,
+    devpostLink: "https://devpost.com/software/skancare",
+    isHackathonWinner: true,
+    isHackathon: true,
+    isSchool: false,
+    isPersonal: false
+  },
+  {
+    name: "joyride",
+    imagePath: "/imgs/projects/joyride.png",
+    screenshotPath: "/imgs/projects/joyrideModal.png",
+    text: projectsText.joyride,
+    githubLink: "https://github.com/ericong18/joyride",
+    demoLink: null,
+    devpostLink: "https://devpost.com/software/carpuul",
+    isHackathonWinner: true,
+    isHackathon: true,
+    isSchool: false,
+    isPersonal: false
+  },
+  {
+    name: "bandsonmap",
+    imagePath: "/imgs/projects/bandsonmap.png",
+    screenshotPath: "/imgs/projects/bandsonmapModal.gif",
+    text: projectsText.bandsonmap,
+    githubLink: "https://github.com/ericong18/bandsonmap",
+    demoLink: "https://bandsonmap.firebaseapp.com",
+    devpostLink: null,
+    isHackathonWinner: false,
+    isHackathon: false,
+    isSchool: false,
+    isPersonal: true
+  },
+  {
+    name: "rshell",
+    imagePath: "/imgs/projects/rshell.png",
+    screenshotPath: "/imgs/projects/rshellModal.gif",
+    text: projectsText.rshell,
+    githubLink: "https://github.com/ericong18/rshell",
+    demoLink: null,
+    devpostLink: null,
+    isHackathonWinner: false,
+    isHackathon: false,
+    isSchool: true,
+    isPersonal: false
+  }
+];
 
 // export const experiences = [
 //   {

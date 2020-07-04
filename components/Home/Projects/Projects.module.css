@@ -26,10 +26,12 @@
 
 .githubLink, .githubLink:hover {
   color: black;
+  width: 28px;
 }
 
 .demoLink, .demoLink:hover {
-  color: rgb(88, 88, 88)
+  color: rgb(88, 88, 88);
+  width: 28px;
 }
 
 .demoLink, .githubLink, .devpostLink {
