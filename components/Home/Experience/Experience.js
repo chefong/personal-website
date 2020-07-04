@@ -21,7 +21,7 @@ function Experience() {
           const { title, subtitle, description, image } = experience;
           
           return (
-            <div className={`row justify-content-center ${styles.experience}`}>
+            <div className={`row justify-content-center ${styles.experience}`} key={title}>
               <div className="col-md-3">
                 <Fade>
                   <img src={image} alt={title} className={styles.logo}/>

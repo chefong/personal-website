@@ -34,7 +34,7 @@ function Title() {
               </Fade>
               <div className={styles.icons}>
                 {links.map(({ url, icon }) => (
-                  <a href={url} className={styles.icon} rel="noopener noreferrer">
+                  <a href={url} className={styles.icon} rel="noopener noreferrer" key={url}>
                     <FontAwesomeIcon icon={icon} size={fontAwesomeSize} />
                   </a>
                 ))}

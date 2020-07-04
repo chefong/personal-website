@@ -24,7 +24,7 @@ function Navigation() {
           <Nav className="m-auto">
             {navigationItems.map(({ to, href, label }) => {
               return (
-                <NavItem className={styles.item}>
+                <NavItem className={styles.item} key={label}>
                   <Link activeClass="active" to={to} spy smooth offset={isMobile ? 10 : scrollOffsetDesktop} duration={scrollDuration}>
                     <NavLink href={href} className={styles.navlink}>{label}</NavLink>
                   </Link>

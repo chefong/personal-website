@@ -33,7 +33,7 @@ function Projects() {
               value={projectOption}
               onChange={handleSelectChange}
             >
-              {selectProjectOptions.map(option => <Option value={option}>{option}</Option>)}
+              {selectProjectOptions.map(option => <Option value={option} key={option}>{option}</Option>)}
             </Select>
             <p className="subtitle">{projectsText.title}</p>
             <hr/>
@@ -55,7 +55,7 @@ function Projects() {
                 } = project;
 
                 return (
-                  <div className="col-md-4">
+                  <div className="col-md-4" key={name}>
                     <Zoom>
                       <input
                         type="image"

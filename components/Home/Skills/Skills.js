@@ -21,12 +21,12 @@ function Skills() {
         <div className="row justify-content-center">
           {skillsSection.map(({ type, icons }) => {
             return (
-              <div className={`col-md-4 ${styles.section}`}>
+              <div className={`col-md-4 ${styles.section}`} key={type}>
                 <h5 className={styles.type}>{type}</h5>
                 <div className="row">
                   {icons.map(({ name, imagePath }) => {
                     return (
-                      <div className="col-3 col-md-3 col-xs-3">
+                      <div className="col-3 col-md-3 col-xs-3" key={name}>
                         <Zoom>
                           <img src={imagePath} alt={name} className={styles.icon}/>
                         </Zoom>
