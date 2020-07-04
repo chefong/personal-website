@@ -17,17 +17,14 @@ export default function Root() {
         <meta property="og:image" content="https://dl.dropboxusercontent.com/s/0asqccltefx00pd/og-image.png" />
       </Head>
       <main>
-        <Navigation />
-        <Home />
+        <div className="root-container">
+          <Navigation />
+          <Home />
+        </div>
       </main>
       <footer>
         <Footer />
       </footer>
-      <style jsx global>{`
-        html {
-          font-size: 1rem;
-        }
-      `}</style>
     </>
   )
 }

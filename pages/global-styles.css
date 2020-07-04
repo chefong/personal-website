@@ -71,4 +71,9 @@ a[title="GitHub profile"], .react-github-calendar__meta, .react-github-calendar_
 
 .ant-modal-content {
   font-family: "Geomanist";
+  font-size: 1em;
+}
+
+.root-container {
+  font-size: 1em;
 }
