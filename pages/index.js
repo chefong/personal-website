@@ -24,8 +24,8 @@ export default function Root() {
         <Footer />
       </footer>
       <style jsx global>{`
-        body {
-          font-size: 14px;
+        html {
+          font-size: 1rem;
         }
       `}</style>
     </>
