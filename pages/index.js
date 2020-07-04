@@ -25,11 +25,7 @@ export default function Root() {
       </footer>
       <style jsx global>{`
         body {
-          font-size: auto;
-        }
-        
-        p {
-          font-size: 1em;
+          font-size: 14px;
         }
       `}</style>
     </>
