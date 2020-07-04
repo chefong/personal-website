@@ -39,7 +39,7 @@ p {
 
 .subtitle {
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: -1%;
   text-transform: uppercase;
   font-weight: 700
@@ -69,11 +69,11 @@ a[title="GitHub profile"], .react-github-calendar__meta, .react-github-calendar_
   display: none;
 }
 
-.ant-modal-content {
+.ant-modal-body {
   font-family: "Geomanist";
-  font-size: 1em;
+  font-size: 1rem !important;
 }
 
 .root-container {
-  font-size: 1em;
+  font-size: 1rem !important;
 }
