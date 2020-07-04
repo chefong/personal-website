@@ -34,13 +34,13 @@ main, html {
 }
 
 p {
-  font-size: 90%;
+  font-size: 80%;
   color: #505050;
 }
 
 .subtitle {
   font-weight: 900;
-  font-size: 140%;
+  font-size: 130%;
   margin-bottom: -1%;
   text-transform: uppercase;
   font-weight: 700
