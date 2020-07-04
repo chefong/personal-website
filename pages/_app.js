@@ -1,4 +1,4 @@
-import './index.css';
+import './global-styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
 

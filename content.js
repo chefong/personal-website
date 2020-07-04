@@ -13,8 +13,8 @@ export const titleText = {
 export const aboutText = {
   title: "About",
   greetings: "Hi This Is Eric.",
-  greetingsSub1: "I recently graduated from the University of California, Riverside with a B.S. in Computer Science. I have big passions for web design, web development, music, and food that doesn't contain cilantro.",
-  greetingsSub2: "If you want to talk about anything (like how Arsenal is doing in the Premier League), feel free to connect with me! Here's some of my activity on GitHub."
+  greetingsSub1: "I recently graduated from the University of California, Riverside with a B.S. in Computer Science. I have big passions for developing rich and meaningful user experiences 🤯, 75 - 85 BPM music 🎶, sharing my knowledge 🧠, and food that doesn't contain cilantro 🤢.",
+  greetingsSub2: "If you want to talk about anything (like how Arsenal is doing in the Premier League), feel free to reach out! Here's some of my activity on GitHub."
 }
 
 export const skillsText = {
@@ -63,5 +63,5 @@ export const experienceText = {
 }
 
 export const footerText = {
-  description: "Made with ☕ at 🏠 by Eric Ong"
+  description: "Made with 🍵 at 🏠 by Eric Ong"
 }

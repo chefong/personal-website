@@ -7,9 +7,20 @@ import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import { Element } from 'react-scroll';
 import { projectsText } from '../../../content';
 import { selectProjectOptions, projects } from '../../../constants';
-import { filterProject } from '../../../helpers';
 
 const { Option } = Select;
+
+const filterProject = (project, option) => {
+  if (option === "Hackathon") {
+    return project.isHackathon;
+  } else if (option === "School") {
+    return project.isSchool;
+  } else if (option === "Personal") {
+    return project.isPersonal;
+  }
+
+  return true;
+}
 
 function Projects() {
   const [isProjectOpen, setIsProjectOpen] = useState({});

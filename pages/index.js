@@ -13,8 +13,10 @@ export default function Root() {
       <main>
         <Navigation />
         <Home />
-        <Footer />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
