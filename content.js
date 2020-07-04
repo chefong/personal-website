@@ -40,7 +40,7 @@ export const projectsText = {
 export const experienceText = {
   title: "Experience",
   intuitTitle: "Intuit",
-  intuitSubtitle: "Software Engineer I (July 2020 - Present)",
+  intuitSubtitle: "Software Engineer (July 2020 - Present)",
   intuitDescription: "Financial Data Platform.",
   opentableTitle: "OpenTable",
   opentableSubtitle: "Software Engineering Intern (June 2019 - August 2019)",
