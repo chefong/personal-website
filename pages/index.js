@@ -4,8 +4,6 @@ import Home from '../components/Home/Home';
 import Footer from '../components/Footer/Footer';
 import { aboutText } from '../content';
 
-const ogImage = require("../public/imgs/og-image.png");
-
 export default function Root() {
   return (
     <>
@@ -16,7 +14,7 @@ export default function Root() {
         <meta property="og:title" content="Eric Ong" />
         <meta property="og:description" content={`${aboutText.greetings} ${aboutText.greetingsSub1} ${aboutText.greetingsSub2}`} />
         <meta property="og:url" content="https://www.ericong.me/" />
-        <meta property="og:image" content="../public/imgs/og-image.png" />
+        <meta property="og:image" content="https://dl.dropboxusercontent.com/s/0asqccltefx00pd/og-image.png" />
       </Head>
       <main>
         <Navigation />
