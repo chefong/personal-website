@@ -1,22 +1,5 @@
 import { skillsText, projectsText, experienceText } from './content';
 
-// Projects images
-// import joyride from './static/imgs/projects/joyride.png';
-// import joyrideSC from './static/imgs/projects/joyrideModal.png';
-// import bandsonmap from './static/imgs/projects/bandsonmap.png';
-// import bandsonmapGIF from './static/imgs/projects/bandsonmapModal.gif';
-// import rshell from './static/imgs/projects/rshell.png';
-// import rshellGIF from './static/imgs/projects/rshellModal.gif';
-
-// Experience images
-// import intuit from './static/imgs/experience/intuit.png';
-// import opentable from './static/imgs/experience/opentable.png';
-// import urc from './static/imgs/experience/urc.png';
-// import wttb from './static/imgs/experience/wttb.png';
-// import ucr from './static/imgs/experience/ucr.png';
-// import acm from './static/imgs/experience/acm.png';
-// import ieee from './static/imgs/experience/ieee.png';
-
 export const email = "ericong18@gmail.com";
 
 const languagesSkills = [
@@ -267,50 +250,50 @@ export const projects = [
   }
 ];
 
-// export const experiences = [
-//   {
-//     title: experienceText.intuitTitle,
-//     subtitle: experienceText.intuitSubtitle,
-//     description: experienceText.intuitDescription,
-//     image: intuit
-//   },
-//   {
-//     title: experienceText.opentableTitle,
-//     subtitle: experienceText.opentableSubtitle,
-//     description: experienceText.opentableDescription,
-//     image: opentable
-//   },
-//   {
-//     title: experienceText.urcTitle,
-//     subtitle: experienceText.urcSubtitle,
-//     description: experienceText.urcDescription,
-//     image: urc
-//   },
-//   {
-//     title: experienceText.csambaTitle,
-//     subtitle: experienceText.csambaSubtitle,
-//     description: experienceText.csambaDescription,
-//     image: wttb
-//   },
-//   {
-//     title: experienceText.geospatialTitle,
-//     subtitle: experienceText.geospatialSubtitle,
-//     description: experienceText.geospatialDescription,
-//     image: ucr
-//   },
-//   {
-//     title: experienceText.acmTitle,
-//     subtitle: experienceText.acmSubtitle,
-//     description: experienceText.acmDescription,
-//     image: acm
-//   },
-//   {
-//     title: experienceText.ieeeTitle,
-//     subtitle: experienceText.ieeeSubtitle,
-//     description: experienceText.ieeeDescription,
-//     image: ieee
-//   }
-// ];
+export const experiences = [
+  // {
+  //   title: experienceText.intuitTitle,
+  //   subtitle: experienceText.intuitSubtitle,
+  //   description: experienceText.intuitDescription,
+  //   image: "/imgs/experience/intuit.png"
+  // },
+  {
+    title: experienceText.opentableTitle,
+    subtitle: experienceText.opentableSubtitle,
+    description: experienceText.opentableDescription,
+    image: "/imgs/experience/opentable.png"
+  },
+  {
+    title: experienceText.urcTitle,
+    subtitle: experienceText.urcSubtitle,
+    description: experienceText.urcDescription,
+    image: "/imgs/experience/urc.png"
+  },
+  {
+    title: experienceText.csambaTitle,
+    subtitle: experienceText.csambaSubtitle,
+    description: experienceText.csambaDescription,
+    image: "/imgs/experience/wttb.png"
+  },
+  {
+    title: experienceText.geospatialTitle,
+    subtitle: experienceText.geospatialSubtitle,
+    description: experienceText.geospatialDescription,
+    image: "/imgs/experience/ucr.png"
+  },
+  {
+    title: experienceText.acmTitle,
+    subtitle: experienceText.acmSubtitle,
+    description: experienceText.acmDescription,
+    image: "/imgs/experience/acm.png"
+  },
+  {
+    title: experienceText.ieeeTitle,
+    subtitle: experienceText.ieeeSubtitle,
+    description: experienceText.ieeeDescription,
+    image: "/imgs/experience/ieee.png"
+  }
+];
 
 export const selectProjectOptions = [
   'All',

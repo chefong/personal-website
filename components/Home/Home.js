@@ -3,7 +3,7 @@ import Title from './Title/Title';
 import About from './About/About';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
-// import Experience from './Experience/Experience';
+import Experience from './Experience/Experience';
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
       <About/>
       <Skills/>
       <Projects/>
-      {/* <Experience/> */}
+      <Experience/>
     </div>
   )
 }
