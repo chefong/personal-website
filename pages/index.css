@@ -5,13 +5,13 @@ h2 {
   color: #565656;
 }
 
-body {
+main {
   font-family: "Geomanist";
   background-color: #f7f7f7;
   font-weight: normal;
 }
 
-body, html {
+main, html {
   height: 100%;
 }
 

@@ -24,11 +24,11 @@ function Skills() {
               <div className={`col-md-4 ${styles.section}`}>
                 <h5 className={styles.type}>{type}</h5>
                 <div className="row">
-                  {icons.map(({ name, image }) => {
+                  {icons.map(({ name, imagePath }) => {
                     return (
                       <div className="col-3 col-md-3 col-xs-3">
                         <Zoom>
-                          <img src={image} alt={name} className={styles.icon}/>
+                          <img src={imagePath} alt={name} className={styles.icon}/>
                         </Zoom>
                       </div>
                     )

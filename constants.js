@@ -1,21 +1,5 @@
 import { skillsText, projectsText, experienceText } from './content';
 
-// Skills images
-// import bootstrapIcon from './static/imgs/skills/bootstrap.svg';
-// import gitIcon from './static/imgs/skills/git.svg';
-// import nodeIcon from './static/imgs/skills/nodejs.svg';
-// import psIcon from './static/imgs/skills/photoshop.png';
-// import reactIcon from './static/imgs/skills/react.svg';
-// import lrIcon from './static/imgs/skills/lightroom.png';
-// import audacityIcon from './static/imgs/skills/audacity.png';
-// import sketchIcon from './static/imgs/skills/sketch.png';
-// import reduxIcon from './static/imgs/skills/redux.png';
-// import psqlIcon from './static/imgs/skills/postgresql.svg';
-// import figmaIcon from './static/imgs/skills/figma.png';
-// import vueIcon from './static/imgs/skills/vue.svg';
-// import jestIcon from './static/imgs/skills/jest.svg';
-// import mongodbIcon from './static/imgs/skills/mongodb.svg';
-
 // Projects images
 // import patch from './static/imgs/projects/patch.png';
 // import patchSC from './static/imgs/projects/patchModal.png';
@@ -50,87 +34,87 @@ export const email = "ericong18@gmail.com";
 const languagesSkills = [
   {
     name: "C++",
-    imagePath: "/static/imgs/skills/cplusplus.svg'"
+    imagePath: "/imgs/skills/cplusplus.svg"
   },
   {
     name: "HTML",
-    imagePath: "/static/imgs/skills/html5.svg"
+    imagePath: "/imgs/skills/html5.svg"
   },
   {
     name: "CSS",
-    imagePath: "/static/imgs/skills/css3.svg"
+    imagePath: "/imgs/skills/css3.svg"
   },
   {
     name: "JavaScript",
-    imagePath: "/static/imgs/skills/javascript.svg",
+    imagePath: "/imgs/skills/javascript.svg",
   },
   {
     name: "Python",
-    imagePath: "/static/imgs/skills/python.svg"
+    imagePath: "/imgs/skills/python.svg"
   }
 ];
 
-// const technologiesSkills = [
-//   {
-//     name: "Git",
-//     image: gitIcon
-//   },
-//   {
-//     name: "React",
-//     image: reactIcon
-//   },
-//   {
-//     name: "Vue.js",
-//     image: vueIcon
-//   },
-//   {
-//     name: "Node.js",
-//     image: nodeIcon
-//   },
-//   {
-//     name: "Redux",
-//     image: reduxIcon
-//   },
-//   {
-//     name: "Jest",
-//     image: jestIcon
-//   },
-//   {
-//     name: "MongoDB",
-//     image: mongodbIcon
-//   },
-//   {
-//     name: "PostgreSQL",
-//     image: psqlIcon
-//   },
-//   {
-//     name: "Bootstrap",
-//     image: bootstrapIcon
-//   }
-// ];
+const technologiesSkills = [
+  {
+    name: "Git",
+    imagePath: "/imgs/skills/git.svg"
+  },
+  {
+    name: "React",
+    imagePath: "/imgs/skills/react.svg"
+  },
+  {
+    name: "Vue.js",
+    imagePath: "/imgs/skills/vue.svg"
+  },
+  {
+    name: "Node.js",
+    imagePath: "/imgs/skills/nodejs.svg"
+  },
+  {
+    name: "Redux",
+    imagePath: "/imgs/skills/redux.png"
+  },
+  {
+    name: "Jest",
+    imagePath: "/imgs/skills/jest.svg"
+  },
+  {
+    name: "MongoDB",
+    imagePath: "/imgs/skills/mongodb.svg"
+  },
+  {
+    name: "PostgreSQL",
+    imagePath: "/imgs/skills/postgresql.svg"
+  },
+  {
+    name: "Bootstrap",
+    imagePath: "/imgs/skills/bootstrap.svg"
+  }
+];
 
-// const othersSkills = [
-//   {
-//     name: "Figma",
-//     image: figmaIcon
-//   },
-//   {
-//     name: "Adobe Photoshop",
-//     image: psIcon
-//   },
-//   {
-//     name: "Adobe Lightroom",
-//     image: lrIcon
-//   },
-//   {
-//     name: "Sketch",
-//     image: sketchIcon
-//   },
-//   {
-//     name: "Audacity",
-//     image: audacityIcon
-//   }
-// ];
+const othersSkills = [
+  {
+    name: "Figma",
+    imagePath: "/imgs/skills/figma.png"
+  },
+  {
+    name: "Adobe Photoshop",
+    imagePath: "/imgs/skills/photoshop.png"
+  },
+  {
+    name: "Adobe Lightroom",
+    imagePath: "/imgs/skills/lightroom.png"
+  },
+  {
+    name: "Sketch",
+    imagePath: "/imgs/skills/sketch.png"
+  },
+  {
+    name: "Audacity",
+    imagePath: "/imgs/skills/audacity.png"
+  }
+];
 
 export const navigationItems = [
   {
@@ -164,15 +148,15 @@ export const skillsSection = [
   {
     type: skillsText.languages,
     icons: languagesSkills
+  },
+  {
+    type: skillsText.technologies,
+    icons: technologiesSkills
+  },
+  {
+    type: skillsText.others,
+    icons: othersSkills
   }
-  // {
-  //   type: skillsText.technologies,
-  //   icons: technologiesSkills
-  // },
-  // {
-  //   type: skillsText.others,
-  //   icons: othersSkills
-  // }
 ];
 
 // export const projects = [

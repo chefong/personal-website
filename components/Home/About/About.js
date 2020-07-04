@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
 import Fade from 'react-reveal/Fade';
-import eric from '../../../assets/imgs/about/collection.png';
 import GitHubCalendar from 'react-github-calendar';
 import ReactTooltip from 'react-tooltip';
 import { Element } from 'react-scroll';
@@ -23,7 +22,7 @@ function About() {
         <div className="row justify-content-center">
           <div className="col-md-5">
             <Fade left>
-              <img src={eric} alt="Eric Ong" className={styles.portrait} />
+              <img src="/imgs/about/collection.png" alt="Eric Ong" className={styles.portrait} />
             </Fade>
           </div>
           <div className="col-md-5">
