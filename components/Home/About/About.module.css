@@ -1,12 +1,14 @@
 .portrait {
-  width: 90%;
+  width: 100%;
   display: block;
-  margin-top: 32px;
 }
 
 .greeting {
   font-weight: bold;
   font-size: 1.75em;
+}
+
+.portrait, .greeting {
   margin-top: 12%;
 }
 

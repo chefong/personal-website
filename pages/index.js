@@ -17,6 +17,11 @@ export default function Root() {
       <footer>
         <Footer />
       </footer>
+      <style jsx global>{`
+        body {
+          font-size: 1em;
+        }
+      `}</style>
     </>
   )
 }
