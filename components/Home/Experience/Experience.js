@@ -5,6 +5,11 @@ import { Element } from 'react-scroll';
 import { experiences } from '../../../constants';
 import { experienceText } from '../../../content';
 
+const linkHoverStyles = {
+  cursor: "pointer",
+  textDecoration: "underline"
+};
+
 function Experience() {
   return (
     <Element name="experience">
@@ -17,25 +22,27 @@ function Experience() {
             <hr/>
           </div>
         </div>
-        {experiences.map(experience => {
-          const { title, subtitle, description, image } = experience;
-          
+        {experiences.map(({ orgName, orgRole, description, image, orgLink }) => {
           return (
-            <div className={`row justify-content-center ${styles.experience}`} key={title}>
-              <div className="col-md-3">
-                <Fade>
-                  <img src={image} alt={title} className={styles.logo}/>
-                </Fade>
-              </div>
-              <div className={`col-md-6 ${styles.info}`}>
-                <Fade>
-                  <p className={styles.title}>{title}</p>
-                  <p className={styles.position}><em>{subtitle}</em></p>
+            <Fade key={orgName}>
+              <div className={`row justify-content-center ${styles.experience}`} key={orgName}>
+                <div className="col-md-3">
+                  <img src={image} alt={orgName} className={styles.logo}/>
+                </div>
+                <div className={`col-md-6 ${styles.info}`}>
+                  <a
+                    href={orgLink}
+                    target="_blank"
+                    className={orgLink ? `${styles.title} ${styles.linkHoverable}` : `${styles.title} ${styles.nonHoverable}`}
+                  >
+                    {orgName}
+                  </a>
+                  <p className={styles.position}><em>{orgRole}</em></p>
                   <hr className={styles.line}></hr>
                   <p>{description}</p>
-                </Fade>
+                </div>
               </div>
-            </div>
+            </Fade>
           )
         })}
       </div>

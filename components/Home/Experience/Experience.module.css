@@ -1,13 +1,15 @@
 .title {
   font-weight: 700;
-  color: #505050
+  color: #505050;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
   margin-top: 2px;
-  width: 12em;
+  width: 12rem;
   margin-bottom: 16px;
 }
 
@@ -27,4 +29,13 @@
   width: 10%;
   border-width: 4px;
   margin-left: 0;
+}
+
+.linkHoverable {
+  text-decoration: underline black;
+}
+
+.nonHoverable {
+  cursor: default;
+  text-decoration: none;
 }

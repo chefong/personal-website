@@ -13,7 +13,7 @@ export const titleText = {
 export const aboutText = {
   title: "About",
   greetings: "Hi This Is Eric.",
-  greetingsSub1: "I recently graduated from the University of California, Riverside with a B.S. in Computer Science. I have big passions for developing rich and meaningful user experiences 🤯, 75 - 85 BPM music 🎶, sharing my knowledge 🧠, and food that doesn't contain cilantro 🤢.",
+  greetingsSub1: "I recently graduated from the University of California, Riverside with a B.S. in Computer Science. I have big passions for developing rich and meaningful user experiences 🤯, 70 - 85 BPM music 🎶, sharing my knowledge 🧠, and food that doesn't contain cilantro 🤢.",
   greetingsSub2: "If you want to talk about anything (like how Arsenal is doing in the Premier League), feel free to reach out! Here's some of my activity on GitHub."
 }
 
@@ -39,26 +39,26 @@ export const projectsText = {
 
 export const experienceText = {
   title: "Experience",
-  intuitTitle: "Intuit",
-  intuitSubtitle: "Software Engineer (July 2020 - Present)",
+  intuitName: "Intuit",
+  intuitRole: "Software Engineer (July 2020 - Present)",
   intuitDescription: "Financial Data Platform.",
-  opentableTitle: "OpenTable",
-  opentableSubtitle: "Software Engineering Intern (June 2019 - August 2019)",
+  opentableName: "OpenTable",
+  opentableRole: "Software Engineering Intern (June 2019 - August 2019)",
   opentableDescription: "As a part of the Content Team, I worked on various consumer-facing products (internal tools, Restaurant Profile, GuestCenter Admin) while using technologies such as React, Jest, and OpenComponents. One of the projects I worked on focused on improving an existing internal tool to speed up workflow for internal marketing users. Another project I worked on was kickstarting the Gallery Photos feature on OpenTable's GuestCenter Admin with my team, giving restaurants the ability to manage their own photos.",
-  urcTitle: "Undergraduate Research Club at UCR",
-  urcSubtitle: "Vice President of Internal Affairs (June 2018 - May 2019), Webmaster (June 2019 - June 2020)",
+  urcName: "Undergraduate Research Club at UCR",
+  urcRole: "Vice President of Internal Affairs (June 2018 - May 2019), Webmaster (June 2019 - June 2020)",
   urcDescription: "URC at UCR is aimed towards assisting undergraduates with research networking opportunities, workshops, and outreach events. Formerly as the Vice President of Internal of the organization, I was responsible for the organization and communications between members and the officer board. When I served as the Webmaster, I developed the organization's website from scratch and created \"internal tools\" to help board members perform their jobs more efficiently.",
-  csambaTitle: "Center for the Synthesis of Advanced Materials for Biomedical Applications at UCR",
-  csambaSubtitle: "Undergraduate Researcher & Web Developer (February 2018 - August 2018)",
+  csambaName: "Center for the Synthesis of Advanced Materials for Biomedical Applications at UCR",
+  csambaRole: "Undergraduate Researcher & Web Developer (February 2018 - August 2018)",
   csambaDescription: "Helped with designing a microcomputer to analyze blood flow in the brain and learned about contrast analysis from images captured through the microcomputer. In addition, I helped with developing the website for to showcase this specific project.",
-  geospatialTitle: "Center for Geospatial Sciences at UCR",
-  geospatialSubtitle: "Undergraduate Researcher (November 2017 - January 2018)",
+  geospatialName: "Center for Geospatial Sciences at UCR",
+  geospatialRole: "Undergraduate Researcher (November 2017 - January 2018)",
   geospatialDescription: "Assisted Professor Amr Magdy with researching methods for Twitter data management, microblogging, and different data technologies optimized for fast data and different database systems.",
-  acmTitle: "Association for Computing Machinery at UCR",
-  acmSubtitle: "Member (September 2016 - June 2020)",
+  acmName: "Association for Computing Machinery at UCR",
+  acmRole: "Member (September 2016 - June 2020)",
   acmDescription: "ACM is a professional and academic organization aimed towards computer science and engineering students in leadership development and the growth of knowledge in computer science.",
-  ieeeTitle: "Institute of Electrical and Electronics Engineers at UCR",
-  ieeeSubtitle: "Member (September 2016 - June 2020)",
+  ieeeName: "Institute of Electrical and Electronics Engineers at UCR",
+  ieeeRole: "Member (September 2016 - June 2020)",
   ieeeDescription: "IEEE is a professional engineering organization aimed to provide technical and social skills for individuals in the engineering field through meetings, workshops, projects, and other opportunities outside of the classroom. I served as a mentor to help guide and teach underclassmen about improving their professional and academic careers."
 }
 

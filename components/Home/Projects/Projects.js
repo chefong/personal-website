@@ -54,17 +54,7 @@ function Projects() {
           <div className="row justify-content-center">
             {projects
               .filter(project => filterProject(project, projectOption))
-              .map(project => {
-                const {
-                  imagePath,
-                  name,
-                  screenshotPath,
-                  text,
-                  githubLink,
-                  demoLink,
-                  devpostLink
-                } = project;
-
+              .map(({ imagePath, name, screenshotPath, text, githubLink, demoLink, devpostLink }) => {
                 return (
                   <div className="col-md-4" key={name}>
                     <Zoom>

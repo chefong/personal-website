@@ -251,47 +251,54 @@ export const projects = [
 ];
 
 export const experiences = [
-  // {
-  //   title: experienceText.intuitTitle,
-  //   subtitle: experienceText.intuitSubtitle,
-  //   description: experienceText.intuitDescription,
-  //   image: "/imgs/experience/intuit.png"
-  // },
   {
-    title: experienceText.opentableTitle,
-    subtitle: experienceText.opentableSubtitle,
+    orgName: experienceText.intuitName,
+    orgRole: experienceText.intuitRole,
+    description: experienceText.intuitDescription,
+    image: "/imgs/experience/intuit.png",
+    orgLink: "https://www.intuit.com/"
+  },
+  {
+    orgName: experienceText.opentableName,
+    orgRole: experienceText.opentableRole,
     description: experienceText.opentableDescription,
-    image: "/imgs/experience/opentable.png"
+    image: "/imgs/experience/opentable.png",
+    orgLink: "https://www.opentable.com/"
   },
   {
-    title: experienceText.urcTitle,
-    subtitle: experienceText.urcSubtitle,
+    orgName: experienceText.urcName,
+    orgRole: experienceText.urcRole,
     description: experienceText.urcDescription,
-    image: "/imgs/experience/urc.png"
+    image: "/imgs/experience/urc.png",
+    orgLink: null
   },
   {
-    title: experienceText.csambaTitle,
-    subtitle: experienceText.csambaSubtitle,
+    orgName: experienceText.csambaName,
+    orgRole: experienceText.csambaRole,
     description: experienceText.csambaDescription,
-    image: "/imgs/experience/wttb.png"
+    image: "/imgs/experience/wttb.png",
+    orgLink: "https://csamba.ucr.edu/"
   },
   {
-    title: experienceText.geospatialTitle,
-    subtitle: experienceText.geospatialSubtitle,
+    orgName: experienceText.geospatialName,
+    orgRole: experienceText.geospatialRole,
     description: experienceText.geospatialDescription,
-    image: "/imgs/experience/ucr.png"
+    image: "/imgs/experience/cgs.png",
+    orgLink: "https://spatial.ucr.edu/"
   },
   {
-    title: experienceText.acmTitle,
-    subtitle: experienceText.acmSubtitle,
+    orgName: experienceText.acmName,
+    orgRole: experienceText.acmRole,
     description: experienceText.acmDescription,
-    image: "/imgs/experience/acm.png"
+    image: "/imgs/experience/acm.png",
+    orgLink: "https://acmucr.org/"
   },
   {
-    title: experienceText.ieeeTitle,
-    subtitle: experienceText.ieeeSubtitle,
+    orgName: experienceText.ieeeName,
+    orgRole: experienceText.ieeeRole,
     description: experienceText.ieeeDescription,
-    image: "/imgs/experience/ieee.png"
+    image: "/imgs/experience/ieee.png",
+    orgLink: null
   }
 ];
 
