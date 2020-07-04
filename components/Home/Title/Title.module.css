@@ -33,6 +33,7 @@
   display: inline-block;
   margin: 4%;
   color: black;
+  width: 28px;
 }
 
 .icon:hover {
@@ -45,7 +46,6 @@
   position: relative;
   display: inline-block;
   margin: 4%;
-  top: -0.6em;
   letter-spacing: 0.25em;
   border: 2px solid black;
   border-radius: 10px;
@@ -55,6 +55,7 @@
   padding-bottom: 1%;
   text-transform: uppercase;
   color: black;
+  font-family: "Geomanist"
 }
 
 .resume:hover {

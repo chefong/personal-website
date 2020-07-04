@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from './Title.module.css';
+import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Element } from 'react-scroll';
 import { titleText } from '../../../content';
 import { Link } from 'react-scroll';
 import { isMobile } from 'react-device-detect';
 import { scrollOffsetDesktop, scrollDuration, fontAwesomeSize, links, resume } from '../../../constants';
-import Fade from 'react-reveal/Fade';
-import eric from '../../../assets/imgs/title/name.png';
-import apple from '../../../assets/imgs/title/apple.png';
-import downArrow from '../../../assets/imgs/title/double-down.svg';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faGlobe, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faEnvelope, faGlobe, faCloudDownloadAlt);
 
 function Title() {
   return (
@@ -21,14 +23,14 @@ function Title() {
               <div className="row justify-content-center">
                 <div className="col-md-12">
                   <Fade>
-                    <img src={eric} alt="Eric Ong" className={styles.name}/>
+                    <img src="/imgs/title/name.png" alt="Eric Ong" className={styles.name}/>
                   </Fade>
                 </div>
               </div>
             </div>
             <div className="col-md-5">
               <Fade>
-                <img src={apple} alt="Apple" className={styles.apple} />
+                <img src="/imgs/title/apple.png" alt="Apple" className={styles.apple} />
               </Fade>
               <div className={styles.icons}>
                 {links.map(({ url, icon }) => (
@@ -42,7 +44,7 @@ function Title() {
           </div>
           <div className="row justify-content-center">
             <Link activeClass="active" to="about" spy smooth offset={isMobile ? 2 : scrollOffsetDesktop} duration={scrollDuration}>
-              <img className={styles.arrow} src={downArrow} alt="down"/>
+              <img className={styles.arrow} src="/imgs/title/double-down.svg" alt="down"/>
             </Link>
           </div>
         </div>
