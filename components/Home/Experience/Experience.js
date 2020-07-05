@@ -33,9 +33,9 @@ function Experience() {
                   <a
                     href={orgLink}
                     target="_blank"
-                    className={orgLink ? `${styles.title} ${styles.linkHoverable}` : `${styles.title} ${styles.nonHoverable}`}
+                    className={orgLink ? styles.linkHoverable : styles.nonHoverable}
                   >
-                    {orgName}
+                    <span className={styles.title}>{orgName}</span>
                   </a>
                   <p className={styles.position}><em>{orgRole}</em></p>
                   <hr className={styles.line}></hr>
