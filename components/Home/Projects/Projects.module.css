@@ -26,12 +26,13 @@
 
 .githubLink, .githubLink:hover {
   color: black;
+  height: 28px;
   width: 28px;
 }
 
 .demoLink, .demoLink:hover {
   color: rgb(88, 88, 88);
-  width: 28px;
+  height: 28px;
 }
 
 .demoLink, .githubLink, .devpostLink {
@@ -46,17 +47,11 @@
   display: block;
 }
 
-.projects__tag {
-  margin-top: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
 .filter {
   float: right;
   width: 128px;
 }
 
 .devpostIcon {
-  width: 2.05em;
+  height: 28px;
 }
