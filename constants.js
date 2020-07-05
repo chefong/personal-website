@@ -1,6 +1,11 @@
 import { skillsText, projectsText, experienceText } from './content';
 
 export const email = "ericong18@gmail.com";
+export const fontAwesomeSize = "2x";
+export const githubUsername = "chefong";
+export const resume = "https://drive.google.com/file/d/1p9soqZuF9Ud7QaSsN0SV9fIjAScFseV3/view?usp=sharing";
+export const scrollOffsetDesktop = 0;
+export const scrollDuration = 1000;
 
 const languagesSkills = [
   {
@@ -311,7 +316,7 @@ export const selectProjectOptions = [
 
 export const links = [
   {
-    url: "https://github.com/chefong",
+    url: `https://github.com/${githubUsername}`,
     icon: ['fab', 'github'],
   },
   {
@@ -331,9 +336,3 @@ export const links = [
     icon: "envelope",
   }
 ];
-
-export const fontAwesomeSize = "2x";
-export const githubUsername = "chefong";
-export const resume = "https://drive.google.com/file/d/1p9soqZuF9Ud7QaSsN0SV9fIjAScFseV3/view?usp=sharing";
-export const scrollOffsetDesktop = 0;
-export const scrollDuration = 1000;

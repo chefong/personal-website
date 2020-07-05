@@ -31,11 +31,13 @@
   margin-left: 0;
 }
 
-.linkHoverable {
+.linkHoverable:hover {
   text-decoration: underline black;
+  color: black;
 }
 
 .nonHoverable {
   cursor: default;
   text-decoration: none;
+  color: #505050;
 }
