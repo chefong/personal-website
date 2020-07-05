@@ -251,13 +251,13 @@ export const projects = [
 ];
 
 export const experiences = [
-  {
-    orgName: experienceText.intuitName,
-    orgRole: experienceText.intuitRole,
-    description: experienceText.intuitDescription,
-    image: "/imgs/experience/intuit.png",
-    orgLink: "https://www.intuit.com/"
-  },
+  // {
+  //   orgName: experienceText.intuitName,
+  //   orgRole: experienceText.intuitRole,
+  //   description: experienceText.intuitDescription,
+  //   image: "/imgs/experience/intuit.png",
+  //   orgLink: "https://www.intuit.com/"
+  // },
   {
     orgName: experienceText.opentableName,
     orgRole: experienceText.opentableRole,
