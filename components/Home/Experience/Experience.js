@@ -30,12 +30,8 @@ function Experience() {
                   <img src={image} alt={orgName} className={styles.logo}/>
                 </div>
                 <div className={`col-md-6 ${styles.info}`}>
-                  <a
-                    href={orgLink}
-                    target="_blank"
-                    className={orgLink ? styles.linkHoverable : styles.nonHoverable}
-                  >
-                    <span className={styles.title}>{orgName}</span>
+                  <a href={orgLink} target="_blank">
+                    <span className={orgLink ? `${styles.title} ${styles.linkHoverable}` : `${styles.title} ${styles.nonHoverable}`}>{orgName}</span>
                   </a>
                   <p className={styles.position}><em>{orgRole}</em></p>
                   <hr className={styles.line}></hr>
