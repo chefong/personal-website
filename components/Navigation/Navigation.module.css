@@ -1,9 +1,12 @@
 .navbar {
   background-color: #505050;
   border-radius: 20px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 8px 15px -4px gray;
-  margin: 0 30%;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  max-width: 496px;
   margin-top: 16px;
 }
 

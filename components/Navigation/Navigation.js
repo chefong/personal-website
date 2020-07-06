@@ -18,7 +18,7 @@ function Navigation() {
 
   return (
     <div className="container-fluid">
-      <Navbar dark fixed="top" expand="md" className={styles.navbar}>
+      <Navbar dark fixed="top" expand="lg" className={styles.navbar}>
         <NavbarToggler onClick={toggle} className="toggler"/>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="m-auto">

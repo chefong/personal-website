@@ -26,7 +26,7 @@ function Skills() {
                 <div className="row">
                   {icons.map(({ name, imagePath }) => {
                     return (
-                      <div className="col-3 col-md-3 col-xs-3" key={name}>
+                      <div className="col-lg-3 col-md-4 col-xs-4" key={name}>
                         <Zoom>
                           <img src={imagePath} alt={name} className={styles.icon}/>
                         </Zoom>
