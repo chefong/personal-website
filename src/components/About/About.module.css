@@ -1,5 +1,5 @@
 .section {
-  margin-top: 8em;
+  margin-top: 6em;
 }
 
 .headerGroup {
@@ -24,7 +24,8 @@
   margin-left: -20px;
 }
 
-.headerLine {
-  display: inline-block;
-  width: auto;
+.image {
+  width: 100%;
+  display: block;
+  margin: auto;
 }

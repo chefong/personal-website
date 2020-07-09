@@ -22,13 +22,13 @@ export default function Navigation() {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mr-5" navbar>
-            <NavItem className="mr-4 mt-4 mb-2">
+            <NavItem className="ml-4 mt-4 mb-2">
               <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>01.</span> About</NavLink>
             </NavItem>
-            <NavItem className="mr-4 mt-4 mb-2">
+            <NavItem className="ml-4 mt-4 mb-2">
               <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>02.</span> Experience</NavLink>
             </NavItem>
-            <NavItem className="mr-4 mt-4 mb-2">
+            <NavItem className="ml-4 mt-4 mb-2">
               <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>03.</span> Projects</NavLink>
             </NavItem>
           </Nav>

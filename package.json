@@ -20,6 +20,7 @@
     "react-device-detect": "^1.13.1",
     "react-dom": "16.13.1",
     "react-github-calendar": "^2.0.1",
+    "react-particles-js": "^3.2.1",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.16",
     "react-tooltip": "^4.2.7",

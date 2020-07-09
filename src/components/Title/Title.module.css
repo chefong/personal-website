@@ -1,5 +1,9 @@
 .section {
-  margin-top: 6em;
+  margin-top: 4em;
+}
+
+.content {
+  margin-bottom: 2em;
 }
 
 .subtitle {
@@ -55,7 +59,8 @@
 }
 
 .hero {
-  display: block;
-  margin: auto;
   width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-top: 1em;
 }

@@ -1,7 +1,9 @@
 import Head from 'next/head';
+import Particles from 'react-particles-js';
 import Navigation from '../components/Navigation/Navigation';
 import Title from '../components/Title/Title';
 import About from '../components/About/About';
+import Experience from '../components/Experience/Experience';
 
 export default function Root() {
   return (
@@ -18,6 +20,7 @@ export default function Root() {
         <Navigation />
         <Title />
         <About />
+        <Experience />
       </main>
       <footer>
       </footer>
@@ -25,6 +28,10 @@ export default function Root() {
         body {
           background: #FFFEFB;
           font-family: "Geomanist";
+        }
+
+        hr {
+          border: 1px solid #808080;
         }
       `}</style>
     </>
