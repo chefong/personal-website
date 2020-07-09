@@ -63,7 +63,6 @@ export default function Title() {
             alt="Eric Ong"
             onMouseEnter={handleProfileHoverIn}
             onMouseLeave={handleProfileHoverOut}
-            style={{ transition: "all 0.5s ease" }}
           />
         </div>
       </div>

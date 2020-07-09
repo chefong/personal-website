@@ -32,7 +32,9 @@ export default function Navigation() {
           transition: "all 0.5s ease"
         }}
       >
-        <NavbarBrand href="/" className="ml-5">reactstrap</NavbarBrand>
+        <NavbarBrand href="/" className="ml-5">
+          <img className={styles.logo} src="/imgs/logo.svg" alt=""/>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mr-5 mt-3 mb-3" navbar>
