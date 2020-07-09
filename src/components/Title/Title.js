@@ -12,10 +12,12 @@ export default function Title() {
             <p className={styles.description}>I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.</p>
             <div className="mt-5">
               <Button className={`${styles.button} ${styles.contact} mr-4`}>Contact Me</Button>
-              <Button className={`${styles.button} ${styles.resume} mr-4`}>
-                <img className={styles.resumeIcon} src="/imgs/title/file-solid.svg" alt=""/>
-                Resume
-              </Button>
+              <a href="https://drive.google.com/file/d/1p9soqZuF9Ud7QaSsN0SV9fIjAScFseV3/view?usp=sharing">
+                <Button className={`${styles.button} ${styles.resume} mr-4`}>
+                  <img className={styles.resumeIcon} src="/imgs/title/file-solid.svg" alt=""/>
+                  Resume
+                </Button>
+              </a>
             </div>
           </div>
         </div>

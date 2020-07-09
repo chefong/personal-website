@@ -4,10 +4,11 @@
   color: #303030;
   border: 2px solid #303030;
   border-radius: 8px;
-  height: 208px;
+  height: 232px;
   margin-bottom: 2em;
   transition: all 0.25s ease;
   box-shadow: -12px 12px 0px #303030;
+  position: relative;
 }
 
 .cardInfo:hover {
@@ -24,4 +25,10 @@
 .github {
   width: 18px;
   float: right;
+}
+
+.badge {
+  background-color: #303030;
+  position: absolute;
+  bottom: 32px;
 }
