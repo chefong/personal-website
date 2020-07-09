@@ -26,10 +26,10 @@ export default function Navigation() {
               <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>01.</span> About</NavLink>
             </NavItem>
             <NavItem className="ml-4 mt-4 mb-2">
-              <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>02.</span> Experience</NavLink>
+              <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>02.</span> Projects</NavLink>
             </NavItem>
             <NavItem className="ml-4 mt-4 mb-2">
-              <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>03.</span> Projects</NavLink>
+              <NavLink href="/components/" className={styles.navLink}><span className={styles.navNum}>03.</span> Experience</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

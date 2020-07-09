@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation/Navigation';
 import Title from '../components/Title/Title';
 import About from '../components/About/About';
 import Experience from '../components/Experience/Experience';
+import Projects from '../components/Projects/Projects';
 
 export default function Root() {
   return (
@@ -20,6 +21,7 @@ export default function Root() {
         <Navigation />
         <Title />
         <About />
+        <Projects />  
         <Experience />
       </main>
       <footer>

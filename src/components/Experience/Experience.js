@@ -6,7 +6,7 @@ export default function Experience() {
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className={styles.headerGroup}>
-            <h2 className={styles.header}><span className={styles.headerNum}>02.</span> My Experience</h2>
+            <h2 className={styles.header}><span className={styles.headerNum}>03.</span> My Experience</h2>
           </div>
         </div>
       </div>
