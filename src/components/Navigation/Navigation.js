@@ -32,7 +32,7 @@ export default function Navigation() {
           transition: "all 0.5s ease"
         }}
       >
-        <NavbarBrand href="/" className="ml-5">
+        <NavbarBrand href="/" className="ml-2">
           <img className={styles.logo} src="/imgs/logo.svg" alt=""/>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
