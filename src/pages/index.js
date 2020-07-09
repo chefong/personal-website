@@ -10,13 +10,22 @@ export default function Root() {
   return (
     <>
       <Head>
-        <title>Eric Ong</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
-        <meta property="og:title" content="Eric Ong" />
+        <title>Eric Ong</title>
+        <meta name="title" content="Eric Ong" />
+        <meta name="description" content="I’m an aspiring Software Engineer based in the SF Bay Area with a focus on full-stack web development." />
+
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ericong.me/" />
-        <meta property="og:image:secure_url" content="https://dl.dropboxusercontent.com/s/rv188kuaoog0mku/og-image.png" />
+        <meta property="og:title" content="Eric Ong" />
         <meta property="og:description" content="I’m an aspiring Software Engineer based in the SF Bay Area with a focus on full-stack web development." />
+        <meta property="og:image" content="https://dl.dropboxusercontent.com/s/rv188kuaoog0mku/og-image.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.ericong.me/" />
+        <meta property="twitter:title" content="Eric Ong" />
+        <meta property="twitter:description" content="I’m an aspiring Software Engineer based in the SF Bay Area with a focus on full-stack web development." />
+        <meta property="twitter:image" content="https://dl.dropboxusercontent.com/s/rv188kuaoog0mku/og-image.png" />
       </Head>
       <main>
         <Navigation />
