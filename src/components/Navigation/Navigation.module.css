@@ -1,8 +1,16 @@
+.navbar {
+  background-color: #fffefb;
+}
+
 .navLink {
   font-weight: 500;
   font-size: 1.2em;
   color: #303030 !important;
 } 
+
+.navLink:hover {
+  cursor: pointer;
+}
 
 .navNum {
   color: #808080;

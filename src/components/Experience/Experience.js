@@ -2,7 +2,7 @@ import styles from './Experience.module.css';
 
 export default function Experience() {
   return (
-    <section className={`${styles.section} container-fluid`}>
+    <section className={`${styles.section} container-fluid`} id="experience">
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className={styles.headerGroup}>

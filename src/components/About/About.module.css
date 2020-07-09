@@ -2,6 +2,15 @@
   margin-top: 6em;
 }
 
+.link {
+  font-weight: 500;
+  color: #303030;
+}
+
+.link:hover {
+  color: #303030;
+}
+
 .headerGroup {
   font-weight: 500;
 }
@@ -28,4 +37,6 @@
   width: 100%;
   display: block;
   margin: auto;
+  border-radius: 50%;
+  margin-top: 1.5em;
 }

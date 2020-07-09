@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Particles from 'react-particles-js';
 import Navigation from '../components/Navigation/Navigation';
 import Title from '../components/Title/Title';
 import About from '../components/About/About';
 import Experience from '../components/Experience/Experience';
 import Projects from '../components/Projects/Projects';
+import Footer from '../components/Footer/Footer';
 
 export default function Root() {
   return (
@@ -25,10 +25,11 @@ export default function Root() {
         <Experience />
       </main>
       <footer>
+        <Footer />
       </footer>
       <style global jsx>{`
         body {
-          background: #FFFEFB;
+          background: #fffefb;
           font-family: "Geomanist";
         }
 

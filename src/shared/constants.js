@@ -1,3 +1,21 @@
+const navItems = [
+  {
+    to: "about",
+    num: "01.",
+    name: "About"
+  },
+  {
+    to: "projects",
+    num: "02.",
+    name: "Projects"
+  },
+  {
+    to: "experience",
+    num: "03.",
+    name: "Experience"
+  }
+];
+
 const projects = [
   {
     name: "Patch",
@@ -37,4 +55,32 @@ const projects = [
   }
 ];
 
-export { projects };
+const handles = [
+  {
+    name: "GitHub",
+    iconPath: "/imgs/footer/github.svg",
+    link: "https://github.com/chefong"
+  },
+  {
+    name: "LinkedIn",
+    iconPath: "/imgs/footer/linkedin.svg",
+    link: "https://www.linkedin.com/in/ericong18/"
+  },
+  {
+    name: "Instagram",
+    iconPath: "/imgs/footer/instagram.svg",
+    link: "https://www.instagram.com/chef_ong/"
+  },
+  {
+    name: "Medium",
+    iconPath: "/imgs/footer/medium.svg",
+    link: "https://medium.com/@ericong18"
+  },
+  {
+    name: "Email",
+    iconPath: "/imgs/footer/envelope.svg",
+    link: "mailto:ericong18@gmail.com"
+  }
+];
+
+export { navItems, projects, handles };

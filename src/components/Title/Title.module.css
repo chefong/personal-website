@@ -1,5 +1,5 @@
 .section {
-  margin-top: 4em;
+  margin-top: 10em;
 }
 
 .content {
@@ -59,8 +59,9 @@
 }
 
 .hero {
-  width: 75%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-top: 1em;
+  transition: all 0.5s ease;
 }

@@ -37,8 +37,8 @@
 
 .line {
   width: 10%;
-  border-width: 2px;
+  border-width: 1.5px;
+  border-color: #E5E5E5;
   margin-left: 0;
   margin-top: -8px;
-  color: #808080
 }
