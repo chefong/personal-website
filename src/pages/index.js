@@ -15,7 +15,8 @@ export default function Root() {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
         <meta property="og:title" content="Eric Ong" />
         <meta property="og:url" content="https://www.ericong.me/" />
-        <meta property="og:image" content="https://dl.dropboxusercontent.com/s/0asqccltefx00pd/og-image.png" />
+        <meta property="og:image" content="https://dl.dropboxusercontent.com/s/rv188kuaoog0mku/og-image.png" />
+        <meta property="og:description" content="I’m an aspiring Software Engineer based in the SF Bay Area with a focus on full-stack web development." />
       </Head>
       <main>
         <Navigation />
