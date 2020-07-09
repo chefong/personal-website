@@ -5,8 +5,8 @@ import { projects } from '../../shared/constants';
 export default function Projects() {
   return (
     <section className={`${styles.section} container-fluid`} id="projects">
-      <div className="row justify-content-center">
-        <div className="col-8">
+      <div className="row">
+        <div className="col-8 offset-md-2">
           <div className={styles.headerGroup}>
             <h2 className={styles.header}><span className={styles.headerNum}>02.</span> Projects</h2>
           </div>
