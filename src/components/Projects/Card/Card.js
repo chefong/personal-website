@@ -3,7 +3,7 @@ import { Badge } from 'reactstrap';
 
 export default function Card({ name, description, githubLink, wonHackathon }) {
   return (
-    <div className="col-md-4">
+    <div className="col-lg-4 col-md-6 col-sm-12">
       <div className={styles.cardInfo}>
         <a href={githubLink} target="_blank">
           <img className={styles.github} src="/imgs/projects/github.svg" alt=""/>
