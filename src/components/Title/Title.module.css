@@ -1,0 +1,61 @@
+.section {
+  margin-top: 6em;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 2em;
+  color: #808080;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 6em;
+  color: #303030;
+  margin-left: -4px;
+}
+
+.description {
+  color: #303030;
+}
+
+.period {
+  color: #808080;
+}
+
+.button {
+  font-weight: 500;
+  padding: 10px 16px;
+}
+
+.resume {
+  background-color: #303030;
+}
+
+.resume:hover {
+  background-color: #404040;
+}
+
+.contact {
+  background: none;
+  color: #303030;
+  border: 2px solid #303030;
+}
+
+.contact:hover {
+  background-color: #303030;
+  border: 2px solid #303030;
+  color: #FFFEFB;
+}
+
+.contactIcon, .resumeIcon {
+  width: 0.9em;
+  margin-right: 8px;
+  margin-top: -2px;
+}
+
+.hero {
+  display: block;
+  margin: auto;
+  width: 75%;
+}

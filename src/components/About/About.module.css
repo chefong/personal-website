@@ -1,0 +1,30 @@
+.section {
+  margin-top: 8em;
+}
+
+.headerGroup {
+  font-weight: 500;
+}
+
+.headerNum {
+  color: #808080;
+}
+
+.thingsGroup {
+  margin-top: 1.5em;
+}
+
+.thingsHeader {
+  font-weight: 500;
+  color: #303030;
+}
+
+.thingsList {
+  margin-top: -8px;
+  margin-left: -20px;
+}
+
+.headerLine {
+  display: inline-block;
+  width: auto;
+}
