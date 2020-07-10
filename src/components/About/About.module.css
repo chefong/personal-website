@@ -4,11 +4,11 @@
 
 .link {
   font-weight: 500;
-  color: #303030;
+  color: #4A74E1;
 }
 
 .link:hover {
-  color: #303030;
+  color: #4A74E1;
 }
 
 .headerGroup {
@@ -16,7 +16,7 @@
 }
 
 .headerNum {
-  color: #808080;
+  color: #4A74E1;
 }
 
 .thingsGroup {
