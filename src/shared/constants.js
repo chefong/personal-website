@@ -55,6 +55,23 @@ const projects = [
   }
 ];
 
+const experiences = [
+  {
+    imagePath: "/imgs/experience/intuit.png",
+    name: "Intuit",
+    position: "Software Engineer",
+    duration: "July 2020 - Present",
+    description: "Financial Data Platform Team."
+  },
+  {
+    imagePath: "imgs/experience/opentable.png",
+    name: "OpenTable",
+    position: "Software Engineering Intern",
+    duration: "June 2019 - August 2019",
+    description: "As a part of the Content Team, I worked on various consumer-facing products (internal tools, Restaurant Profile, GuestCenter Admin) using React, TypeScript, Jest, and OpenComponents. One of the projects I worked on focused on improving an existing internal tool to speed up workflow for internal marketing users. Another project I worked on was kickstarting the Gallery Photos feature on OpenTable's GuestCenter Admin with my team, giving restaurants the ability to manage their own photos."
+  }
+];
+
 const handles = [
   {
     name: "GitHub",
@@ -83,4 +100,4 @@ const handles = [
   }
 ];
 
-export { navItems, projects, handles };
+export { navItems, projects, experiences, handles };

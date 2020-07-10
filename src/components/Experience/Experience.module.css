@@ -12,7 +12,7 @@
 }
 
 .experienceGroup {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .companyImage {
@@ -37,7 +37,7 @@
 
 .line {
   width: 10%;
-  border-width: 1.5px;
+  border-width: 2px;
   border-color: #E5E5E5;
   margin-left: 0;
   margin-top: -8px;

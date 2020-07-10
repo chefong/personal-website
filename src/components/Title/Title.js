@@ -35,20 +35,20 @@ export default function Title() {
   return (
     <section className={`${styles.section} container-fluid`}>
       <div className="row justify-content-center">
-        <div className="col-md-4">
+        <div className="col-lg-4 col-md-6">
           <div className={`${styles.content} mb-5`}>
             <p className={styles.subtitle}>Hi, This Is</p>
             <h1 className={styles.name}>Eric Ong<span className={styles.period}>.</span></h1>
             <p className={styles.description}>I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.</p>
             <div className="mt-5">
               <a href="mailto:ericong18@gmail.com">
-                <Button className={`${styles.button} ${styles.contact} mr-4`} onMouseEnter={handleContactHoverIn} onMouseLeave={handleContactHoverOut}>
+                <Button className={`${styles.button} ${styles.contact} mr-4 mb-4`} onMouseEnter={handleContactHoverIn} onMouseLeave={handleContactHoverOut}>
                   <img className={styles.resumeIcon} src={contactIconPath} alt="" />
                   Contact Me
                 </Button>
               </a>
-              <a href="https://drive.google.com/file/d/1p9soqZuF9Ud7QaSsN0SV9fIjAScFseV3/view?usp=sharing">
-                <Button className={`${styles.button} ${styles.resume} mr-4`}>
+              <a href="/docs/EricOngResume.pdf">
+                <Button className={`${styles.button} ${styles.resume} mr-4 mb-4`}>
                   <img className={styles.resumeIcon} src="/imgs/title/file-solid.svg" alt=""/>
                   Resume
                 </Button>
@@ -56,7 +56,7 @@ export default function Title() {
             </div>
           </div>
         </div>
-        <div className="col-md-3 offset-md-1">
+        <div className="col-lg-3 offset-lg-1 col-md-4">
           <img
             className={`${styles.hero}`}
             src="/imgs/title/me-2.svg"
