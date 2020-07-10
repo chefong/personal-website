@@ -10,7 +10,7 @@ const coloredProfileImagePath = "/imgs/title/me-colored.svg";
 
 export default function Title() {
   const [contactIconPath, setContactIconPath] = useState(darkPlaneIconPath);
-  const [profileImagePath, setProfileImagePath] = useState(bwProfileImagePath);
+  const [profileIn, setProfileIn] = useState(false);
 
   const handleContactHoverIn = e => {
     e.preventDefault();
@@ -24,12 +24,12 @@ export default function Title() {
 
   const handleProfileHoverIn = e => {
     e.preventDefault();
-    setProfileImagePath(coloredProfileImagePath);
+    setProfileIn(true);
   }
 
   const handleProfileHoverOut = e => {
     e.preventDefault();
-    setProfileImagePath(bwProfileImagePath);
+    setProfileIn(false);
   }
 
   return (
@@ -59,10 +59,11 @@ export default function Title() {
         <div className="col-md-3 offset-md-1">
           <img
             className={`${styles.hero}`}
-            src={profileImagePath}
+            src="/imgs/title/me-2.svg"
             alt="Eric Ong"
             onMouseEnter={handleProfileHoverIn}
             onMouseLeave={handleProfileHoverOut}
+            style={{ filter: profileIn ? "saturate(1)" : "saturate(0)" }}
           />
         </div>
       </div>

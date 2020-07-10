@@ -31,10 +31,6 @@ export default function Root() {
           background: #fffefb;
           font-family: "Geomanist";
         }
-
-        hr {
-          border: 1px solid #808080;
-        }
       `}</style>
     </>
   )

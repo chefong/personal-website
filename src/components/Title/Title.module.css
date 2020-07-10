@@ -63,4 +63,5 @@
   display: block;
   margin-left: auto;
   margin-top: 1em;
+  transition: all 0.25s ease;
 }
