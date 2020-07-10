@@ -28,7 +28,7 @@ export default function Navigation() {
         fixed="top"
         className={styles.navbar}
         style={{
-          boxShadow: scrollPosition > 0 ? "0px 4px 28px rgba(0, 0, 0, 0.06)" : "none",
+          boxShadow: (scrollPosition > 0 || isOpen) ? "0px 4px 28px rgba(0, 0, 0, 0.06)" : "none",
           transition: "all 0.5s ease"
         }}
       >
