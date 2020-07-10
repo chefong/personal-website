@@ -1,14 +1,16 @@
-const config = {
-  title: "Eric Ong",
-  description: "I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.",
+const name = "Eric Ong";
+const description = "I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.";
+const url = "https://www.ericong.me";
+
+export default {
+  title: name,
+  description,
   openGraph: {
     type: "website",
-    url: "https://www.ericong.me/",
-    title: "Eric Ong",
-    site_name: "Eric Ong",
-    description: "I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.",
-    images: [{ url: "https://www.ericong.me/imgs/og-image.png" }]
+    url,
+    title: name,
+    site_name: name,
+    description,
+    images: [{ url: `${url}/imgs/og-image.png` }]
   },
-}
-
-export { config };
+};

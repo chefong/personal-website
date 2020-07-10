@@ -15,7 +15,7 @@ export default function Projects() {
       <div className="row justify-content-center">
         <div className="col-lg-9 col-md-9">
           <div className="row justify-content-center">
-            {projects.map(project => <Card { ...project } />)}
+            {projects.map(project => <Card { ...project } key={project.name} />)}
           </div>
         </div>
       </div>

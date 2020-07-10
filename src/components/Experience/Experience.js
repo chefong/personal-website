@@ -12,7 +12,7 @@ export default function Experience() {
         </div>
       </div>
       {experiences.map(({ imagePath, name, position, duration, description }) => (
-        <div className={styles.experienceGroup}>
+        <div className={styles.experienceGroup} key={name}>
           <div className="row justify-content-center">
             <div className="col-lg-3 col-md-4 col-sm-4">
               <img className={styles.companyImage} src={imagePath} alt={name}/>
