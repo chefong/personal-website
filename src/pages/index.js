@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import { config } from './next-seo.config';
+import { config } from '../next-seo.config';
 import Head from 'next/head';
 import Navigation from '../components/Navigation/Navigation';
 import Title from '../components/Title/Title';
