@@ -1,4 +1,4 @@
-export default {
+const config = {
   title: "Eric Ong",
   description: "I’m an aspiring Software Engineer based in the SF Bay Area with a focus on full-stack web development.",
   openGraph: {
@@ -9,4 +9,6 @@ export default {
     description: "I’m an aspiring Software Engineer based in the SF Bay Area with a focus on full-stack web development.",
     images: [{ url: "https://www.ericong.me/imgs/og-image.png" }]
   },
-};
+}
+
+export { config };

@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import SEO from './next-seo.config';
+import { config } from './next-seo.config';
 import Head from 'next/head';
 import Navigation from '../components/Navigation/Navigation';
 import Title from '../components/Title/Title';
@@ -15,7 +15,7 @@ export default function Root() {
         <link rel="icon" href="/favicon.ico" />
         <title>Eric Ong</title>
       </Head>
-      <NextSeo {...SEO} />
+      <NextSeo {...config} />
       <main>
         <Navigation />
         <Title />
