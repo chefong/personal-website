@@ -28,18 +28,25 @@ export default function Navigation() {
         fixed="top"
         className={styles.navbar}
         style={{
-          boxShadow: scrollPosition > 16 ? "0px 4px 28px rgba(0, 0, 0, 0.06)" : "none",
+          boxShadow: scrollPosition > 0 ? "0px 4px 28px rgba(0, 0, 0, 0.06)" : "none",
           transition: "all 0.5s ease"
         }}
       >
         <NavbarBrand href="/" className="ml-2">
           <img className={styles.logo} src="/imgs/logo.svg" alt=""/>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} className={`${styles.toggler} mr-2`}>
+          {isOpen ? (
+              <img className={styles.togglerIcon} src="/imgs/navigation/close.svg" alt=""/>
+            ) : (
+              <img className={styles.togglerIcon} src="/imgs/navigation/bars.svg" alt=""/>
+            )
+          }
+        </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mr-5 mt-3 mb-3" navbar>
             {navItems.map(({ to, num, name }) => (
-              <Link to={to} smooth={true} offset={-150} duration={750}>
+              <Link to={to} smooth={true} offset={-150} duration={750} key={to}>
                 <NavItem className="ml-4">
                   <NavLink className={styles.navLink}>
                     <span className={styles.navNum}>{num}</span> {name}
