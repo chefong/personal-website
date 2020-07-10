@@ -39,7 +39,7 @@ export default function Title() {
           <div className={`${styles.content} mb-5`}>
             <p className={styles.subtitle}>Hi, This Is</p>
             <h1 className={styles.name}>Eric Ong<span className={styles.period}>.</span></h1>
-            <p className={styles.description}>I’m an aspiring Software Engineer based in the SF Bay Area with a focus on full-stack web development.</p>
+            <p className={styles.description}>I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.</p>
             <div className="mt-5">
               <a href="mailto:ericong18@gmail.com">
                 <Button className={`${styles.button} ${styles.contact} mr-4`} onMouseEnter={handleContactHoverIn} onMouseLeave={handleContactHoverOut}>
