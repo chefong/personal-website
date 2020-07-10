@@ -30,6 +30,7 @@
 .button {
   font-weight: 500;
   padding: 10px 16px;
+  border-radius: 8px;
 }
 
 .resume {
