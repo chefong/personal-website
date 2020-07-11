@@ -17,3 +17,9 @@
 .icon:hover {
   transform: scale(1.25);
 }
+
+.message {
+  margin-top: 3em;
+  color: #808080;
+  font-size: 14px;
+}

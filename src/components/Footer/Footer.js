@@ -13,6 +13,9 @@ export default function Footer() {
           ))}
         </div>
       </div>
+      <div className="row justify-content-center">
+        <p className={styles.message}>Made with 🥛🍵 by Eric Ong</p>
+      </div>
     </div>
   )
 }
