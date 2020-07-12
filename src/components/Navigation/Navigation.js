@@ -49,7 +49,7 @@ export default function Navigation() {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mr-5 mt-3 mb-3" navbar>
             {navItems.map(({ to, num, name }, index) => (
-              <NavItem className="ml-4" key={index}>
+              <NavItem className="ml-4 mt-2 mb-2" key={index}>
                 <Link className={styles.navLink} to={to} smooth={true} offset={-150} duration={750}>
                   <span className={styles.navNum}>{num}</span> {name}
                 </Link>
