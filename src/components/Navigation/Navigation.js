@@ -45,8 +45,8 @@ export default function Navigation() {
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mr-5 mt-3 mb-3" navbar>
-            {navItems.map(({ to, num, name }) => (
-              <Link to={to} smooth={true} offset={-150} duration={750} key={to}>
+            {navItems.map(({ to, num, name }, index) => (
+              <Link to={to} smooth={true} offset={-150} duration={750} key={index}>
                 <NavItem className="ml-4">
                   <NavLink className={styles.navLink}>
                     <span className={styles.navNum}>{num}</span> {name}

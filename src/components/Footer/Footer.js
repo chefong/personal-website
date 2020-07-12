@@ -6,8 +6,8 @@ export default function Footer() {
     <div className={`${styles.container} container-fluid`}>
       <div className="row justify-content-center">
         <div className={styles.iconGroup}>
-          {handles.map(({ name, iconPath, link }) => (
-            <a className={styles.link} href={link} key={name} target="_blank">
+          {handles.map(({ name, iconPath, link }, index) => (
+            <a className={styles.link} href={link} key={index} target="_blank">
               <img className={styles.icon} src={iconPath} alt={name}/>
             </a>
           ))}
