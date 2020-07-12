@@ -12,6 +12,9 @@ import {
 } from 'reactstrap';
 import styles from './Navigation.module.css';
 
+const openIconPath = "/imgs/navigation/bars.svg";
+const closeIconPath = "/imgs/navigation/close.svg";
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -37,22 +40,20 @@ export default function Navigation() {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} className={`${styles.toggler} mr-2`}>
           {isOpen ? (
-              <img className={styles.togglerIcon} src="/imgs/navigation/close.svg" alt=""/>
+              <img className={styles.togglerIcon} src={closeIconPath} alt="Menu"/>
             ) : (
-              <img className={styles.togglerIcon} src="/imgs/navigation/bars.svg" alt=""/>
+              <img className={styles.togglerIcon} src={openIconPath} alt="Close"/>
             )
           }
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mr-5 mt-3 mb-3" navbar>
             {navItems.map(({ to, num, name }, index) => (
-              <Link to={to} smooth={true} offset={-150} duration={750} key={index}>
-                <NavItem className="ml-4">
-                  <NavLink className={styles.navLink}>
-                    <span className={styles.navNum}>{num}</span> {name}
-                  </NavLink>
-                </NavItem>
-              </Link>
+              <NavItem className="ml-4" key={index}>
+                <Link className={styles.navLink} to={to} smooth={true} offset={-150} duration={750}>
+                  <span className={styles.navNum}>{num}</span> {name}
+                </Link>
+              </NavItem>
             ))}
           </Nav>
         </Collapse>
