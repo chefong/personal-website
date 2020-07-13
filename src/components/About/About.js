@@ -1,4 +1,6 @@
 import styles from './About.module.css';
+import { Fade } from 'react-reveal';
+import { revealProps } from '../../shared/constants';
 
 export default function About() {
   return (
@@ -6,26 +8,38 @@ export default function About() {
       <div className="row justify-content-center">
         <div className="col-lg-5 col-md-6">
           <div className={styles.headerGroup}>
-            <h2 className={styles.header}><span className={styles.headerNum}>01.</span> About Me</h2>
+            <Fade {...revealProps}>
+              <h2 className={styles.header}><span className={styles.headerNum}>01.</span> About Me</h2>
+            </Fade>
           </div>
           <div className={styles.content}>
-            <p className={styles.description}>I graduated Magna Cum Laude from the <a href="https://www.ucr.edu/" className={styles.link} target="_blank">University of California, Riverside</a> in June 2020 with a B.S. degree in Computer Science. I’m an incoming Software Engineer at <a href="https://www.intuit.com/" className={styles.link} target="_blank">Intuit</a>, where I'll be working within the Financial Data Platform Team. Previously, I was at <a href="https://www.opentable.com/" className={styles.link} target="_blank">OpenTable</a> as a Software Engineering Intern on the Content Team.</p>
+            <Fade {...revealProps}>
+              <p className={styles.description}>I graduated Magna Cum Laude from the <a href="https://www.ucr.edu/" className={styles.link} target="_blank">University of California, Riverside</a> in June 2020 with a B.S. degree in Computer Science. I’m an incoming Software Engineer at <a href="https://www.intuit.com/" className={styles.link} target="_blank">Intuit</a>, where I'll be working within the Financial Data Platform Team. Previously, I was at <a href="https://www.opentable.com/" className={styles.link} target="_blank">OpenTable</a> as a Software Engineering Intern on the Content Team.</p>
+            </Fade>
             <div className={styles.thingsGroup}>
               <div className="row justify-content-center">
                 <div className="col-6">
-                  <p className={styles.thingsHeader}>Things I Like</p>
-                  <ul className={styles.thingsList}>
-                    <li>Watermelon 🍉</li>
-                    <li>70 - 85 BPM music 🎶</li>
-                    <li>Minimal design 🎨</li>
-                    <li>Premier League ⚽</li>
-                  </ul>
+                  <Fade {...revealProps}>
+                    <p className={styles.thingsHeader}>Things I Like</p>
+                  </Fade>
+                  <Fade {...revealProps} cascade>
+                    <ul className={styles.thingsList}>
+                      <li>Watermelon 🍉</li>
+                      <li>70 - 85 BPM music 🎶</li>
+                      <li>Minimal design 🎨</li>
+                      <li>Premier League ⚽</li>
+                    </ul>
+                  </Fade>
                 </div>
                 <div className="col-6">
-                  <p className={styles.thingsHeader}>Thing I Don't Like</p>
-                  <ul className={styles.thingsList}>
-                    <li>Cilantro 🤢</li>
-                  </ul>
+                  <Fade {...revealProps}>
+                    <p className={styles.thingsHeader}>Thing I Don't Like</p>
+                  </Fade>
+                  <Fade {...revealProps} cascade>
+                    <ul className={styles.thingsList}>
+                      <li>Cilantro 🤢</li>
+                    </ul>
+                  </Fade>
                 </div>
               </div>
             </div>

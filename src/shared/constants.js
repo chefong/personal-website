@@ -100,4 +100,12 @@ const handles = [
   }
 ];
 
-export { navItems, projects, experiences, handles };
+const revealProps = {
+  duration: 400,
+  delay: 100,
+  distance: "1em",
+  ssrReveal: true,
+  bottom: true
+};
+
+export { navItems, projects, experiences, handles, revealProps };
