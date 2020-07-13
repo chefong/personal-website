@@ -101,9 +101,9 @@ const handles = [
 ];
 
 const revealProps = {
-  duration: 400,
-  delay: 100,
-  distance: "1em",
+  duration: 500,
+  delay: 200,
+  distance: "1.2em",
   ssrReveal: true,
   bottom: true
 };
