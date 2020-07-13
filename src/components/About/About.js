@@ -46,9 +46,11 @@ export default function About() {
           </div>
         </div>
         <div className="col-lg-3 col-md-4">
-          <div className={styles.imageContainer}>
-            <img src="/imgs/about/spin.gif" className={styles.image} alt=""/>
-          </div>
+          <Fade {...revealProps}>
+            <div className={styles.imageContainer}>
+              <img src="/imgs/about/spin.gif" className={styles.image} alt=""/>
+            </div>
+          </Fade>
         </div>
       </div>
     </section>
