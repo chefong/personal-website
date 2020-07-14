@@ -104,7 +104,8 @@ const revealProps = {
   duration: 500,
   delay: 400,
   distance: "1.25em",
-  bottom: true
+  bottom: true,
+  ssrFadeout: true
 };
 
 export { navItems, projects, experiences, handles, revealProps };

@@ -24,7 +24,7 @@ export default function Experience() {
             </div>
             <div className="col-lg-5 col-md-6 col-sm-6">
               <div className={styles.companyInfo}>
-                <Fade {...revealProps}>
+                <Fade {...revealProps} cascade>
                   <p className={styles.name}>{name}</p>
                   <p className={styles.position}>{position} ({duration})</p>
                   <hr className={styles.line} />
