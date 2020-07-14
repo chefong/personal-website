@@ -1,7 +1,12 @@
-import { useEffect } from 'react';
-import Router from 'next/router';
-
 export default function Resume() {
-  useEffect(() => Router.push("/docs/EricOngResume.pdf"), []);
   return null;
+}
+
+export async function getServerSideProps({ res }) {
+  res.writeHead(301, {
+    Location: '/docs/EricOngResume.pdf'
+  });
+  res.end();
+
+  return { props: {} };
 }
