@@ -75,27 +75,27 @@ const experiences = [
 const handles = [
   {
     name: "GitHub",
-    iconPath: "/imgs/footer/github.svg",
+    icon: ['fab', 'github'],
     link: "https://github.com/chefong"
   },
   {
     name: "LinkedIn",
-    iconPath: "/imgs/footer/linkedin.svg",
+    icon: ['fab', 'linkedin-in'],
     link: "https://www.linkedin.com/in/ericong18/"
   },
   {
     name: "Instagram",
-    iconPath: "/imgs/footer/instagram.svg",
+    icon: ['fab', 'instagram'],
     link: "https://www.instagram.com/chef_ong/"
   },
   {
     name: "Medium",
-    iconPath: "/imgs/footer/medium.svg",
+    icon: ['fab', 'medium'],
     link: "https://medium.com/@ericong18"
   },
   {
     name: "Email",
-    iconPath: "/imgs/footer/envelope.svg",
+    icon: "envelope",
     link: "mailto:ericong18@gmail.com"
   }
 ];

@@ -1,6 +1,7 @@
 import styles from './Card.module.css';
 import { Badge } from 'reactstrap';
 import { Fade } from 'react-reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { revealProps } from '../../../shared/constants';
 
 export default function Card({ name, description, githubLink, wonHackathon }) {
@@ -9,7 +10,7 @@ export default function Card({ name, description, githubLink, wonHackathon }) {
       <Fade {...revealProps}>
         <div className={styles.cardInfo}>
           <a href={githubLink} target="_blank">
-            <img className={styles.github} src="/imgs/projects/github.svg" alt=""/>
+            <FontAwesomeIcon className={styles.github} icon={['fab', 'github']} />
           </a>
           <p className={styles.name}>{name}</p>
           <p className={styles.description}>{description}</p>

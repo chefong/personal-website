@@ -23,8 +23,14 @@
 }
 
 .github {
-  width: 18px;
   float: right;
+  width: 1.25em;
+  color: #303030;
+  transition: all 0.25s ease;
+}
+
+.github:hover {
+  color: #4A74E1;
 }
 
 .badge {

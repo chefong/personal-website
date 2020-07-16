@@ -35,10 +35,11 @@
 
 .resume {
   background-color: #303030;
+  border: none;
 }
 
 .resume:hover {
-  background-color: #404040;
+  background-color: #4A74E1;
 }
 
 .contact {
@@ -48,14 +49,14 @@
 }
 
 .contact:hover {
-  background-color: #303030;
-  border: 2px solid #303030;
-  color: #FFFEFB;
+  color: #4A74E1;
+  border: 2px solid #4A74E1;
+  background: none;
 }
 
 .contactIcon, .resumeIcon {
   width: 0.9em;
-  margin-right: 8px;
+  margin-right: 10px;
   margin-top: -2px;
 }
 

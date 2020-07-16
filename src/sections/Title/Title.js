@@ -3,23 +3,10 @@ import { Button } from 'reactstrap';
 import { Fade } from 'react-reveal';
 import { revealProps } from '../../shared/constants';
 import styles from './Title.module.css';
-
-const darkPlaneIconPath = "/imgs/title/paper-plane-solid.svg";
-const lightPlaneIconPath = "/imgs/title/paper-plane-solid-light.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Title() {
-  const [contactIconPath, setContactIconPath] = useState(darkPlaneIconPath);
   const [profileIn, setProfileIn] = useState(false);
-
-  const handleContactHoverIn = e => {
-    e.preventDefault();
-    setContactIconPath(lightPlaneIconPath);
-  }
-
-  const handleContactHoverOut = e => {
-    e.preventDefault();
-    setContactIconPath(darkPlaneIconPath);
-  }
 
   const handleProfileHoverIn = e => {
     e.preventDefault();
@@ -42,14 +29,14 @@ export default function Title() {
               <p className={styles.description}>I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.</p>
               <div className="mt-5">
                 <a href="mailto:ericong18@gmail.com">
-                  <Button className={`${styles.button} ${styles.contact} mr-4 mb-4`} onMouseEnter={handleContactHoverIn} onMouseLeave={handleContactHoverOut}>
-                    <img className={styles.resumeIcon} src={contactIconPath} alt="" />
+                  <Button className={`${styles.button} ${styles.contact} mr-4 mb-4`}>
+                    <FontAwesomeIcon className={styles.contactIcon} icon="paper-plane" />
                     Contact Me
                   </Button>
                 </a>
                 <a href="/docs/EricOngResume.pdf">
                   <Button className={`${styles.button} ${styles.resume} mr-4 mb-4`}>
-                    <img className={styles.resumeIcon} src="/imgs/title/file-solid.svg" alt=""/>
+                    <FontAwesomeIcon className={styles.resumeIcon} icon="file-alt" />
                     Resume
                   </Button>
                 </a>
