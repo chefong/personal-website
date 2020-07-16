@@ -48,7 +48,9 @@ export default function About() {
         <div className="col-lg-3 col-md-4">
           <Fade {...revealProps}>
             <div className={styles.imageContainer}>
-              <img src="/imgs/about/spin.gif" className={styles.image} alt=""/>
+              <video className={styles.image} autoPlay loop muted>
+                <source src="/imgs/about/spin.mp4" type="video/mp4" />
+              </video>
             </div>
           </Fade>
         </div>
