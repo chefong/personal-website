@@ -89,6 +89,16 @@ const handles = [
     link: "https://www.instagram.com/chef_ong/"
   },
   {
+    name: "Spotify",
+    icon: ['fab', 'spotify'],
+    link: "https://open.spotify.com/user/ericong18?si=H0kHkFdxQ-GyKIlfLWzDqg"
+  },
+  {
+    name: "Yelp",
+    icon: ['fab', 'yelp'],
+    link: "https://www.yelp.com/user_details?userid=4xQxHwQnCHR7WFVFOLxZ4A"
+  },
+  {
     name: "Medium",
     icon: ['fab', 'medium'],
     link: "https://medium.com/@ericong18"

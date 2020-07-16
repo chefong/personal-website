@@ -8,10 +8,15 @@
   margin: auto 1.25em;
 }
 
+.iconGroup {
+  text-align: center;
+}
+
 .icon {
   transition: all 0.15s ease;
   color: #303030;
   width: 1.5em;
+  margin: 0.5em auto;
 }
 
 .icon:hover {
