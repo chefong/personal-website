@@ -54,8 +54,8 @@ export default function Title() {
               <h1 className={styles.name}>Eric Ong<span className={styles.period}>.</span></h1>
               <p className={styles.description}>I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.</p>
               <div className="mt-5">
-                <a href="mailto:ericong18@gmail.com">
-                  <Button className={`${styles.button} ${styles.contact} mr-4 mb-4`}>
+                <a href="mailto:ericong18@gmail.com" className="mr-4 mb-4">
+                  <Button className={`${styles.button} ${styles.contact}`}>
                     <FontAwesomeIcon className={styles.contactIcon} icon="paper-plane" />
                     Contact Me
                   </Button>
@@ -64,8 +64,9 @@ export default function Title() {
                   href="/docs/EricOngResume.pdf"
                   onMouseEnter={handleResumeHoverIn}
                   onMouseLeave={handleResumeHoverOut}
+                  className="mr-4 mb-4" 
                 >
-                  <Button className={`${styles.button} ${styles.resume} mr-4 mb-4`}>
+                  <Button className={`${styles.button} ${styles.resume}`}>
                     <FontAwesomeIcon className={styles.resumeIcon} icon="file-alt" />
                     Resume
                     <Confetti active={resumeHovered} config={confettiConfig} />
