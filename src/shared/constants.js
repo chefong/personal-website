@@ -61,7 +61,7 @@ const experiences = [
     name: "Intuit",
     position: "Software Engineer",
     duration: "July 2020 - Present",
-    description: "Financial Data Platform Team."
+    description: "Financial Data Platform."
   },
   {
     imagePath: "imgs/experience/opentable.png",
