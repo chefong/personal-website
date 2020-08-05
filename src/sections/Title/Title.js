@@ -80,7 +80,7 @@ export default function Title() {
           <Fade {...revealProps}>
             <img
               className={styles.hero}
-              src="/imgs/title/me.svg"
+              src="/imgs/title/me.jpg"
               alt="Eric Ong"
               onMouseEnter={handleProfileHoverIn}
               onMouseLeave={handleProfileHoverOut}
