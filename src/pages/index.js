@@ -36,6 +36,11 @@ export default function Root() {
           background: #fffefb;
           font-family: "Geomanist";
         }
+
+        main {
+          max-width: 1600px;
+          margin: 0 auto;
+        }
       `}</style>
     </>
   )
