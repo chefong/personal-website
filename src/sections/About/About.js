@@ -14,7 +14,7 @@ export default function About() {
           </div>
           <div className={styles.content}>
             <Fade {...revealProps} cascade>
-              <p className={styles.description}>I graduated Magna Cum Laude from the <a href="https://www.ucr.edu/" className={styles.link} target="_blank">University of California, Riverside</a> in June 2020 with a B.S. degree in Computer Science. I’m currently a Software Engineer at <a href="https://www.intuit.com/" className={styles.link} target="_blank">Intuit</a>, where I'll be working within the Financial Data Platform Team. Previously, I was at <a href="https://www.opentable.com/" className={styles.link} target="_blank">OpenTable</a> as a Software Engineering Intern on the Content Team.</p>
+              <p className={styles.description}>I graduated Magna Cum Laude from the <a href="https://www.ucr.edu/" className={styles.link} target="_blank">University of California, Riverside</a> in June 2020 with a B.S. degree in Computer Science. I’m currently a Software Engineer at <a href="https://www.intuit.com/" className={styles.link} target="_blank">Intuit</a> on the Financial Data Platform, Widgets Team. Previously, I was at <a href="https://www.opentable.com/" className={styles.link} target="_blank">OpenTable</a> as a Software Engineering Intern on the Content Team.</p>
             </Fade>
             <div className={styles.thingsGroup}>
               <div className="row justify-content-center">
