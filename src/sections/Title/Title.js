@@ -77,16 +77,14 @@ export default function Title() {
           </Fade>
         </div>
         <div className="col-lg-3 offset-lg-1 col-md-4">
-          <Fade {...revealProps}>
-            <img
-              className={styles.hero}
-              src="/imgs/title/me.jpg"
-              alt="Eric Ong"
-              onMouseEnter={handleProfileHoverIn}
-              onMouseLeave={handleProfileHoverOut}
-              style={{ filter: profileIn ? "saturate(1)" : "saturate(0)" }}
-            />
-          </Fade>
+          <img
+            className={styles.hero}
+            src="/imgs/title/me.jpg"
+            alt="Eric Ong"
+            onMouseEnter={handleProfileHoverIn}
+            onMouseLeave={handleProfileHoverOut}
+            style={{ filter: profileIn ? "saturate(1)" : "saturate(0)" }}
+          />
         </div>
       </div>
     </section>
