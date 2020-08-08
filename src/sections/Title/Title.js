@@ -21,18 +21,7 @@ const confettiConfig = {
 };
 
 export default function Title() {
-  const [profileIn, setProfileIn] = useState(false);
   const [resumeHovered, setResumeHovered] = useState(false);
-
-  const handleProfileHoverIn = e => {
-    e.preventDefault();
-    setProfileIn(true);
-  }
-
-  const handleProfileHoverOut = e => {
-    e.preventDefault();
-    setProfileIn(false);
-  }
 
   const handleResumeHoverIn = e => {
     e.preventDefault();
@@ -77,14 +66,7 @@ export default function Title() {
           </Fade>
         </div>
         <div className="col-lg-3 offset-lg-1 col-md-4">
-          <img
-            className={styles.hero}
-            src="/imgs/title/me.jpg"
-            alt="Eric Ong"
-            onMouseEnter={handleProfileHoverIn}
-            onMouseLeave={handleProfileHoverOut}
-            style={{ filter: profileIn ? "saturate(1)" : "saturate(0)" }}
-          />
+          <img className={styles.hero} src="/imgs/title/me.jpg" alt="Eric Ong" />
         </div>
       </div>
     </section>

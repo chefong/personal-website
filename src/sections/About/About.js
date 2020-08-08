@@ -47,9 +47,10 @@ export default function About() {
         </div>
         <div className="col-lg-3 col-md-4">
           <div className={styles.imageContainer}>
-            <video className={styles.image} autoPlay loop muted>
+            {/* <video className={styles.image} autoPlay loop muted>
               <source src="/imgs/about/spin.mp4" type="video/mp4" />
-            </video>
+            </video> */}
+            <img src="/imgs/about/abstract.png" alt="lines" className={styles.image} />
           </div>
         </div>
       </div>

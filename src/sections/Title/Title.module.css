@@ -61,9 +61,14 @@
 }
 
 .hero {
-  width: 90%;
+  width: 95%;
   display: block;
   margin: 0 auto;
   margin-top: 1.5em;
   transition: all 0.25s ease;
+  filter: saturate(0);
+}
+
+.hero:hover {
+  filter: saturate(1);
 }
