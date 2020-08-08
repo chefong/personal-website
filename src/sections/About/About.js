@@ -1,8 +1,19 @@
+import { useState } from 'react';
 import styles from './About.module.css';
 import { Fade } from 'react-reveal';
 import { revealProps } from '../../shared/constants';
 
 export default function About() {
+  const [hovered, setHovered] = useState(false);
+
+  const handleImageHover = () => setHovered(true);
+
+  const handleImageUnhover = () => setHovered(false);
+
+  const renderAnimation = () => {
+    return hovered ? `${styles.animate}` : "";
+  }
+
   return (
     <section className={`${styles.section} container-fluid`} id="about">
       <div className="row justify-content-center">
@@ -47,10 +58,13 @@ export default function About() {
         </div>
         <div className="col-lg-3 col-md-4">
           <div className={styles.imageContainer}>
-            {/* <video className={styles.image} autoPlay loop muted>
-              <source src="/imgs/about/spin.mp4" type="video/mp4" />
-            </video> */}
-            <img src="/imgs/about/abstract.png" alt="lines" className={styles.image} />
+            <img
+              src="/imgs/about/abstract.png"
+              alt="lines"
+              className={`${styles.image} ${renderAnimation()}`}
+              onMouseEnter={handleImageHover}
+              onMouseLeave={handleImageUnhover}
+            />
           </div>
         </div>
       </div>

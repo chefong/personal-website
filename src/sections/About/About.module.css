@@ -49,7 +49,7 @@
   }
   50% {
     filter: saturate(1);
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 }
 
@@ -58,5 +58,10 @@
   margin-top: 1em;
   padding: 1em;
   transition: all 0.25s ease;
-  animation: pulse 5s linear infinite;
+  filter: saturate(0);
+  /* animation: pulse 5s linear infinite; */
+}
+
+.animate {
+  animation: pulse 2s linear infinite;
 }
