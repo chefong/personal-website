@@ -61,9 +61,7 @@ export default function About() {
             <img
               src="/imgs/about/abstract.png"
               alt="lines"
-              className={`${styles.image} ${renderAnimation()}`}
-              onMouseEnter={handleImageHover}
-              onMouseLeave={handleImageUnhover}
+              className={`${styles.image} ${styles.animate}`}
             />
           </div>
         </div>
