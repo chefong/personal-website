@@ -1,54 +1,70 @@
-import { useState } from 'react';
 import styles from './About.module.css';
 import { Fade } from 'react-reveal';
 import { revealProps } from '../../shared/constants';
+import { FormattedMessage } from "text-provider";
 
 export default function About() {
-  const [hovered, setHovered] = useState(false);
-
-  const handleImageHover = () => setHovered(true);
-
-  const handleImageUnhover = () => setHovered(false);
-
-  const renderAnimation = () => {
-    return hovered ? `${styles.animate}` : "";
-  }
-
   return (
     <section className={`${styles.section} container-fluid`} id="about">
       <div className="row justify-content-center">
         <div className="col-lg-5 col-md-6">
           <div className={styles.headerGroup}>
             <Fade {...revealProps}>
-              <h2 className={styles.header}><span className={styles.headerNum}>01.</span> About Me</h2>
+              <h2 className={styles.header}>
+                <span className={styles.headerNum}>01. </span> 
+                <FormattedMessage id="ABOUT_HEADING" />
+                </h2>
             </Fade>
           </div>
           <div className={styles.content}>
             <Fade {...revealProps} cascade>
-              <p className={styles.description}>I graduated Magna Cum Laude from the <a href="https://www.ucr.edu/" className={styles.link} target="_blank">University of California, Riverside</a> in June 2020 with a B.S. degree in Computer Science. I’m currently a Software Engineer at <a href="https://www.intuit.com/" className={styles.link} target="_blank">Intuit</a> on the Financial Data Platform, Widgets Team. Previously, I was at <a href="https://www.opentable.com/" className={styles.link} target="_blank">OpenTable</a> as a Software Engineering Intern on the Content Team.</p>
+              <p className={styles.description}>
+                <FormattedMessage
+                  id="ABOUT_DESCRIPTION"
+                  values={{
+                    schoolClass: styles.link,
+                    intuitClass: styles.link,
+                    openTableClass: styles.link
+                  }}
+                />
+              </p>
             </Fade>
             <div className={styles.thingsGroup}>
               <div className="row justify-content-center">
                 <div className="col-6">
                   <Fade {...revealProps}>
-                    <p className={styles.thingsHeader}>Things I Like</p>
+                    <p className={styles.thingsHeader}>
+                      <FormattedMessage id="ABOUT_LIKE" />
+                    </p>
                   </Fade>
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
-                      <li>Watermelon 🍉</li>
-                      <li>70 - 85 BPM music 🎶</li>
-                      <li>Minimal design 🎨</li>
-                      <li>Premier League ⚽</li>
+                      <li>
+                        <FormattedMessage id="ABOUT_LIKE_WATERMELON" />
+                      </li>
+                      <li>
+                        <FormattedMessage id="ABOUT_LIKE_MUSIC" />
+                      </li>
+                      <li>
+                        <FormattedMessage id="ABOUT_LIKE_DESIGN" />
+                      </li>
+                      <li>
+                        <FormattedMessage id="ABOUT_LIKE_PREMIER_LEAGUE" />
+                      </li>
                     </ul>
                   </Fade>
                 </div>
                 <div className="col-6">
                   <Fade {...revealProps}>
-                    <p className={styles.thingsHeader}>Thing I Don't Like</p>
+                    <p className={styles.thingsHeader}>
+                      <FormattedMessage id="ABOUT_DISLIKE" />
+                    </p>
                   </Fade>
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
-                      <li>Cilantro 🤢</li>
+                      <li>
+                        <FormattedMessage id="ABOUT_DISLIKE_CILANTRO" />
+                      </li>
                     </ul>
                   </Fade>
                 </div>

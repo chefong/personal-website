@@ -1,5 +1,6 @@
 import styles from './Footer.module.css';
 import { Fade } from 'react-reveal';
+import { FormattedMessage } from 'text-provider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { handles, revealProps } from '../../shared/constants';
 
@@ -19,7 +20,9 @@ export default function Footer() {
       </div>
       <div className="row justify-content-center">
         <Fade {...revealProps}>
-          <p className={styles.message}>Made with 🥛🍵 by Eric Ong</p>
+          <p className={styles.message}>
+            <FormattedMessage id="FOOTER_DESCRIPTION" />
+          </p>
         </Fade>
       </div>
     </div>

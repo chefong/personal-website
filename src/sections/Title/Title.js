@@ -4,6 +4,7 @@ import { Fade } from 'react-reveal';
 import { revealProps } from '../../shared/constants';
 import styles from './Title.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FormattedMessage } from "text-provider";
 import Confetti from 'react-dom-confetti';
 
 const confettiConfig = {
@@ -39,14 +40,21 @@ export default function Title() {
         <div className="col-lg-4 col-md-6">
           <Fade {...revealProps}>
             <div className={`${styles.content} mb-5`}>
-              <p className={styles.subtitle}>Hi, This Is</p>
-              <h1 className={styles.name}>Eric Ong<span className={styles.period}>.</span></h1>
-              <p className={styles.description}>I’m a Software Engineer based in the SF Bay Area with a focus on full-stack web development.</p>
+              <p className={styles.subtitle}>
+                <FormattedMessage id="TITLE_GREETING" />
+              </p>
+              <h1 className={styles.name}>
+                <FormattedMessage id="NAME" />
+                <span className={styles.period}>.</span>
+              </h1>
+              <p className={styles.description}>
+                <FormattedMessage id="TITLE_DESCRIPTION" />
+              </p>
               <div className="mt-5">
                 <a href="mailto:ericong18@gmail.com" className="mr-4 mb-4">
                   <Button className={`${styles.button} ${styles.contact}`}>
                     <FontAwesomeIcon className={styles.contactIcon} icon="paper-plane" />
-                    Contact Me
+                    <FormattedMessage id="TITLE_CONTACT" />
                   </Button>
                 </a>
                 <a
@@ -57,7 +65,7 @@ export default function Title() {
                 >
                   <Button className={`${styles.button} ${styles.resume}`}>
                     <FontAwesomeIcon className={styles.resumeIcon} icon="file-alt" />
-                    Resume
+                    <FormattedMessage id="TITLE_RESUME" />
                     <Confetti active={resumeHovered} config={confettiConfig} />
                   </Button>
                 </a>

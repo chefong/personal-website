@@ -18,57 +18,57 @@ const navItems = [
 
 const projects = [
   {
-    name: "Patch",
-    description: "A web application that retroactively fixes your Zoom audio recordings.",
+    nameId: "PROJECTS_PATCH",
+    descriptionId: "PROJECTS_PATCH_DESCRIPTION",
     githubLink: "https://github.com/willshiao/Patch",
-    wonHackathon: true
+    winner: true
   },
   {
-    name: "CheaterBeater",
-    description: "Identify and act on fraudulent Devpost hackathon submissions.",
+    nameId: "PROJECTS_CHEATERBEATER",
+    descriptionId: "PROJECTS_CHEATERBEATER_DESCRIPTION",
     githubLink: "https://github.com/willshiao/CheaterBeater",
-    wonHackathon: true
+    winner: true
   },
   {
-    name: "Baut",
-    description: "A chatbot that recommends movies and music based on the user's likings.",
+    nameId: "PROJECTS_BAUT",
+    descriptionId: "PROJECTS_BAUT_DESCRIPTION",
     githubLink: "https://github.com/KirbyDownB/GEICOChatBot",
-    wonHackathon: true
+    winner: true
   },
   {
-    name: "birdie",
-    description: "A web application that visualizes tweets on a Mapbox map.",
+    nameId: "PROJECTS_BIRDIE",
+    descriptionId: "PROJECTS_BIRDIE_DESCRIPTION",
     githubLink: "https://github.com/chefong/birdie",
-    wonHackathon: false
+    winner: false
   },
   {
-    name: "Stock Overflow",
-    description: "Use news data to predict how a stock will act in the future.",
+    nameId: "PROJECTS_STOCK_OVERFLOW",
+    descriptionId: "PROJECTS_STOCK_OVERFLOW_DESCRIPTION",
     githubLink: "https://github.com/kimjihwan0208/stockoverflow",
-    wonHackathon: false
+    winner: false
   },
   {
-    name: "Joyride",
-    description: "Determine the most efficient way to reach a destination with your carpool buddies!",
+    nameId: "PROJECTS_JOYRIDE",
+    descriptionId: "PROJECTS_JOYRIDE_DESCRIPTION",
     githubLink: "https://github.com/ericong18/joyride",
-    wonHackathon: true
+    winner: true
   }
 ];
 
 const experiences = [
   {
     imagePath: "/imgs/experience/intuit.png",
-    name: "Intuit",
+    nameId: "EXPERIENCE_INTUIT",
     position: "Software Engineer",
     duration: "July 2020 - Present",
-    description: "Financial Data Platform."
+    descriptionId: "EXPERIENCE_INTUIT_DESCRIPTION"
   },
   {
     imagePath: "imgs/experience/opentable.png",
-    name: "OpenTable",
+    nameId: "EXPERIENCE_OPENTABLE",
     position: "Software Engineering Intern",
     duration: "June 2019 - August 2019",
-    description: "As a part of the Content Team, I worked on various consumer-facing products (internal tools, Restaurant Profile, GuestCenter Admin) using React, TypeScript, Jest, and OpenComponents. One of the projects I worked on focused on improving an existing internal tool to speed up workflow for internal marketing users. Another project I worked on was kickstarting the Gallery Photos feature on OpenTable's GuestCenter Admin with my team, giving restaurants the ability to manage their own photos."
+    descriptionId: "EXPERIENCE_OPENTABLE_DESCRIPTION"
   }
 ];
 

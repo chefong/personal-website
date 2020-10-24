@@ -2,6 +2,8 @@ import { NextSeo } from 'next-seo';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faFileAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { TextProvider } from "text-provider";
+import strings from '../shared/content.json';
 import config from '../next-seo.config';
 import Head from 'next/head';
 import Navigation from '../components/Navigation/Navigation';
@@ -21,16 +23,18 @@ export default function Root() {
         <title>Eric Ong</title>
       </Head>
       <NextSeo {...config} />
-      <main>
-        <Navigation />
-        <Title />
-        <About />
-        <Projects />  
-        <Experience />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <TextProvider globalText={strings}>
+        <main>
+          <Navigation />
+          <Title />
+          <About />
+          <Projects />
+          <Experience />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </TextProvider>
       <style global jsx>{`
         body {
           background: #fffefb;

@@ -1,6 +1,7 @@
 import styles from './Projects.module.css';
 import Card from './Card/Card';
 import { Fade } from 'react-reveal';
+import { FormattedMessage } from 'text-provider';
 import { projects, revealProps } from '../../shared/constants';
 
 export default function Projects() {
@@ -10,7 +11,10 @@ export default function Projects() {
         <div className="col-lg-9 col-md-9">
           <Fade {...revealProps}>
             <div className={styles.headerGroup}>
-              <h2 className={styles.header}><span className={styles.headerNum}>02.</span> Projects</h2>
+              <h2 className={styles.header}>
+                <span className={styles.headerNum}>02. </span>
+                <FormattedMessage id="PROJECTS_HEADING" />
+              </h2>
             </div>
           </Fade>
         </div>
@@ -23,5 +27,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

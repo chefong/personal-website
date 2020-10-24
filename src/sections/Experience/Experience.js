@@ -1,5 +1,6 @@
 import styles from './Experience.module.css';
 import { Fade } from 'react-reveal';
+import { FormattedMessage } from 'text-provider';
 import { experiences, revealProps } from '../../shared/constants';
 
 export default function Experience() {
@@ -14,21 +15,25 @@ export default function Experience() {
           </Fade>
         </div>
       </div>
-      {experiences.map(({ imagePath, name, position, duration, description }, index) => (
+      {experiences.map(({ imagePath, nameId, position, duration, descriptionId }, index) => (
         <div className={styles.experienceGroup} key={index}>
           <div className="row justify-content-center">
             <div className="col-lg-3 col-md-4 col-sm-4">
               <Fade {...revealProps}>
-                <img className={styles.companyImage} src={imagePath} alt={name}/>
+                <img className={styles.companyImage} src={imagePath} alt={nameId}/>
               </Fade>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-6">
               <div className={styles.companyInfo}>
                 <Fade {...revealProps}>
-                  <p className={styles.name}>{name}</p>
+                  <p className={styles.name}>
+                    <FormattedMessage id={nameId} />
+                  </p>
                   <p className={styles.position}>{position} ({duration})</p>
                   <hr className={styles.line} />
-                  <p className={styles.description}>{description}</p>
+                  <p className={styles.description}>
+                    <FormattedMessage id={descriptionId} />
+                  </p>
                 </Fade>
               </div>
             </div>

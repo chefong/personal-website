@@ -1,17 +1,26 @@
 import styles from './Card.module.css';
 import { Badge } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FormattedMessage } from 'text-provider';
 
-export default function Card({ name, description, githubLink, wonHackathon }) {
+export default function Card({ nameId, descriptionId, githubLink, winner }) {
   return (
     <div className="col-lg-4 col-md-6">
       <div className={styles.cardInfo}>
         <a href={githubLink} target="_blank">
           <FontAwesomeIcon className={styles.github} icon={['fab', 'github']} />
         </a>
-        <p className={styles.name}>{name}</p>
-        <p className={styles.description}>{description}</p>
-        {wonHackathon && <Badge className={styles.badge}>HACKATHON WINNER</Badge>}
+        <p className={styles.name}>
+          <FormattedMessage id={nameId} />
+        </p>
+        <p className={styles.description}>
+          <FormattedMessage id={descriptionId} />
+        </p>
+        {winner && 
+          <Badge className={styles.badge}>
+            <FormattedMessage id="WINNER" />
+          </Badge>
+        }
       </div>
     </div>
   )
