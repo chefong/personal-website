@@ -29,7 +29,7 @@
   "WINNER": "HACKATHON WINNER",
   "EXPERIENCE_HEADING": "My Experience",
   "EXPERIENCE_INTUIT": "Intuit",
-  "EXPERIENCE_INTUIT_DESCRIPTION": "Financial Data Platform.",
+  "EXPERIENCE_INTUIT_DESCRIPTION": "Intuit Data Exchange (formerly known as Financial Data Platform).",
   "EXPERIENCE_OPENTABLE": "OpenTable",
   "EXPERIENCE_OPENTABLE_DESCRIPTION": "As a part of the Content Team, I worked on various consumer-facing products (internal tools, Restaurant Profile, GuestCenter Admin) using React, TypeScript, Jest, and OpenComponents. One of the projects I worked on focused on improving an existing internal tool to speed up workflow for internal marketing users. Another project I worked on was kickstarting the Gallery Photos feature on OpenTable's GuestCenter Admin with my team, giving restaurants the ability to manage their own photos.",
   "FOOTER_DESCRIPTION": "Made with 🥛🍵 by Eric Ong"
