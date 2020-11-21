@@ -33,35 +33,15 @@
   margin-left: -20px;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    filter: saturate(0);
-    transform: scale(1);
-  }
-  50% {
-    filter: saturate(1);
-    transform: scale(1.05);
-  }
-}
-
 .image {
   width: 100%;
   margin-top: 1em;
   padding: 1em;
   transition: all 0.25s ease;
   filter: saturate(0);
-  /* animation: pulse 5s linear infinite; */
 }
 
-.animate {
-  animation: pulse 5s linear infinite;
+.image:hover {
+  filter: saturate(1);
+  transform: scale(1.05);
 }

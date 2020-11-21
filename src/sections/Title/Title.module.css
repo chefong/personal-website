@@ -50,8 +50,17 @@
 
 .contact:hover {
   color: #4A74E1;
-  border: 2px solid #4A74E1;
+  border-color: #4A74E1;
   background: none;
+}
+
+.resume {
+  border: 2px solid #303030;
+}
+
+.resume:hover {
+  background-color: #4A74E1;
+  border-color: #4A74E1;
 }
 
 .contactIcon, .resumeIcon {
