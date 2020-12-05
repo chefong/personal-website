@@ -1,7 +1,9 @@
 import styles from './About.module.css';
 import { Fade } from 'react-reveal';
-import { revealProps } from '../../shared/constants';
-import { FormattedMessage } from "text-provider";
+import { revealProps, likedThings, dislikedThings } from '../../shared/constants';
+import { FormattedMessage } from 'text-provider';
+import Lottie from 'lottie-react';
+import codeAnimation from './code-animation.json';
 
 export default function About() {
   return (
@@ -39,18 +41,11 @@ export default function About() {
                   </Fade>
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
-                      <li>
-                        <FormattedMessage id="ABOUT_LIKE_WATERMELON" />
-                      </li>
-                      <li>
-                        <FormattedMessage id="ABOUT_LIKE_MUSIC" />
-                      </li>
-                      <li>
-                        <FormattedMessage id="ABOUT_LIKE_DESIGN" />
-                      </li>
-                      <li>
-                        <FormattedMessage id="ABOUT_LIKE_PREMIER_LEAGUE" />
-                      </li>
+                      {likedThings.map(id => (
+                        <li>
+                          <FormattedMessage id={id} />
+                        </li>
+                      ))}
                     </ul>
                   </Fade>
                 </div>
@@ -62,9 +57,11 @@ export default function About() {
                   </Fade>
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
-                      <li>
-                        <FormattedMessage id="ABOUT_DISLIKE_CILANTRO" />
-                      </li>
+                      {dislikedThings.map(id => (
+                        <li>
+                          <FormattedMessage id={id} />
+                        </li>
+                      ))}
                     </ul>
                   </Fade>
                 </div>
@@ -74,11 +71,7 @@ export default function About() {
         </div>
         <div className="col-lg-3 col-md-4">
           <div className={styles.imageContainer}>
-            <img
-              src="/imgs/about/abstract.png"
-              alt="lines"
-              className={`${styles.image} ${styles.animate}`}
-            />
+            <Lottie className={styles.image} animationData={codeAnimation} />
           </div>
         </div>
       </div>

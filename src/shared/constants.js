@@ -107,4 +107,8 @@ const revealProps = {
   bottom: true
 };
 
-export { navItems, projects, experiences, handles, revealProps };
+const likedThings = ['ABOUT_LIKE_WATERMELON', 'ABOUT_LIKE_MUSIC', 'ABOUT_LIKE_DESIGN', 'ABOUT_LIKE_PREMIER_LEAGUE'];
+
+const dislikedThings = ['ABOUT_DISLIKE_CILANTRO'];
+
+export { navItems, projects, experiences, handles, revealProps, likedThings, dislikedThings };

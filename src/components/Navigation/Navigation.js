@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
+import Lottie from "lottie-react";
 import { navItems } from '../../shared/constants';
 import {
   Collapse,
@@ -10,15 +11,28 @@ import {
   NavItem
 } from 'reactstrap';
 import styles from './Navigation.module.css';
+import menuAnimation from './menu-animation.json';
 
-const openIconPath = "/imgs/navigation/bars.svg";
-const closeIconPath = "/imgs/navigation/close.svg";
+const lottieProps = {
+  animationData: menuAnimation,
+  loop: false,
+  autoplay: false,
+};
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const menuIconEl = useRef(null);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => {
+    if (isOpen) {
+      menuIconEl.current.playSegments([100, 140], true);
+      setIsOpen(false);
+    } else {
+      menuIconEl.current.playSegments([30, 70], true);
+      setIsOpen(true);
+    }
+  };
 
   useEffect(() => window.addEventListener('scroll', () => setScrollPosition(window.scrollY)), []);
 
@@ -37,13 +51,12 @@ export default function Navigation() {
         <NavbarBrand href="/" className="ml-2">
           <img className={styles.logo} src="/imgs/logo.svg" alt=""/>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} className={`${styles.toggler} mr-2`}>
-          {isOpen ? (
-              <img className={styles.togglerIcon} src={closeIconPath} alt="Menu"/>
-            ) : (
-              <img className={styles.togglerIcon} src={openIconPath} alt="Close"/>
-            )
-          }
+        <NavbarToggler onClick={toggle} className={styles.toggler}>
+          <Lottie
+            {...lottieProps}
+            lottieRef={menuIconEl}
+            className={styles.togglerIcon}
+          />
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto mr-5 mt-3 mb-3" navbar>
