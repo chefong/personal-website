@@ -83,3 +83,15 @@
 .hero:hover {
   filter: saturate(1);
 }
+
+@media (max-width: 767px) {
+  .hero {
+    width: 60%
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    width: 75%
+  }
+}

@@ -2,10 +2,10 @@ import styles from './About.module.css';
 import { Fade } from 'react-reveal';
 import { revealProps, likedThings, dislikedThings } from '../../shared/constants';
 import { FormattedMessage } from 'text-provider';
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 import codeAnimation from './code-animation.json';
 
-const lottieOptions = {
+const lottieProps = {
   loop: true,
   autoplay: true,
   animationData: codeAnimation
@@ -48,7 +48,7 @@ export default function About() {
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
                       {likedThings.map(id => (
-                        <li>
+                        <li key={id}>
                           <FormattedMessage id={id} />
                         </li>
                       ))}
@@ -64,7 +64,7 @@ export default function About() {
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
                       {dislikedThings.map(id => (
-                        <li>
+                        <li key={id}>
                           <FormattedMessage id={id} />
                         </li>
                       ))}
@@ -77,11 +77,7 @@ export default function About() {
         </div>
         <div className="col-lg-3 col-md-4">
           <div className={styles.imageContainer}>
-            <Lottie
-              isClickToPauseDisabled
-              ariaRole="img"
-              options={lottieOptions}
-            />
+            <Lottie {...lottieProps} />
           </div>
         </div>
       </div>
