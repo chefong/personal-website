@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
-import Lottie from "lottie-react";
+import Lottie from 'react-lottie';
 import { navItems } from '../../shared/constants';
 import {
   Collapse,
@@ -13,11 +13,18 @@ import {
 import styles from './Navigation.module.css';
 import menuAnimation from './menu-animation.json';
 
-const lottieProps = {
-  animationData: menuAnimation,
+const lottieOptions = {
   loop: false,
   autoplay: false,
+  animationData: menuAnimation
 };
+
+// Segment frames for menu open and close
+const menuOpenSegments = [30, 70];
+const menuCloseSegments = [100, 140];
+
+// Icon size for menu icon
+const menuDimension = 48;
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,10 +33,10 @@ export default function Navigation() {
 
   const toggle = () => {
     if (isOpen) {
-      menuIconEl.current.playSegments([100, 140], true);
+      menuIconEl.current.anim.playSegments(menuCloseSegments, true);
       setIsOpen(false);
     } else {
-      menuIconEl.current.playSegments([30, 70], true);
+      menuIconEl.current.anim.playSegments(menuOpenSegments, true);
       setIsOpen(true);
     }
   };
@@ -53,9 +60,12 @@ export default function Navigation() {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} className={styles.toggler}>
           <Lottie
-            {...lottieProps}
-            lottieRef={menuIconEl}
+            isClickToPauseDisabled
+            options={lottieOptions}
+            ref={menuIconEl}
             className={styles.togglerIcon}
+            height={menuDimension}
+            width={menuDimension}
           />
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>

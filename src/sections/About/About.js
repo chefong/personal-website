@@ -2,8 +2,14 @@ import styles from './About.module.css';
 import { Fade } from 'react-reveal';
 import { revealProps, likedThings, dislikedThings } from '../../shared/constants';
 import { FormattedMessage } from 'text-provider';
-import Lottie from 'lottie-react';
+import Lottie from 'react-lottie';
 import codeAnimation from './code-animation.json';
+
+const lottieOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: codeAnimation
+};
 
 export default function About() {
   return (
@@ -71,7 +77,11 @@ export default function About() {
         </div>
         <div className="col-lg-3 col-md-4">
           <div className={styles.imageContainer}>
-            <Lottie className={styles.image} animationData={codeAnimation} />
+            <Lottie
+              isClickToPauseDisabled
+              ariaRole="img"
+              options={lottieOptions}
+            />
           </div>
         </div>
       </div>
