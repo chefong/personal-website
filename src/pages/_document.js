@@ -1,11 +1,11 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Head, Main, NextScript, Html, Body } from 'next/document';
 
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID;
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -25,11 +25,11 @@ export default class MyDocument extends Document {
             }}
           />
         </Head>
-        <body>
+        <Body>
           <Main />
           <NextScript />
-        </body>
-      </html>
+        </Body>
+      </Html>
     )
   }
 }
