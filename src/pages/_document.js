@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript, Html, Body } from 'next/document';
+import Document, { Head, Main, NextScript, Html } from 'next/document';
 
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID;
 
@@ -25,10 +25,10 @@ export default class MyDocument extends Document {
             }}
           />
         </Head>
-        <Body>
+        <body>
           <Main />
           <NextScript />
-        </Body>
+        </body>
       </Html>
     )
   }
