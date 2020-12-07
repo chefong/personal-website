@@ -24,18 +24,20 @@ const confettiConfig = {
 export default function Title() {
   const [resumeHovered, setResumeHovered] = useState(false);
 
+  /* istanbul ignore next */
   const handleResumeHoverIn = e => {
     e.preventDefault();
     setResumeHovered(true);
   }
 
+  /* istanbul ignore next */
   const handleResumeHoverOut = e => {
     e.preventDefault();
     setResumeHovered(false);
   }
 
   return (
-    <section className={`${styles.section} container-fluid`}>
+    <section className={`${styles.section} container-fluid`} data-testid="Title-container">
       <div className="row justify-content-center">
         <div className="col-lg-4 col-md-6">
           <Fade {...revealProps}>

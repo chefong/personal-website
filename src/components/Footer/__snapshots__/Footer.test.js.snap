@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches snapshot 1`] = `
+<div>
+  <div
+    class="undefined container-fluid"
+    data-testid="Footer-container"
+  >
+    <div
+      class="row justify-content-center"
+    >
+      <div>
+        <a
+          class="react-reveal"
+          data-testid="Footer-icon-link"
+          href="https://github.com/chefong"
+          target="_blank"
+        />
+        <a
+          class="react-reveal"
+          data-testid="Footer-icon-link"
+          href="https://www.linkedin.com/in/ericong18/"
+          target="_blank"
+        />
+        <a
+          class="react-reveal"
+          data-testid="Footer-icon-link"
+          href="https://open.spotify.com/user/ericong18?si=H0kHkFdxQ-GyKIlfLWzDqg"
+          target="_blank"
+        />
+        <a
+          class="react-reveal"
+          data-testid="Footer-icon-link"
+          href="https://medium.com/@ericong18"
+          target="_blank"
+        />
+        <a
+          class="react-reveal"
+          data-testid="Footer-icon-link"
+          href="mailto:ericong18@gmail.com"
+          target="_blank"
+        />
+      </div>
+    </div>
+    <div
+      class="row justify-content-center"
+    >
+      <p
+        class="react-reveal"
+      >
+        <span />
+      </p>
+    </div>
+  </div>
+</div>
+`;

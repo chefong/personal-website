@@ -6,7 +6,7 @@ import { FormattedMessage } from 'text-provider';
 export default function Card({ nameId, descriptionId, githubLink, winner }) {
   return (
     <div className="col-lg-4 col-md-6">
-      <div className={styles.cardInfo}>
+      <div className={styles.cardInfo} data-testid="Card-container">
         <a href={githubLink} target="_blank">
           <FontAwesomeIcon className={styles.github} icon={['fab', 'github']} />
         </a>

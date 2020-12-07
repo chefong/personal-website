@@ -6,12 +6,12 @@ import { handles, revealProps } from '../../shared/constants';
 
 export default function Footer() {
   return (
-    <div className={`${styles.container} container-fluid`}>
+    <div className={`${styles.container} container-fluid`} data-testid="Footer-container">
       <div className="row justify-content-center">
         <div className={styles.iconGroup}>
           <Fade {...revealProps}>
             {handles.map(({ icon, link }, index) => (
-              <a className={styles.link} href={link} key={index} target="_blank">
+              <a className={styles.link} href={link} key={index} target="_blank" data-testid="Footer-icon-link">
                 <FontAwesomeIcon className={styles.icon} icon={icon} />
               </a>
             ))}

@@ -31,3 +31,6 @@ yarn-error.log*
 
 # ngrok
 ngrok
+
+# babelrc
+.babelrc

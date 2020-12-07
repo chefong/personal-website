@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects matches snapshot 1`] = `
+<div>
+  <section
+    class="undefined container-fluid"
+    data-testid="Projects-container"
+    id="projects"
+  >
+    <div
+      class="row justify-content-center"
+    >
+      <div
+        class="col-lg-9 col-md-9"
+      >
+        <div
+          class="react-reveal"
+        >
+          <h2>
+            <span>
+              02. 
+            </span>
+            <span />
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row justify-content-center"
+    >
+      <div
+        class="col-lg-9 col-md-9"
+      >
+        <div
+          class="row justify-content-center"
+        >
+          <div
+            class="col-lg-4 col-md-6"
+          >
+            <div
+              data-testid="Card-container"
+            >
+              <a
+                href="https://github.com/willshiao/Patch"
+                target="_blank"
+              />
+              <p>
+                <span />
+              </p>
+              <p>
+                <span />
+              </p>
+              <span
+                class="badge badge-secondary"
+              >
+                <span />
+              </span>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+          >
+            <div
+              data-testid="Card-container"
+            >
+              <a
+                href="https://github.com/willshiao/CheaterBeater"
+                target="_blank"
+              />
+              <p>
+                <span />
+              </p>
+              <p>
+                <span />
+              </p>
+              <span
+                class="badge badge-secondary"
+              >
+                <span />
+              </span>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+          >
+            <div
+              data-testid="Card-container"
+            >
+              <a
+                href="https://github.com/KirbyDownB/GEICOChatBot"
+                target="_blank"
+              />
+              <p>
+                <span />
+              </p>
+              <p>
+                <span />
+              </p>
+              <span
+                class="badge badge-secondary"
+              >
+                <span />
+              </span>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+          >
+            <div
+              data-testid="Card-container"
+            >
+              <a
+                href="https://github.com/chefong/birdie"
+                target="_blank"
+              />
+              <p>
+                <span />
+              </p>
+              <p>
+                <span />
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+          >
+            <div
+              data-testid="Card-container"
+            >
+              <a
+                href="https://github.com/kimjihwan0208/stockoverflow"
+                target="_blank"
+              />
+              <p>
+                <span />
+              </p>
+              <p>
+                <span />
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+          >
+            <div
+              data-testid="Card-container"
+            >
+              <a
+                href="https://github.com/ericong18/joyride"
+                target="_blank"
+              />
+              <p>
+                <span />
+              </p>
+              <p>
+                <span />
+              </p>
+              <span
+                class="badge badge-secondary"
+              >
+                <span />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

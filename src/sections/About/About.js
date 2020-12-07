@@ -1,6 +1,6 @@
 import styles from './About.module.css';
 import { Fade } from 'react-reveal';
-import { revealProps, likedThings, dislikedThings } from '../../shared/constants';
+import { revealProps, likes, dislikes } from '../../shared/constants';
 import { FormattedMessage } from 'text-provider';
 import Lottie from 'lottie-react';
 import codeAnimation from './code-animation.json';
@@ -13,7 +13,7 @@ const lottieProps = {
 
 export default function About() {
   return (
-    <section className={`${styles.section} container-fluid`} id="about">
+    <section className={`${styles.section} container-fluid`} id="about" data-testid="About-container">
       <div className="row justify-content-center">
         <div className="col-lg-5 col-md-6">
           <div className={styles.headerGroup}>
@@ -47,8 +47,8 @@ export default function About() {
                   </Fade>
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
-                      {likedThings.map(id => (
-                        <li key={id}>
+                      {likes.map(id => (
+                        <li key={id} data-testid="About-like">
                           <FormattedMessage id={id} />
                         </li>
                       ))}
@@ -63,8 +63,8 @@ export default function About() {
                   </Fade>
                   <Fade {...revealProps} cascade>
                     <ul className={styles.thingsList}>
-                      {dislikedThings.map(id => (
-                        <li key={id}>
+                      {dislikes.map(id => (
+                        <li key={id} data-testid="About-dislike">
                           <FormattedMessage id={id} />
                         </li>
                       ))}

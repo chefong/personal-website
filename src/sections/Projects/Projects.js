@@ -6,7 +6,7 @@ import { projects, revealProps } from '../../shared/constants';
 
 export default function Projects() {
   return (
-    <section className={`${styles.section} container-fluid`} id="projects">
+    <section className={`${styles.section} container-fluid`} id="projects" data-testid="Projects-container">
       <div className="row justify-content-center">
         <div className="col-lg-9 col-md-9">
           <Fade {...revealProps}>

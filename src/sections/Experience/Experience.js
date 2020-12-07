@@ -5,7 +5,7 @@ import { experiences, revealProps } from '../../shared/constants';
 
 export default function Experience() {
   return (
-    <section className={`${styles.section} container-fluid`} id="experience">
+    <section className={`${styles.section} container-fluid`} id="experience" data-testid="Experience-container">
       <div className="row justify-content-center">
         <div className="col-lg-8 col-md-10 col-sm-10">
           <Fade {...revealProps}>
@@ -16,7 +16,7 @@ export default function Experience() {
         </div>
       </div>
       {experiences.map(({ imagePath, nameId, position, duration, descriptionId }, index) => (
-        <div className={styles.experienceGroup} key={index}>
+        <div className={styles.experienceGroup} key={index} data-testid="Experience-item">
           <div className="row justify-content-center">
             <div className="col-lg-3 col-md-4 col-sm-4">
               <Fade {...revealProps}>

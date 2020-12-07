@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience matches snapshot 1`] = `
+<div>
+  <section
+    class="undefined container-fluid"
+    data-testid="Experience-container"
+    id="experience"
+  >
+    <div
+      class="row justify-content-center"
+    >
+      <div
+        class="col-lg-8 col-md-10 col-sm-10"
+      >
+        <div
+          class="react-reveal"
+        >
+          <h2>
+            <span>
+              03.
+            </span>
+             My Experience
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="Experience-item"
+    >
+      <div
+        class="row justify-content-center"
+      >
+        <div
+          class="col-lg-3 col-md-4 col-sm-4"
+        >
+          <img
+            alt="EXPERIENCE_INTUIT"
+            class="react-reveal"
+            src="/imgs/experience/intuit.png"
+          />
+        </div>
+        <div
+          class="col-lg-5 col-md-6 col-sm-6"
+        >
+          <div>
+            <p
+              class="react-reveal"
+            >
+              <span />
+            </p>
+            <p
+              class="react-reveal"
+            >
+              Software Engineer
+               (
+              July 2020 - Present
+              )
+            </p>
+            <hr
+              class="react-reveal"
+            />
+            <p
+              class="react-reveal"
+            >
+              <span />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="Experience-item"
+    >
+      <div
+        class="row justify-content-center"
+      >
+        <div
+          class="col-lg-3 col-md-4 col-sm-4"
+        >
+          <img
+            alt="EXPERIENCE_OPENTABLE"
+            class="react-reveal"
+            src="imgs/experience/opentable.png"
+          />
+        </div>
+        <div
+          class="col-lg-5 col-md-6 col-sm-6"
+        >
+          <div>
+            <p
+              class="react-reveal"
+            >
+              <span />
+            </p>
+            <p
+              class="react-reveal"
+            >
+              Software Engineering Intern
+               (
+              June 2019 - August 2019
+              )
+            </p>
+            <hr
+              class="react-reveal"
+            />
+            <p
+              class="react-reveal"
+            >
+              <span />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

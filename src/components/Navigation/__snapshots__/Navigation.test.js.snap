@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="Navigation-container"
+  >
+    <nav
+      class="navbar navbar-expand-md navbar-light fixed-top"
+      style="box-shadow: none; transition: all 0.5s ease;"
+    >
+      <a
+        class="ml-2 navbar-brand"
+        href="/"
+      >
+        <img
+          alt=""
+          src="/imgs/logo.svg"
+        />
+      </a>
+      <button
+        aria-label="Toggle navigation"
+        class="navbar-toggler"
+        data-testid="Navigation-toggle"
+        type="button"
+      >
+        <div>
+          <svg
+            height="512"
+            preserveAspectRatio="xMidYMid meet"
+            style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+            viewBox="0 0 512 512"
+            width="512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <clippath
+                id="__lottie_element_16"
+              >
+                <rect
+                  height="512"
+                  width="512"
+                  x="0"
+                  y="0"
+                />
+              </clippath>
+            </defs>
+            <g
+              clip-path="url(#__lottie_element_16)"
+            >
+              <g
+                opacity="1"
+                style="display: block;"
+                transform="matrix(1,0,0,1,63.75,338.083984375)"
+              >
+                <g
+                  opacity="1"
+                  transform="matrix(1,0,0,1,192.25,21.58300018310547)"
+                >
+                  <path
+                    d=" M-192,21.33300018310547 C-192,21.33300018310547 192,21.33300018310547 192,21.33300018310547 C192,21.33300018310547 192,-21.33300018310547 192,-21.33300018310547 C192,-21.33300018310547 -192,-21.33300018310547 -192,-21.33300018310547 C-192,-21.33300018310547 -192,21.33300018310547 -192,21.33300018310547z"
+                    fill="rgb(66,66,66)"
+                    fill-opacity="1"
+                  />
+                </g>
+              </g>
+              <g
+                opacity="1"
+                style="display: block;"
+                transform="matrix(1,0,0,1,63.75,234.4149932861328)"
+              >
+                <g
+                  opacity="1"
+                  transform="matrix(1,0,0,1,192.25,21.583999633789062)"
+                >
+                  <path
+                    d=" M-192,21.333999633789062 C-192,21.333999633789062 192,21.333999633789062 192,21.333999633789062 C192,21.333999633789062 192,-21.333999633789062 192,-21.333999633789062 C192,-21.333999633789062 -192,-21.333999633789062 -192,-21.333999633789062 C-192,-21.333999633789062 -192,21.333999633789062 -192,21.333999633789062z"
+                    fill="rgb(66,66,66)"
+                    fill-opacity="1"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                opacity="1"
+                style="display: block;"
+                transform="matrix(1,0,0,1,63.75,127.74999237060547)"
+              >
+                <g
+                  opacity="1"
+                  transform="matrix(1,0,0,1,192.25,21.58300018310547)"
+                >
+                  <path
+                    d=" M-192,21.33300018310547 C-192,21.33300018310547 192,21.33300018310547 192,21.33300018310547 C192,21.33300018310547 192,-21.33300018310547 192,-21.33300018310547 C192,-21.33300018310547 -192,-21.33300018310547 -192,-21.33300018310547 C-192,-21.33300018310547 -192,21.33300018310547 -192,21.33300018310547z"
+                    fill="rgb(66,66,66)"
+                    fill-opacity="1"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        data-testid="Navigation-collapse"
+      >
+        <ul
+          class="ml-auto mr-5 mt-3 mb-3 navbar-nav"
+        >
+          <li
+            class="ml-4 mt-2 mb-2 nav-item"
+            data-testid="Navigation-item"
+          >
+            <a>
+              <span>
+                01.
+              </span>
+               
+              About
+            </a>
+          </li>
+          <li
+            class="ml-4 mt-2 mb-2 nav-item"
+            data-testid="Navigation-item"
+          >
+            <a>
+              <span>
+                02.
+              </span>
+               
+              Projects
+            </a>
+          </li>
+          <li
+            class="ml-4 mt-2 mb-2 nav-item"
+            data-testid="Navigation-item"
+          >
+            <a>
+              <span>
+                03.
+              </span>
+               
+              Experience
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+`;

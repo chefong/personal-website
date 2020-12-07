@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
@@ -25,5 +28,12 @@
     "react-scroll": "^1.7.16",
     "reactstrap": "^8.5.1",
     "text-provider": "0.0.37"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "jest-canvas-mock": "^2.3.0"
   }
 }
