@@ -1,6 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, ReactElement } from 'react';
 import { Link } from 'react-scroll';
-/* istanbul ignore next */
 import Lottie from 'lottie-react';
 import { navItems } from '../../shared/constants';
 import {
@@ -13,6 +12,7 @@ import {
 } from 'reactstrap';
 import styles from './Navigation.module.css';
 import menuAnimation from './menu-animation.json';
+import { LottieSegment } from '../../interfaces';
 
 const lottieProps = {
   loop: false,
@@ -21,20 +21,22 @@ const lottieProps = {
 };
 
 // Segment frames for menu open and close
-const menuOpenSegments = [30, 70];
-const menuCloseSegments = [100, 140];
+const menuOpenSegments: LottieSegment = { start: 30, end: 70};
+const menuCloseSegments: LottieSegment = { start: 100, end: 140 };
 
-export default function Navigation() {
+export default function Navigation(): ReactElement {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const menuIconEl = useRef(null);
 
   const toggle = () => {
     if (isOpen) {
-      menuIconEl.current.playSegments(menuCloseSegments, true);
+      const { start, end } = menuCloseSegments;
+      menuIconEl.current.playSegments([start, end], true);
       setIsOpen(false);
     } else {
-      menuIconEl.current.playSegments(menuOpenSegments, true);
+      const { start, end } = menuOpenSegments;
+      menuIconEl.current.playSegments([start, end], true);
       setIsOpen(true);
     }
   };
