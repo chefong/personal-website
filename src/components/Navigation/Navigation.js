@@ -20,23 +20,39 @@ const lottieProps = {
   animationData: menuAnimation
 };
 
+const reactScrollLinkProps = {
+  smooth: true,
+  offset: -150,
+  duration: 750,
+};
+
 // Segment frames for menu open and close
 const menuOpenSegments = [30, 70];
 const menuCloseSegments = [100, 140];
+
+// Box shadow styling for when the nav menu is open
+const menuBoxShadow = '0px 4px 28px rgba(0, 0, 0, 0.06)';
+
+// Menu transition styling for menu
+const menuTransition = 'all 0.5s ease';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const menuIconEl = useRef(null);
 
+  const openMenu = () => {
+    menuIconEl.current.playSegments(menuOpenSegments, true);
+    setIsOpen(true);
+  };
+
+  const closeMenu = () => {
+    menuIconEl.current.playSegments(menuCloseSegments, true);
+    setIsOpen(false);
+  };
+
   const toggle = () => {
-    if (isOpen) {
-      menuIconEl.current.playSegments(menuCloseSegments, true);
-      setIsOpen(false);
-    } else {
-      menuIconEl.current.playSegments(menuOpenSegments, true);
-      setIsOpen(true);
-    }
+    isOpen ? closeMenu() : openMenu();
   };
 
   /* istanbul ignore next */
@@ -50,8 +66,8 @@ export default function Navigation() {
         fixed="top"
         className={styles.navbar}
         style={{
-          boxShadow: (scrollPosition > 0 || isOpen) ? "0px 4px 28px rgba(0, 0, 0, 0.06)" : "none",
-          transition: "all 0.5s ease"
+          boxShadow: (scrollPosition > 0 || isOpen) ? menuBoxShadow : 'none',
+          transition: menuTransition,
         }}
       >
         <NavbarBrand href="/" className="ml-2">
@@ -68,7 +84,7 @@ export default function Navigation() {
           <Nav className="ml-auto mr-5 mt-3 mb-3" navbar>
             {navItems.map(({ to, num, name }, index) => (
               <NavItem className="ml-4 mt-2 mb-2" key={index} data-testid="Navigation-item">
-                <Link smooth className={styles.navLink} to={to} offset={-150} duration={750}>
+                <Link {...reactScrollLinkProps} className={styles.navLink} to={to}>
                   <span className={styles.navNum}>{num}</span> {name}
                 </Link>
               </NavItem>
