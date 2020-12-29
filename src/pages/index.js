@@ -12,10 +12,45 @@ import Title from '../sections/Title/Title';
 import About from '../sections/About/About';
 import Experience from '../sections/Experience/Experience';
 import Projects from '../sections/Projects/Projects';
+import useKeyPress from '../shared/hooks/useKeyPress';
+import getQuote from '../services/getQuote';
+import toast, { Toaster } from 'react-hot-toast';
 
 library.add(fab, faEnvelope, faFileAlt, faPaperPlane);
 
+const toasterProps = {
+  toastOptions: {
+    style: {
+      padding: '16px',
+      fontFamily: 'Geomanist',
+      backgroundColor: '#303030',
+      color: 'white',
+    },
+    duration: 5000,
+  },
+  position: 'bottom-center',
+};
+
 export default function Root() {
+  useKeyPress('q', () => {
+    toast.promise(
+      getQuote(),
+      {
+        loading: 'Getting quote...',
+        success: (response) => {
+          const { data: { content } } = response;
+          return content;
+        },
+        error: 'Couldn\'nt get quote.',
+      },
+      {
+        loading: { icon: '⌛' },
+        success: { icon: '🤔' },
+        error: { icon: '😕' },
+      },
+    );
+  });
+
   return (
     <>
       <Head>
@@ -30,6 +65,7 @@ export default function Root() {
           <About />
           <Projects />
           <Experience />
+          <Toaster {...toasterProps} />
         </main>
         <footer>
           <Footer />
