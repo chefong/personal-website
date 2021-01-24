@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import Footer from '../../components/Footer/Footer';
 import Title from '../Title/Title';
@@ -51,15 +51,11 @@ function getDurationFromWords(content) {
 }
 
 export default function Body() {
-  const [theme, setTheme] = useState('light');
-  const [toastDuration, setToastDuration] = useState(5000);
+  let siteTheme;
+  if (process.browser) siteTheme = localStorage.getItem('siteTheme');
 
-  useEffect(() => {
-    const siteTheme = localStorage.getItem('siteTheme');
-    if (siteTheme) {
-      setTheme(siteTheme);
-    }
-  });
+  const [theme, setTheme] = useState(siteTheme || 'light');
+  const [toastDuration, setToastDuration] = useState(5000);
 
   useKeyPress('q', () => {
     toast.dismiss();
