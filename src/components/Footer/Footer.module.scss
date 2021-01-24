@@ -6,6 +6,12 @@
 
 .link {
   margin: auto 1.25em;
+  color: var(--theme-page-text);
+  transition: all 0.25s ease;
+}
+
+.link:hover {
+  color: var(--theme-color);
 }
 
 .iconGroup {
@@ -13,14 +19,8 @@
 }
 
 .icon {
-  transition: all 0.25s ease;
-  color: #303030;
   width: 1.5em;
   margin: 0.5em auto;
-}
-
-.icon:hover {
-  color: #4A74E1;
 }
 
 .message {

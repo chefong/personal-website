@@ -1,13 +1,13 @@
 .cardInfo {
   padding: 32px;
   padding-top: 36px;
-  color: #303030;
-  border: 2px solid #303030;
+  color: var(--theme-page-text);
+  border: 2px solid var(--theme-page-text);
   border-radius: 8px;
   height: 248px;
   margin-bottom: 2em;
   transition: all 0.25s ease;
-  box-shadow: -12px 12px #303030;
+  box-shadow: -12px 12px var(--theme-page-text);
   position: relative;
 }
 
@@ -24,16 +24,16 @@
 .github {
   float: right;
   width: 1.25em;
-  color: #303030;
+  color: var(--theme-page-text);
   transition: all 0.25s ease;
 }
 
 .github:hover {
-  color: #4A74E1;
+  color: var(--theme-color);
 }
 
 .badge {
-  background-color: #4A74E1;
+  background-color: var(--theme-color);
   position: absolute;
   bottom: 32px;
 }

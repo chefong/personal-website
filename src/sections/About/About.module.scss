@@ -1,0 +1,58 @@
+.section {
+  margin: 10em auto;
+}
+
+.link {
+  font-weight: 500;
+  color: var(--theme-color);
+}
+
+.link:hover {
+  color: var(--theme-color);
+}
+
+.header {
+  color: var(--theme-page-text);
+}
+
+.headerGroup {
+  font-weight: 500;
+}
+
+.headerNum {
+  color: var(--theme-color);
+}
+
+.thingsGroup {
+  margin-top: 1.5em;
+}
+
+.thingsHeader {
+  font-weight: 500;
+  color: var(--theme-page-text);
+}
+
+.thingsList {
+  margin-top: -8px;
+  margin-left: -20px;
+  color: var(--theme-page-text);
+}
+
+.description {
+  color: var(--theme-page-text);
+}
+
+.hero {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  transition: all 0.25s ease;
+  filter: saturate(0);
+  border-radius: 50%;
+  border: 8px solid var(--theme-color);
+}
+
+.hero:hover {
+  filter: saturate(1);
+}

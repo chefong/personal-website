@@ -1,15 +1,7 @@
-import styles from './About.module.css';
+import styles from './About.module.scss';
 import { Fade } from 'react-reveal';
 import { revealProps, likes, dislikes } from '../../shared/constants';
 import { FormattedMessage } from 'text-provider';
-import Lottie from 'lottie-react';
-import codeAnimation from './code-animation.json';
-
-const lottieProps = {
-  loop: true,
-  autoplay: true,
-  animationData: codeAnimation
-};
 
 export default function About() {
   return (
@@ -77,7 +69,7 @@ export default function About() {
         </div>
         <div className="col-lg-3 col-md-4">
           <div className={styles.imageContainer}>
-            <Lottie {...lottieProps} />
+            <img className={styles.hero} src="/imgs/title/me.jpg" alt="Eric Ong" />
           </div>
         </div>
       </div>

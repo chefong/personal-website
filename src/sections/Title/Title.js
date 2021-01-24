@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from 'reactstrap';
 import { Fade } from 'react-reveal';
 import { revealProps } from '../../shared/constants';
-import styles from './Title.module.css';
+import styles from './Title.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from "text-provider";
 import Confetti from 'react-dom-confetti';
@@ -39,7 +39,7 @@ export default function Title() {
   return (
     <section className={`${styles.section} container-fluid`} data-testid="Title-container">
       <div className="row justify-content-center">
-        <div className="col-lg-4 col-md-6">
+        <div className="col-lg-8 col-md-6">
           <Fade {...revealProps}>
             <div className={`${styles.content} mb-5`}>
               <p className={styles.subtitle}>
@@ -74,9 +74,6 @@ export default function Title() {
               </div>
             </div>
           </Fade>
-        </div>
-        <div className="col-lg-3 offset-lg-1 col-md-4">
-          <img className={styles.hero} src="/imgs/title/me.jpg" alt="Eric Ong" />
         </div>
       </div>
     </section>

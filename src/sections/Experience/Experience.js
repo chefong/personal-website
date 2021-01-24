@@ -1,9 +1,11 @@
-import styles from './Experience.module.css';
+import styles from './Experience.module.scss';
 import { Fade } from 'react-reveal';
 import { FormattedMessage } from 'text-provider';
 import { experiences, revealProps } from '../../shared/constants';
 
-export default function Experience() {
+export default function Experience(props) {
+  const { theme } = props;
+
   return (
     <section className={`${styles.section} container-fluid`} id="experience" data-testid="Experience-container">
       <div className="row justify-content-center">
@@ -20,7 +22,11 @@ export default function Experience() {
           <div className="row justify-content-center">
             <div className="col-lg-3 col-md-4 col-sm-4">
               <Fade {...revealProps}>
-                <img className={styles.companyImage} src={imagePath} alt={nameId}/>
+                <img
+                  className={styles.companyImage}
+                  src={theme === 'dark' && imagePath.dark ? imagePath.dark : imagePath.light}
+                  alt={nameId}
+                />
               </Fade>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-6">

@@ -1,4 +1,4 @@
-import styles from './Projects.module.css';
+import styles from './Projects.module.scss';
 import Card from './Card/Card';
 import { Fade } from 'react-reveal';
 import { FormattedMessage } from 'text-provider';

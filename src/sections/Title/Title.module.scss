@@ -1,5 +1,5 @@
 .section {
-  margin-top: 10em;
+  margin: 14em auto;
 }
 
 .content {
@@ -9,22 +9,22 @@
 .subtitle {
   font-weight: 500;
   font-size: 2em;
-  color: #4A74E1;
+  color: var(--theme-color);
 }
 
 .name {
   font-weight: 500;
   font-size: 6em;
-  color: #303030;
+  color: var(--theme-page-text);
   margin-left: -4px;
 }
 
 .description {
-  color: #303030;
+  color: var(--theme-page-text);
 }
 
 .period {
-  color: #4A74E1;
+  color: var(--theme-color);
 }
 
 .button {
@@ -34,33 +34,34 @@
 }
 
 .resume {
-  background-color: #303030;
+  background-color: var(--theme-page-text);
   border: none;
 }
 
 .resume:hover {
-  background-color: #4A74E1;
+  background-color: var(--theme-color);
 }
 
 .contact {
   background: none;
-  color: #303030;
-  border: 2px solid #303030;
+  color: var(--theme-page-text);
+  border: 2px solid var(--theme-page-text);
 }
 
 .contact:hover {
-  color: #4A74E1;
-  border-color: #4A74E1;
+  color: var(--theme-color);
+  border-color: var(--theme-color);
   background: none;
 }
 
 .resume {
-  border: 2px solid #303030;
+  border: 2px solid var(--theme-page-text);
+  color: var(--theme-page-background);
 }
 
 .resume:hover {
-  background-color: #4A74E1;
-  border-color: #4A74E1;
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
 }
 
 .contactIcon, .resumeIcon {
@@ -77,7 +78,7 @@
   transition: all 0.25s ease;
   filter: saturate(0);
   border-radius: 50%;
-  border: 8px solid #4A74E1;
+  border: 8px solid var(--theme-color);
 }
 
 .hero:hover {

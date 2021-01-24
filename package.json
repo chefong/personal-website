@@ -23,6 +23,7 @@
     "next-fonts": "^1.5.1",
     "next-seo": "^4.17.0",
     "react": "16.13.1",
+    "react-dark-mode-toggle": "^0.0.10",
     "react-device-detect": "^1.14.0",
     "react-dom": "16.13.1",
     "react-dom-confetti": "^0.2.0",
@@ -30,6 +31,7 @@
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1",
     "reactstrap": "^8.7.1",
+    "sass": "^1.32.5",
     "text-provider": "0.0.37"
   },
   "devDependencies": {

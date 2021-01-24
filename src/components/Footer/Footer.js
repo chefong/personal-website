@@ -1,4 +1,4 @@
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 import { Fade } from 'react-reveal';
 import { FormattedMessage } from 'text-provider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,4 +1,4 @@
-import styles from './Card.module.css';
+import styles from './Card.module.scss';
 import { Badge } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'text-provider';

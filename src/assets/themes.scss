@@ -1,0 +1,13 @@
+.light {
+  --theme-color: #6E90E8;
+  --theme-page-background: #fffefb;
+  --theme-page-text: #222222;
+  transition: ease 0.5s;
+}
+
+.dark {
+  --theme-color: #6E90E8;
+  --theme-page-background: #222222;
+  --theme-page-text: #fffefb;
+  transition: ease 0.5s;
+}

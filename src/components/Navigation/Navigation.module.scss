@@ -3,13 +3,13 @@
 }
 
 .navbar, .navCollapse {
-  background-color: #fffefb;
+  background-color: var(--theme-page-background);
 }
 
 .navLink {
   font-weight: 500;
   font-size: 1.2em;
-  color: #303030 !important;
+  color: var(--theme-page-text) !important;
 } 
 
 .navLink:hover {
@@ -17,7 +17,7 @@
 }
 
 .navNum {
-  color: #4A74E1;
+  color: var(--theme-color);
 }
 
 .toggler {
@@ -26,4 +26,10 @@
 
 .menuIcon {
   width: 48px;
+}
+
+.switch {
+  margin-top: 5px;
+  margin-left: 24px;
+  margin-bottom: 5px;
 }
