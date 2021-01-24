@@ -28,6 +28,7 @@
     "react-dom": "16.13.1",
     "react-dom-confetti": "^0.2.0",
     "react-hot-toast": "^1.0.1",
+    "react-particles-js": "^3.4.1",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1",
     "reactstrap": "^8.7.1",

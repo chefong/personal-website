@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import Footer from '../../components/Footer/Footer';
 import Title from '../Title/Title';
@@ -9,8 +9,39 @@ import useKeyPress from '../../shared/hooks/useKeyPress';
 import getQuote from '../../services/getQuote';
 import toast, { Toaster } from 'react-hot-toast';
 import styles from './Body.module.scss';
+import Particles from 'react-particles-js';
 
 const ONE_SECOND = 1000;
+const particlesParams = {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 1500
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "opacity": 0.02
+    },
+    "move": {
+      "direction": "right",
+      "speed": 0.05
+    },
+    "size": {
+      "value": 1.25
+    },
+    "opacity": {
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.05
+      }
+    }
+  },
+  "retina_detect": true
+};
 
 function getDurationFromWords(content) {
   const words = content.split(" ");
@@ -22,6 +53,13 @@ function getDurationFromWords(content) {
 export default function Body() {
   const [theme, setTheme] = useState('light');
   const [toastDuration, setToastDuration] = useState(5000);
+
+  useEffect(() => {
+    const siteTheme = localStorage.getItem('siteTheme');
+    if (siteTheme) {
+      setTheme(siteTheme);
+    }
+  });
 
   useKeyPress('q', () => {
     toast.dismiss();
@@ -46,13 +84,23 @@ export default function Body() {
   });
 
   const handleThemeChange = checked => {
-    checked
-      ? setTheme('dark')
-      : setTheme('light');
+    if (checked) {
+      setTheme('dark');
+      localStorage.setItem('siteTheme', 'dark');
+    } else {
+      setTheme('light');
+      localStorage.setItem('siteTheme', 'light');
+    }
   };
 
   return (
     <body className={`${styles.body} ${theme}`}>
+      {theme === 'dark' && (
+        <Particles
+          canvasClassName={styles.particles}
+          params={particlesParams}
+        />
+      )}
       <main>
         <Navigation onThemeChange={handleThemeChange} isDarkModeOn={theme === 'dark'} />
         <Title />
