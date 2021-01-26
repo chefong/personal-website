@@ -69,7 +69,7 @@ export default function About() {
         </div>
         <div className="col-lg-3 col-md-4">
           <div className={styles.imageContainer}>
-            <img className={styles.hero} src="/imgs/title/me.jpg" alt="Eric Ong" />
+            <img className={styles.hero} src="/imgs/about/memoji.png" alt="Eric Ong" />
           </div>
         </div>
       </div>
