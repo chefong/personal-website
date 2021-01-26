@@ -1,5 +1,5 @@
 .section {
-  padding-top: 10em;
+  padding-top: 16em;
   margin-bottom: 14em;
 }
 
@@ -93,6 +93,16 @@
 }
 
 @media (max-width: 576px) {
+  .hero {
+    width: 75%
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding-top: 8em;
+  }
+
   .hero {
     width: 75%
   }
