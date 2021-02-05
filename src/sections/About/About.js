@@ -6,7 +6,7 @@ import { FormattedMessage } from 'text-provider';
 export default function About() {
   return (
     <section className={`${styles.section} container-fluid`} id="about" data-testid="About-container">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center align-items-center">
         <div className="col-lg-5 col-md-6">
           <div className={styles.headerGroup}>
             <Fade {...revealProps}>

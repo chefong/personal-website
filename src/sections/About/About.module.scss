@@ -3,7 +3,7 @@
 }
 
 .link {
-  font-weight: 500;
+  font-weight: bold;
   color: var(--theme-color);
 }
 
@@ -13,10 +13,11 @@
 
 .header {
   color: var(--theme-page-text);
+  font-weight: bold;
 }
 
 .headerGroup {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .headerNum {
@@ -28,7 +29,7 @@
 }
 
 .thingsHeader {
-  font-weight: 500;
+  font-weight: bold;
   color: var(--theme-page-text);
 }
 
@@ -46,5 +47,4 @@
   width: 75%;
   display: block;
   margin: 0 auto;
-  margin-top: 1em;
 }

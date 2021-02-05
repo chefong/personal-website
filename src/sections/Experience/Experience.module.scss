@@ -4,10 +4,11 @@
 
 .header {
   color: var(--theme-page-text);
+  font-weight: bold;
 }
 
 .headerGroup {
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 2.5em;
 }
 
@@ -23,7 +24,7 @@
   display: block;
   margin: 0 auto;
   width: 75%;
-  margin-bottom: 1em;
+  margin-bottom: 16px;
 }
 
 .companyInfo {
@@ -31,7 +32,7 @@
 }
 
 .name {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .position {

@@ -1,6 +1,5 @@
 .section {
-  padding-top: 16em;
-  margin-bottom: 14em;
+  height: 100vh;
 }
 
 .content {
@@ -8,13 +7,13 @@
 }
 
 .subtitle {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 2em;
   color: var(--theme-color);
 }
 
 .name {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 6em;
   color: var(--theme-page-text);
   margin-left: -4px;
@@ -29,7 +28,7 @@
 }
 
 .button {
-  font-weight: 500;
+  font-weight: bold;
   padding: 10px 16px;
   border-radius: 8px;
 }
@@ -86,24 +85,28 @@
   filter: saturate(1);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero {
     width: 60%
   }
 }
 
 @media (max-width: 576px) {
+  .section {
+    padding-top: 4em;
+  }
+
   .hero {
     width: 75%
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 320px) {
   .section {
-    padding-top: 8em;
+    padding-top: 6em;
   }
 
-  .hero {
-    width: 75%
+  .resume {
+    margin-top: 8px;
   }
 }

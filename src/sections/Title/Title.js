@@ -38,7 +38,7 @@ export default function Title() {
 
   return (
     <section className={`${styles.section} container-fluid`} data-testid="Title-container">
-      <div className="row justify-content-center">
+      <div className="h-100 row justify-content-center align-items-center">
         <div className="col-lg-8 col-md-6">
           <Fade {...revealProps}>
             <div className={`${styles.content} mb-5`}>
