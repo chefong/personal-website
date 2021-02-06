@@ -13,7 +13,7 @@ import {
 } from 'reactstrap';
 import styles from './Navigation.module.scss';
 import menuAnimation from './menu-animation.json';
-import DarkModeToggle from "react-dark-mode-toggle";
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const lottieProps = {
   loop: false,
@@ -38,7 +38,7 @@ const menuBoxShadow = '0px 4px 28px rgba(0, 0, 0, 0.06)';
 const menuTransition = 'all 0.5s ease';
 
 export default function Navigation(props) {
-  const { onThemeChange, isDarkModeOn } = props;
+  const { onThemeChange } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const menuIconEl = useRef(null);
@@ -91,8 +91,8 @@ export default function Navigation(props) {
                 </Link>
               </NavItem>
             ))}
-            <NavItem className={styles.switch}>
-              <DarkModeToggle onChange={onThemeChange} checked={isDarkModeOn} size={64} speed={2} />
+            <NavItem className={styles.toggle}>
+              <ThemeToggle onChange={onThemeChange} />
             </NavItem>
           </Nav>
         </Collapse>

@@ -10,6 +10,7 @@ import getQuote from '../../services/getQuote';
 import toast, { Toaster } from 'react-hot-toast';
 import styles from './Body.module.scss';
 import Particles from 'react-particles-js';
+import { themeColors } from '../../shared/constants';
 
 const ONE_SECOND = 1000;
 const particlesParams = {
@@ -79,13 +80,20 @@ export default function Body() {
     );
   });
 
-  const handleThemeChange = checked => {
-    if (checked) {
-      setTheme('dark');
-      localStorage.setItem('siteTheme', 'dark');
-    } else {
-      setTheme('light');
-      localStorage.setItem('siteTheme', 'light');
+  const handleThemeChange = theme => {
+    switch (theme) {
+      case 'dark':
+        setTheme('dark');
+        localStorage.setItem('siteTheme', 'dark');
+        break;
+      case 'tan':
+        setTheme('tan');
+        localStorage.setItem('siteTheme', 'tan');
+        break;
+      default:
+        setTheme('light');
+        localStorage.setItem('siteTheme', 'light');
+        break;
     }
   };
 
@@ -98,7 +106,7 @@ export default function Body() {
         />
       )}
       <main>
-        <Navigation onThemeChange={handleThemeChange} isDarkModeOn={theme === 'dark'} />
+        <Navigation onThemeChange={handleThemeChange} />
         <Title />
         <About />
         <Projects />
@@ -121,7 +129,7 @@ export default function Body() {
       </footer>
       <style jsx global>{`
         body {
-          background: ${theme === "light" ? "#fffefb" : "#222222"};
+          background: ${themeColors[theme]};
         }
       `}</style>
     </body>

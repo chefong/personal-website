@@ -116,4 +116,10 @@ const likes = ['ABOUT_LIKE_WATERMELON', 'ABOUT_LIKE_MUSIC', 'ABOUT_LIKE_DESIGN',
 
 const dislikes = ['ABOUT_DISLIKE_CILANTRO'];
 
-export { navItems, projects, experiences, handles, revealProps, likes, dislikes };
+const themeColors = {
+  light: '#fffefb',
+  dark: '#222222',
+  tan: '#f1e7d0',
+};
+
+export { navItems, projects, experiences, handles, revealProps, likes, dislikes, themeColors };
