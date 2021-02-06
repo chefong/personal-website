@@ -2,6 +2,7 @@
   width: 1.5em;
   margin: 0.5em auto;
   color: var(--theme-page-text);
+  transition: ease 0.5s;
 
   &:hover {
     cursor: pointer;
