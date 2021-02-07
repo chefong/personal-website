@@ -91,7 +91,7 @@ export default function Navigation(props) {
                 </Link>
               </NavItem>
             ))}
-            <NavItem className={styles.toggle}>
+            <NavItem className={`${styles.toggle}`}>
               <ThemeToggle onChange={onThemeChange} />
             </NavItem>
           </Nav>

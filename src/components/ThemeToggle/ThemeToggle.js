@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import styles from './ThemeToggle.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const icons = {
-  light: ['far', 'sun'],
-  dark: ['far', 'moon'],
-  tan: 'wind',
-};
+import { SunnyOutline, MoonOutline, CafeOutline } from 'react-ionicons';
 
 const themeOrder = ['light', 'tan', 'dark'];
+const iconSize = '28px';
+const iconColors = {
+  light: '#222222',
+  dark: '#fffefb',
+  tan: '#222222',
+};
 
 export default function ThemeToggle(props) {
   let siteTheme;
@@ -16,10 +16,9 @@ export default function ThemeToggle(props) {
 
   const { onChange } = props;
   const [activeTheme, setActiveTheme] = useState(siteTheme || 'light');
+  const iconColor = iconColors[activeTheme];
 
-  const handleToggleClick = e => {
-    e.preventDefault();
-
+  const handleToggleClick = () => {
     let nextThemeIndex = themeOrder.indexOf(activeTheme) + 1;
     if (nextThemeIndex === themeOrder.length) nextThemeIndex = 0;
     
@@ -28,9 +27,28 @@ export default function ThemeToggle(props) {
     onChange(nextTheme);
   };
 
+  const getIcon = () => {
+    const iconProps = {
+      className: styles.icon,
+      color: iconColor,
+      onClick: handleToggleClick,
+      height: iconSize,
+      width: iconSize,
+    };
+
+    switch (activeTheme) {
+      case 'tan':
+        return <CafeOutline {...iconProps} />;
+      case 'dark':
+        return <MoonOutline {...iconProps} />;
+      default:
+        return <SunnyOutline {...iconProps} />
+    }
+  };
+
   return (
-    <div className="ThemeToggle-container">
-      <FontAwesomeIcon className={styles.icon} icon={icons[activeTheme]} onClick={handleToggleClick} />
+    <div className={styles.container}>
+      {getIcon()}
     </div>
   )
 };
