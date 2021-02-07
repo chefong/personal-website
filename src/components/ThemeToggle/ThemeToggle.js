@@ -24,6 +24,7 @@ export default function ThemeToggle(props) {
     
     const nextTheme = themeOrder[nextThemeIndex];
     setActiveTheme(themeOrder[nextThemeIndex]);
+    localStorage.setItem('siteTheme', nextTheme);
     onChange(nextTheme);
   };
 
@@ -42,7 +43,7 @@ export default function ThemeToggle(props) {
       case 'dark':
         return <MoonOutline {...iconProps} />;
       default:
-        return <SunnyOutline {...iconProps} />
+        return <SunnyOutline {...iconProps} />;
     }
   };
 

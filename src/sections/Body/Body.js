@@ -84,15 +84,12 @@ export default function Body() {
     switch (theme) {
       case 'dark':
         setTheme('dark');
-        localStorage.setItem('siteTheme', 'dark');
         break;
       case 'tan':
         setTheme('tan');
-        localStorage.setItem('siteTheme', 'tan');
         break;
       default:
         setTheme('light');
-        localStorage.setItem('siteTheme', 'light');
         break;
     }
   };
