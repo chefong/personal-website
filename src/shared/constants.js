@@ -63,7 +63,7 @@ const experiences = [
     },
     nameId: "EXPERIENCE_INTUIT",
     position: "Software Engineer 1",
-    duration: "July 2020 - Present",
+    duration: "July 2020 - February 2021",
     descriptionId: "EXPERIENCE_INTUIT_DESCRIPTION"
   },
   {
@@ -113,7 +113,7 @@ const revealProps = {
   bottom: true
 };
 
-const likes = ['ABOUT_LIKE_WATERMELON', 'ABOUT_LIKE_MUSIC', 'ABOUT_LIKE_DESIGN', 'ABOUT_LIKE_PREMIER_LEAGUE'];
+const likes = ['ABOUT_LIKE_TEA', 'ABOUT_LIKE_WATERMELON', 'ABOUT_LIKE_MUSIC', 'ABOUT_LIKE_DESIGN', 'ABOUT_LIKE_PREMIER_LEAGUE'];
 
 const dislikes = ['ABOUT_DISLIKE_CILANTRO'];
 
