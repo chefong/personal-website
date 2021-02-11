@@ -58,10 +58,11 @@ const projects = [
 const experiences = [
   {
     imagePath: {
-      light: "/imgs/experience/intuit.png",
+      light: "/imgs/experience/intuit.svg",
+      dark: "/imgs/experience/intuit-white.svg"
     },
     nameId: "EXPERIENCE_INTUIT",
-    position: "Software Engineer",
+    position: "Software Engineer 1",
     duration: "July 2020 - Present",
     descriptionId: "EXPERIENCE_INTUIT_DESCRIPTION"
   },
