@@ -5,7 +5,7 @@
   "TITLE_CONTACT": "Contact me",
   "TITLE_RESUME": "Resume",
   "ABOUT_HEADING": "About Me",
-  "ABOUT_DESCRIPTION": "I graduated from the <a href='https://www.ucr.edu/' class={schoolClass} target='_blank'>University of California, Riverside</a> in June 2020 with a B.S. degree in Computer Science. Previously, I was a Software Engineer at <a href='https://www.intuit.com/' class={intuitClass} target='_blank'>Intuit</a> on the Intuit Data Exchange, Widgets Team and before that, I was at <a href='https://www.opentable.com/' class={openTableClass} target='_blank'>OpenTable</a> as a Software Engineering Intern on the Content Team.",
+  "ABOUT_DESCRIPTION": "I graduated from the <a href='https://www.ucr.edu/' class={schoolClass} target='_blank'>University of California, Riverside</a> in June 2020 with a B.S. degree in Computer Science. Currently, I'm a Software Engineer at <a href='https://www.opentable.com/' class={openTableClass} target='_blank'>OpenTable</a> on the Content Team. Previously, I was at <a href='https://www.intuit.com/' class={intuitClass} target='_blank'>Intuit</a> as a Software Engineer on the Intuit Data Exchange, Widgets Team.",
   "ABOUT_LIKE": "Things I Like",
   "ABOUT_LIKE_TEA": "Thai Milk Tea w/ Boba, 50% ice and 50% sweetness 🧋",
   "ABOUT_LIKE_WATERMELON": "Watermelon 🍉",
@@ -32,6 +32,7 @@
   "EXPERIENCE_INTUIT": "Intuit",
   "EXPERIENCE_INTUIT_DESCRIPTION": "Intuit Data Exchange (formerly known as Financial Data Platform).",
   "EXPERIENCE_OPENTABLE": "OpenTable",
-  "EXPERIENCE_OPENTABLE_DESCRIPTION": "As a part of the Content Team, I worked on various consumer-facing products (internal tools, Restaurant Profile, GuestCenter Admin) using React, TypeScript, Jest, and OpenComponents. One of the projects I worked on focused on improving an existing internal tool to speed up workflow for internal marketing users. Another project I worked on was kickstarting the Gallery Photos feature on OpenTable's GuestCenter Admin with my team, giving restaurants the ability to manage their own photos.",
+  "EXPERIENCE_OPENTABLE_DESCRIPTION_1": "As a part of the Content Team, I worked on various consumer-facing products (internal tools, Restaurant Profile, GuestCenter Admin) using React, TypeScript, Jest, and OpenComponents. One of the projects I worked on focused on improving an existing internal tool to speed up workflow for internal marketing users. Another project I worked on was kickstarting the Gallery Photos feature on OpenTable's GuestCenter Admin with my team, giving restaurants the ability to manage their own photos.",
+  "EXPERIENCE_OPENTABLE_DESCRIPTION_2": "Content Team (round ✌️)",
   "FOOTER_DESCRIPTION": "Made with 🥛🍵 by Eric Ong"
 }

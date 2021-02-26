@@ -58,6 +58,16 @@ const projects = [
 const experiences = [
   {
     imagePath: {
+      light: "imgs/experience/opentable.png",
+      dark: "imgs/experience/opentable-white.png",
+    },
+    nameId: "EXPERIENCE_OPENTABLE",
+    position: "Software Engineer 1",
+    duration: "February 2021 - Present",
+    descriptionId: "EXPERIENCE_OPENTABLE_DESCRIPTION_2"
+  },
+  {
+    imagePath: {
       light: "/imgs/experience/intuit.svg",
       dark: "/imgs/experience/intuit-white.svg"
     },
@@ -74,7 +84,7 @@ const experiences = [
     nameId: "EXPERIENCE_OPENTABLE",
     position: "Software Engineering Intern",
     duration: "June 2019 - August 2019",
-    descriptionId: "EXPERIENCE_OPENTABLE_DESCRIPTION"
+    descriptionId: "EXPERIENCE_OPENTABLE_DESCRIPTION_1"
   }
 ];
 
