@@ -62,7 +62,7 @@ const experiences = [
       dark: "imgs/experience/opentable-white.png",
     },
     nameId: "EXPERIENCE_OPENTABLE",
-    position: "Software Engineer 1",
+    positionId: "SOFTWARE_ENGINEER_1",
     duration: "February 2021 - Present",
     descriptionId: "EXPERIENCE_OPENTABLE_DESCRIPTION_2"
   },
@@ -72,7 +72,7 @@ const experiences = [
       dark: "/imgs/experience/intuit-white.svg"
     },
     nameId: "EXPERIENCE_INTUIT",
-    position: "Software Engineer 1",
+    positionId: "SOFTWARE_ENGINEER_1",
     duration: "July 2020 - February 2021",
     descriptionId: "EXPERIENCE_INTUIT_DESCRIPTION"
   },
@@ -82,7 +82,7 @@ const experiences = [
       dark: "imgs/experience/opentable-white.png",
     },
     nameId: "EXPERIENCE_OPENTABLE",
-    position: "Software Engineering Intern",
+    positionId: "SOFTWARE_ENGINEERING_INTERN",
     duration: "June 2019 - August 2019",
     descriptionId: "EXPERIENCE_OPENTABLE_DESCRIPTION_1"
   }

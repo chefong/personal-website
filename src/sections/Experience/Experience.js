@@ -17,7 +17,7 @@ export default function Experience(props) {
           </Fade>
         </div>
       </div>
-      {experiences.map(({ imagePath, nameId, position, duration, descriptionId }, index) => (
+      {experiences.map(({ imagePath, nameId, positionId, duration, descriptionId }, index) => (
         <div className={styles.experienceGroup} key={index} data-testid="Experience-item">
           <div className="row justify-content-center">
             <div className="col-lg-3 col-md-4 col-sm-4">
@@ -35,7 +35,10 @@ export default function Experience(props) {
                   <p className={styles.name}>
                     <FormattedMessage id={nameId} />
                   </p>
-                  <p className={styles.position}>{position} ({duration})</p>
+                  <p className={styles.position}>
+                    <FormattedMessage id={positionId} />{' '}
+                    ({duration})
+                  </p>
                   <hr className={styles.line} />
                   <p className={styles.description}>
                     <FormattedMessage id={descriptionId} />
