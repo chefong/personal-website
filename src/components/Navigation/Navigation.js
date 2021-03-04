@@ -83,15 +83,15 @@ export default function Navigation(props) {
           />
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar data-testid="Navigation-collapse">
-          <Nav className="ml-auto mr-5 justify-content-center" navbar>
+          <Nav className="ml-auto mr-5 justify-content-center align-items-md-center" navbar>
             {navItems.map(({ to, num, name }, index) => (
-              <NavItem className="ml-4 mt-2 mb-2" key={index} data-testid="Navigation-item">
+              <NavItem className="ml-sm-3 ml-md-5 mt-2 mb-2" key={index} data-testid="Navigation-item">
                 <Link {...reactScrollLinkProps} className={styles.navLink} to={to}>
                   <span className={styles.navNum}>{num}</span> {name}
                 </Link>
               </NavItem>
             ))}
-            <NavItem className={`${styles.toggle}`}>
+            <NavItem className={`${styles.toggle} ml-sm-3 ml-md-5`}>
               <ThemeToggle onChange={onThemeChange} />
             </NavItem>
           </Nav>

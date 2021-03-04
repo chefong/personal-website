@@ -112,7 +112,7 @@ export default function Body() {
           toastOptions={{
             style: {
               padding: '16px',
-              fontFamily: 'Geomanist',
+              fontFamily: 'GT Walsheim Pro',
               backgroundColor: '#303030',
               color: 'white',
             },

@@ -1,13 +1,27 @@
 @font-face {
   font-family: "Geomanist";
-  src: url("/fonts/hinted-Geomanist-Regular.ttf");
+  src: url("/fonts/geomanist/hinted-Geomanist-Regular.ttf");
   font-display: auto;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Geomanist";
-  src: url("/fonts/hinted-Geomanist-Medium.ttf");
+  src: url("/fonts/geomanist/hinted-Geomanist-Medium.ttf");
+  font-display: auto;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("/fonts/gt-walsheim-pro/GT-Walsheim-Pro-Regular.ttf");
+  font-display: auto;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("/fonts/gt-walsheim-pro/GT-Walsheim-Pro-Bold.ttf");
   font-display: auto;
   font-weight: bold;
 }

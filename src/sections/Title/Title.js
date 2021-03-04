@@ -41,7 +41,7 @@ export default function Title() {
       <div className="h-100 row justify-content-center align-items-center">
         <div className="col-lg-8 col-md-6">
           <Fade {...revealProps}>
-            <div className={`${styles.content} mb-5`}>
+            <div>
               <p className={styles.subtitle}>
                 <FormattedMessage id="TITLE_GREETING" />
               </p>
