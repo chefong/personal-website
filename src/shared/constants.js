@@ -36,10 +36,10 @@ const projects = [
     winner: true
   },
   {
-    nameId: "PROJECTS_BIRDIE",
-    descriptionId: "PROJECTS_BIRDIE_DESCRIPTION",
-    githubLink: "https://github.com/chefong/birdie",
-    winner: false
+    nameId: "PROJECTS_NUTSHELL",
+    descriptionId: "PROJECTS_NUTSHELL_DESCRIPTION",
+    githubLink: "https://github.com/chefong/nutshell",
+    winner: true
   },
   {
     nameId: "PROJECTS_STOCK_OVERFLOW",
