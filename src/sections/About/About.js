@@ -1,6 +1,5 @@
 import styles from './About.module.scss';
-import { Fade } from 'react-reveal';
-import { revealProps, likes, dislikes } from '../../shared/constants';
+import { likes, dislikes } from '../../shared/constants';
 import { FormattedMessage } from 'text-provider';
 
 export default function About() {
@@ -9,59 +8,47 @@ export default function About() {
       <div className="row justify-content-center align-items-center">
         <div className="col-lg-5 col-md-6">
           <div className={styles.headerGroup}>
-            <Fade {...revealProps}>
-              <h2 className={styles.header}>
-                <span className={styles.headerNum}>01. </span> 
-                <FormattedMessage id="ABOUT_HEADING" />
-                </h2>
-            </Fade>
+            <h2 className={styles.header}>
+              <span className={styles.headerNum}>01. </span> 
+              <FormattedMessage id="ABOUT_HEADING" />
+            </h2>
           </div>
           <div className={styles.content}>
-            <Fade {...revealProps} cascade>
-              <p className={styles.description}>
-                <FormattedMessage
-                  id="ABOUT_DESCRIPTION"
-                  values={{
-                    schoolClass: styles.link,
-                    intuitClass: styles.link,
-                    openTableClass: styles.link
-                  }}
-                />
-              </p>
-            </Fade>
+            <p className={styles.description}>
+              <FormattedMessage
+                id="ABOUT_DESCRIPTION"
+                values={{
+                  schoolClass: styles.link,
+                  intuitClass: styles.link,
+                  openTableClass: styles.link
+                }}
+              />
+            </p>
             <div className={styles.thingsGroup}>
               <div className="row justify-content-center">
                 <div className="col-6">
-                  <Fade {...revealProps}>
-                    <p className={styles.thingsHeader}>
-                      <FormattedMessage id="ABOUT_LIKE" />
-                    </p>
-                  </Fade>
-                  <Fade {...revealProps} cascade>
-                    <ul className={styles.thingsList}>
-                      {likes.map(id => (
-                        <li key={id} data-testid="About-like">
-                          <FormattedMessage id={id} />
-                        </li>
-                      ))}
-                    </ul>
-                  </Fade>
+                  <p className={styles.thingsHeader}>
+                    <FormattedMessage id="ABOUT_LIKE" />
+                  </p>
+                  <ul className={styles.thingsList}>
+                    {likes.map(id => (
+                      <li key={id} data-testid="About-like">
+                        <FormattedMessage id={id} />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <div className="col-6">
-                  <Fade {...revealProps}>
-                    <p className={styles.thingsHeader}>
-                      <FormattedMessage id="ABOUT_DISLIKE" />
-                    </p>
-                  </Fade>
-                  <Fade {...revealProps} cascade>
-                    <ul className={styles.thingsList}>
-                      {dislikes.map(id => (
-                        <li key={id} data-testid="About-dislike">
-                          <FormattedMessage id={id} />
-                        </li>
-                      ))}
-                    </ul>
-                  </Fade>
+                  <p className={styles.thingsHeader}>
+                    <FormattedMessage id="ABOUT_DISLIKE" />
+                  </p>
+                  <ul className={styles.thingsList}>
+                    {dislikes.map(id => (
+                      <li key={id} data-testid="About-dislike">
+                        <FormattedMessage id={id} />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>

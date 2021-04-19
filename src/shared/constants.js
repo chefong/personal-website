@@ -1,4 +1,4 @@
-const navItems = [
+export const navItems = [
   {
     to: "about",
     num: "01.",
@@ -16,7 +16,7 @@ const navItems = [
   }
 ];
 
-const projects = [
+export const projects = [
   {
     nameId: "PROJECTS_PATCH",
     descriptionId: "PROJECTS_PATCH_DESCRIPTION",
@@ -55,7 +55,7 @@ const projects = [
   }
 ];
 
-const experiences = [
+export const experiences = [
   {
     imagePath: {
       light: "imgs/experience/opentable.png",
@@ -88,7 +88,7 @@ const experiences = [
   }
 ];
 
-const handles = [
+export const handles = [
   {
     name: "GitHub",
     icon: ['fab', 'github'],
@@ -116,21 +116,12 @@ const handles = [
   }
 ];
 
-const revealProps = {
-  duration: 500,
-  delay: 400,
-  distance: "1.25em",
-  bottom: true
-};
+export const likes = ['ABOUT_LIKE_TEA', 'ABOUT_LIKE_WATERMELON', 'ABOUT_LIKE_MUSIC', 'ABOUT_LIKE_DESIGN', 'ABOUT_LIKE_PREMIER_LEAGUE'];
 
-const likes = ['ABOUT_LIKE_TEA', 'ABOUT_LIKE_WATERMELON', 'ABOUT_LIKE_MUSIC', 'ABOUT_LIKE_DESIGN', 'ABOUT_LIKE_PREMIER_LEAGUE'];
+export const dislikes = ['ABOUT_DISLIKE_CILANTRO'];
 
-const dislikes = ['ABOUT_DISLIKE_CILANTRO'];
-
-const themeColors = {
+export const themeColors = {
   light: '#fffefb',
   dark: '#222222',
   tan: '#f1e7d0',
 };
-
-export { navItems, projects, experiences, handles, revealProps, likes, dislikes, themeColors };
