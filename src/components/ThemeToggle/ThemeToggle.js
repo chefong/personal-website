@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import styles from './ThemeToggle.module.scss';
 import { SunnyOutline, MoonOutline, CafeOutline } from 'react-ionicons';
+import { themeColors } from '../../shared/constants';
 
 const themeOrder = ['light', 'tan', 'dark'];
 const iconSize = '28px';
 const iconColors = {
-  light: '#222222',
-  dark: '#fffefb',
-  tan: '#222222',
+  light: themeColors.dark,
+  dark: themeColors.light,
+  tan: themeColors.dark,
 };
 
 export default function ThemeToggle(props) {
