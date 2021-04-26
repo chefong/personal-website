@@ -1,9 +1,12 @@
+import { useContext } from 'react';
 import styles from './Experience.module.scss';
 import { FormattedMessage } from 'text-provider';
-import { experiences } from '../../shared/constants';
+import { experiences } from '../../../common/constants';
+import { store } from '../../../store/GlobalProvider';
 
-export default function Experience(props) {
-  const { theme } = props;
+export default function Experience() {
+  const { state } = useContext(store);
+  const { theme } = state;
 
   return (
     <section className={`${styles.section} container-fluid`} id="experience" data-testid="Experience-container">

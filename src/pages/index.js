@@ -4,14 +4,14 @@ import { faEnvelope, faFileAlt, faWind, faPaperPlane } from '@fortawesome/free-s
 import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { TextProvider } from "text-provider";
-import strings from '../shared/content.json';
+import strings from '../common/content.json';
 import config from '../next-seo.config';
 import Head from 'next/head';
-import Body from '../sections/Body/Body';
+import Home from '../components/Home/Home';
 
 library.add(fab, faEnvelope, faFileAlt, faPaperPlane, faWind, faSun, faMoon);
 
-export default function Root() {
+export default function Index() {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ export default function Root() {
       </Head>
       <NextSeo {...config} />
       <TextProvider globalText={strings}>
-        <Body />
+        <Home />
       </TextProvider>
     </>
   )

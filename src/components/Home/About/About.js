@@ -1,5 +1,5 @@
 import styles from './About.module.scss';
-import { likes, dislikes } from '../../shared/constants';
+import { likes, dislikes } from '../../../common/constants';
 import { FormattedMessage } from 'text-provider';
 
 export default function About() {

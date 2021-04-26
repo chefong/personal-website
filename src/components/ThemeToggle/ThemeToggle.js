@@ -1,44 +1,38 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import styles from './ThemeToggle.module.scss';
 import { SunnyOutline, MoonOutline, CafeOutline } from 'react-ionicons';
-import { themeColors } from '../../shared/constants';
+import { themeOrder, iconSize, iconColors } from '../../common/constants';
+import { store } from '../../store/GlobalProvider';
+import actions from '../../store/actions';
 
-const themeOrder = ['light', 'tan', 'dark'];
-const iconSize = '28px';
-const iconColors = {
-  light: themeColors.dark,
-  dark: themeColors.light,
-  tan: themeColors.dark,
-};
-
-export default function ThemeToggle(props) {
+export default function ThemeToggle() {
   let siteTheme;
   if (process.browser) siteTheme = localStorage.getItem('siteTheme');
 
-  const { onChange } = props;
-  const [activeTheme, setActiveTheme] = useState(siteTheme || 'light');
-  const iconColor = iconColors[activeTheme];
+  const { state, dispatch } = useContext(store);
+  const { theme } = state;
+  const iconColor = iconColors[theme];
 
   const handleToggleClick = () => {
-    let nextThemeIndex = themeOrder.indexOf(activeTheme) + 1;
+    let nextThemeIndex = themeOrder.indexOf(theme) + 1;
     if (nextThemeIndex === themeOrder.length) nextThemeIndex = 0;
     
     const nextTheme = themeOrder[nextThemeIndex];
-    setActiveTheme(themeOrder[nextThemeIndex]);
+
+    dispatch({ type: actions.SET_THEME, payload: nextTheme });
     localStorage.setItem('siteTheme', nextTheme);
-    onChange(nextTheme);
+  };
+
+  const iconProps = {
+    className: styles.icon,
+    color: iconColor,
+    onClick: handleToggleClick,
+    height: iconSize,
+    width: iconSize,
   };
 
   const getIcon = () => {
-    const iconProps = {
-      className: styles.icon,
-      color: iconColor,
-      onClick: handleToggleClick,
-      height: iconSize,
-      width: iconSize,
-    };
-
-    switch (activeTheme) {
+    switch (theme) {
       case 'tan':
         return <CafeOutline {...iconProps} />;
       case 'dark':

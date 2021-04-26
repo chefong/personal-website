@@ -1,3 +1,5 @@
+import hamburgerMenuAnimation from '../assets/menu-animation.json';
+
 export const navItems = [
   {
     to: "about",
@@ -124,4 +126,76 @@ export const themeColors = {
   light: '#fffefb',
   dark: '#222222',
   tan: '#f1e7d0',
+};
+
+export const lottieProps = {
+  loop: false,
+  autoplay: false,
+  animationData: hamburgerMenuAnimation,
+};
+
+export const reactScrollLinkProps = {
+  smooth: true,
+  offset: -150,
+  duration: 750,
+};
+
+// Segment frames for menu open and close
+export const menuOpenSegments = [30, 70];
+export const menuCloseSegments = [100, 140];
+
+// Box shadow styling for when the nav menu is open
+export const menuBoxShadow = '0px 4px 28px rgba(0, 0, 0, 0.06)';
+
+// Menu transition styling for menu
+export const menuTransition = 'all 0.5s ease';
+
+export const themeOrder = ['light', 'tan', 'dark'];
+
+export const iconSize = '28px';
+
+export const iconColors = {
+  light: themeColors.dark,
+  dark: themeColors.light,
+  tan: themeColors.dark,
+};
+
+export const toastOptions = {
+  style: {
+    padding: '16px',
+    fontFamily: 'GT Walsheim Pro',
+    backgroundColor: '#303030',
+    color: 'white',
+  },
+};
+
+export const particlesParams = {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 1500
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "opacity": 0.02
+    },
+    "move": {
+      "direction": "right",
+      "speed": 0.05
+    },
+    "size": {
+      "value": 1.25
+    },
+    "opacity": {
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.05
+      }
+    }
+  },
+  "retina_detect": true
 };

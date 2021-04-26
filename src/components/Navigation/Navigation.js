@@ -1,8 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
-/* istanbul ignore next */
 import Lottie from 'lottie-react';
-import { navItems } from '../../shared/constants';
+import {
+  navItems,
+  lottieProps,
+  reactScrollLinkProps,
+  menuOpenSegments,
+  menuCloseSegments,
+  menuBoxShadow,
+  menuTransition
+} from '../../common/constants';
 import {
   Collapse,
   Navbar,
@@ -12,33 +19,9 @@ import {
   NavItem
 } from 'reactstrap';
 import styles from './Navigation.module.scss';
-import menuAnimation from './menu-animation.json';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
-const lottieProps = {
-  loop: false,
-  autoplay: false,
-  animationData: menuAnimation
-};
-
-const reactScrollLinkProps = {
-  smooth: true,
-  offset: -150,
-  duration: 750,
-};
-
-// Segment frames for menu open and close
-const menuOpenSegments = [30, 70];
-const menuCloseSegments = [100, 140];
-
-// Box shadow styling for when the nav menu is open
-const menuBoxShadow = '0px 4px 28px rgba(0, 0, 0, 0.06)';
-
-// Menu transition styling for menu
-const menuTransition = 'all 0.5s ease';
-
-export default function Navigation(props) {
-  const { onThemeChange } = props;
+export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const menuIconEl = useRef(null);
@@ -92,7 +75,7 @@ export default function Navigation(props) {
               </NavItem>
             ))}
             <NavItem className={`${styles.toggle} ml-sm-3 ml-md-5`}>
-              <ThemeToggle onChange={onThemeChange} />
+              <ThemeToggle />
             </NavItem>
           </Nav>
         </Collapse>

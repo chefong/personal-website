@@ -1,7 +1,7 @@
 import styles from './Footer.module.scss';
 import { FormattedMessage } from 'text-provider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { handles } from '../../shared/constants';
+import { handles } from '../../common/constants';
 
 export default function Footer() {
   return (
