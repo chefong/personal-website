@@ -1,13 +1,14 @@
-import { useState, useContext } from 'react';
-import Navigation from '../../components/Navigation/Navigation';
-import Footer from '../../components/Footer/Footer';
+import { useState, useContext, useEffect } from 'react';
+import Navigation from '../Navigation/Navigation';
+import Footer from '../Footer/Footer';
 import useKeyPress from '../../common/hooks/useKeyPress';
 import getQuote from '../../services/getQuote';
 import toast, { Toaster } from 'react-hot-toast';
-import styles from './Body.module.scss';
+import styles from './Container.module.scss';
 import Particles from 'react-particles-js';
 import { themeColors, toastOptions, particlesParams } from '../../common/constants';
 import { store } from '../../store/GlobalProvider';
+import actions from '../../store/actions';
 
 function getDurationFromWords(content) {
   const words = content.split(" ");
@@ -16,10 +17,15 @@ function getDurationFromWords(content) {
   return (numWords / 2) * 1000;
 }
 
-export default function Body({ children }) {
-  const { state } = useContext(store);
+export default function Container({ children }) {
+  const { state, dispatch } = useContext(store);
   const { theme } = state;
   const [toastDuration, setToastDuration] = useState(5000);
+
+  useEffect(() => {
+    const siteTheme = localStorage.getItem('siteTheme') || 'light';
+    dispatch({ type: actions.SET_THEME, payload: siteTheme });
+  }, []);
 
   useKeyPress('q', () => {
     toast.dismiss();
@@ -44,7 +50,7 @@ export default function Body({ children }) {
   });
 
   return (
-    <body className={`${styles.body} ${theme}`}>
+    <div className={`${styles.container} ${theme}`}>
       {theme === 'dark' && (
         <Particles
           canvasClassName={styles.particles}
@@ -64,6 +70,6 @@ export default function Body({ children }) {
           background: ${themeColors[theme]};
         }
       `}</style>
-    </body>
+    </div>
   )
 }

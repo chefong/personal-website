@@ -6,9 +6,6 @@ import { store } from '../../store/GlobalProvider';
 import actions from '../../store/actions';
 
 export default function ThemeToggle() {
-  let siteTheme;
-  if (process.browser) siteTheme = localStorage.getItem('siteTheme');
-
   const { state, dispatch } = useContext(store);
   const { theme } = state;
   const iconColor = iconColors[theme];

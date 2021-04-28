@@ -3,7 +3,7 @@ export default function makeInitialState() {
   if (process.browser) siteTheme = localStorage.getItem('siteTheme');
 
   const initialState = {
-    theme: siteTheme || 'light',
+    theme: null,
   };
 
   return initialState;
