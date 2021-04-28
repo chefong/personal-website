@@ -5,7 +5,6 @@ import useKeyPress from '../../common/hooks/useKeyPress';
 import getQuote from '../../services/getQuote';
 import toast, { Toaster } from 'react-hot-toast';
 import styles from './Container.module.scss';
-import Particles from 'react-particles-js';
 import { themeColors, toastOptions, particlesParams } from '../../common/constants';
 import { store } from '../../store/GlobalProvider';
 import actions from '../../store/actions';
@@ -51,12 +50,6 @@ export default function Container({ children }) {
 
   return (
     <div className={`${styles.container} ${theme}`}>
-      {theme === 'dark' && (
-        <Particles
-          canvasClassName={styles.particles}
-          params={particlesParams}
-        />
-      )}
       <main>
         <Navigation />
         {children}

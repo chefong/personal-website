@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Button } from 'reactstrap';
 import styles from './Title.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FormattedMessage } from "text-provider";
+import { FormattedMessage } from 'text-provider';
 import Confetti from 'react-dom-confetti';
+import { store } from '../../../store/GlobalProvider';
+import Particles from 'react-particles-js';
+import { particlesParams } from '../../../common/constants';
 
 const confettiConfig = {
   angle: 90,
@@ -21,6 +24,8 @@ const confettiConfig = {
 
 export default function Title() {
   const [resumeHovered, setResumeHovered] = useState(false);
+  const { state } = useContext(store);
+  const { theme } = state;
 
   /* istanbul ignore next */
   const handleResumeHoverIn = e => {
@@ -36,6 +41,12 @@ export default function Title() {
 
   return (
     <section className={`${styles.section} container-fluid`} data-testid="Title-container">
+      {theme === 'dark' && (
+        <Particles
+          canvasClassName={styles.particles}
+          params={particlesParams}
+        />
+      )}
       <div className="h-100 row justify-content-center align-items-center">
         <div className="col-lg-8 col-md-6">
           <div>
