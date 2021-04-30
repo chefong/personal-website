@@ -23,42 +23,6 @@
   color: var(--theme-color);
 }
 
-.button {
-  font-weight: bold;
-  padding: 10px 16px;
-  border-radius: 8px;
-}
-
-.resume {
-  background-color: var(--theme-page-text);
-  border: none;
-}
-
-.resume:hover {
-  background-color: var(--theme-color);
-}
-
-.contact {
-  background: none;
-  color: var(--theme-page-text);
-  border: 2px solid var(--theme-page-text);
-}
-
-.contact:hover {
-  color: var(--theme-color);
-  border-color: var(--theme-color);
-  background: none;
-}
-
-.resume {
-  border: 2px solid var(--theme-page-text);
-  color: var(--theme-page-background);
-}
-
-.resume:hover {
-  background-color: var(--theme-color);
-  border-color: var(--theme-color);
-}
 
 .contactIcon, .resumeIcon {
   width: 0.9em;

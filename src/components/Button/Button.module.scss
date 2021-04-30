@@ -1,0 +1,33 @@
+.button {
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  height: 48px;
+  transition: all ease 0.25s;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.primary {
+  color: var(--theme-page-background);
+  background-color: var(--theme-page-text);
+  border: none;
+}
+
+.primary:hover {
+  background-color: var(--theme-color);
+}
+
+.outline {
+  background: none;
+  color: var(--theme-page-text);
+  border: 2px solid var(--theme-page-text);
+}
+
+.outline:hover {
+  color: var(--theme-color);
+  border-color: var(--theme-color);
+  background: none;
+}

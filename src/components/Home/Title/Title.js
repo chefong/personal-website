@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
-import { Button } from 'reactstrap';
+// import { Button } from 'reactstrap';
+import Button from '../../Button/Button';
 import styles from './Title.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'text-provider';
@@ -62,7 +63,7 @@ export default function Title() {
             </p>
             <div className="mt-5">
               <a href="mailto:ericong18@gmail.com" className="mr-4 mb-4">
-                <Button className={`${styles.button} ${styles.contact}`}>
+                <Button variation="outline">
                   <FontAwesomeIcon className={styles.contactIcon} icon="paper-plane" />
                   <FormattedMessage id="TITLE_CONTACT" />
                 </Button>
@@ -73,7 +74,7 @@ export default function Title() {
                 onMouseLeave={handleResumeHoverOut}
                 className="mr-4 mb-4" 
               >
-                <Button className={`${styles.button} ${styles.resume}`}>
+                <Button variation="primary">
                   <FontAwesomeIcon className={styles.resumeIcon} icon="file-alt" />
                   <FormattedMessage id="TITLE_RESUME" />
                   <Confetti active={resumeHovered} config={confettiConfig} />
