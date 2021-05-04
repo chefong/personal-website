@@ -64,8 +64,8 @@ export default function Navigation() {
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar data-testid="Navigation-collapse">
           <Nav className="ml-auto mr-5 justify-content-center align-items-md-center" navbar>
-            {navItems.map(({ to, num, name }, index) => (
-              <NavItem className="ml-sm-3 ml-md-5 mt-2 mb-2" key={index} data-testid="Navigation-item">
+            {navItems.map(({ to, num, name }) => (
+              <NavItem className="ml-sm-3 ml-md-5 mt-2 mb-2" key={name} data-testid="Navigation-item">
                 <Link {...reactScrollLinkProps} className={styles.navLink} to={to}>
                   <span className={styles.navNum}>{num}</span>
                   {' '}
