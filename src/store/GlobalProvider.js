@@ -1,4 +1,5 @@
-import { createContext, useContext, useReducer } from 'react';
+import { createContext, useReducer } from 'react';
+import PropTypes from 'prop-types';
 import makeInitialState from './makeInitialState';
 import reducer from './reducer';
 
@@ -12,3 +13,10 @@ function GlobalProvider({ children }) {
 }
 
 export { store, GlobalProvider };
+
+GlobalProvider.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};

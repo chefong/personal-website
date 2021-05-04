@@ -1,16 +1,17 @@
 import { useState, useContext, useEffect } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+import PropTypes from 'prop-types';
 import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 import useKeyPress from '../../common/hooks/useKeyPress';
 import getQuote from '../../services/getQuote';
-import toast, { Toaster } from 'react-hot-toast';
 import styles from './Container.module.scss';
-import { themeColors, toastOptions, particlesParams } from '../../common/constants';
+import { themeColors, toastOptions } from '../../common/constants';
 import { store } from '../../store/GlobalProvider';
 import actions from '../../store/actions';
 
 function getDurationFromWords(content) {
-  const words = content.split(" ");
+  const words = content.split(' ');
   const numWords = words.length;
 
   return (numWords / 2) * 1000;
@@ -58,11 +59,20 @@ export default function Container({ children }) {
       <footer>
         <Footer />
       </footer>
-      <style jsx global>{`
+      <style jsx global>
+        {`
         body {
           background: ${themeColors[theme]};
         }
-      `}</style>
+      `}
+      </style>
     </div>
-  )
+  );
 }
+
+Container.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};

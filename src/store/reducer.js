@@ -1,14 +1,14 @@
-import actions from "./actions";
+import actions from './actions';
 
 const reducer = (state, action) => {
   const { type, payload } = action;
 
-  switch(type) {
+  switch (type) {
     case actions.SET_THEME:
-      return { ...state, theme: action.payload };
+      return { ...state, theme: payload };
     default:
       throw new Error('No action found for: ', type);
-  }  
+  }
 };
 
 export default reducer;

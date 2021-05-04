@@ -4,7 +4,7 @@ export default function Resume() {
 
 export async function getServerSideProps({ res }) {
   res.writeHead(301, {
-    Location: '/docs/EricOngResume.pdf'
+    Location: '/docs/EricOngResume.pdf',
   });
   res.end();
 

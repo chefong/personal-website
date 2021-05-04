@@ -1,26 +1,26 @@
 import { useState, useContext } from 'react';
 // import { Button } from 'reactstrap';
-import Button from '../../Button/Button';
-import styles from './Title.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'text-provider';
 import Confetti from 'react-dom-confetti';
-import { store } from '../../../store/GlobalProvider';
 import Particles from 'react-particles-js';
+import { store } from '../../../store/GlobalProvider';
+import styles from './Title.module.scss';
+import Button from '../../Button/Button';
 import { particlesParams } from '../../../common/constants';
 
 const confettiConfig = {
   angle: 90,
-  spread: "80",
+  spread: '80',
   startVelocity: 35,
   elementCount: 30,
   dragFriction: 0.12,
   duration: 2500,
   stagger: 5,
-  width: "10px",
-  height: "10px",
-  perspective: "500px",
-  colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
+  width: '10px',
+  height: '10px',
+  perspective: '500px',
+  colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
 };
 
 export default function Title() {
@@ -29,16 +29,16 @@ export default function Title() {
   const { theme } = state;
 
   /* istanbul ignore next */
-  const handleResumeHoverIn = e => {
+  const handleResumeHoverIn = (e) => {
     e.preventDefault();
     setResumeHovered(true);
-  }
+  };
 
   /* istanbul ignore next */
-  const handleResumeHoverOut = e => {
+  const handleResumeHoverOut = (e) => {
     e.preventDefault();
     setResumeHovered(false);
-  }
+  };
 
   return (
     <section className={`${styles.section} container-fluid`} data-testid="Title-container">
@@ -72,7 +72,7 @@ export default function Title() {
                 href="/docs/EricOngResume.pdf"
                 onMouseEnter={handleResumeHoverIn}
                 onMouseLeave={handleResumeHoverOut}
-                className="mr-4 mb-4" 
+                className="mr-4 mb-4"
               >
                 <Button variation="primary">
                   <FontAwesomeIcon className={styles.resumeIcon} icon="file-alt" />
@@ -85,5 +85,5 @@ export default function Title() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,6 +1,8 @@
-import Document, { Head, Main, NextScript, Html } from 'next/document';
+import Document, {
+  Head, Main, NextScript, Html,
+} from 'next/document';
 
-const GA_TRACKING_ID = process.env.GA_TRACKING_ID;
+const { GA_TRACKING_ID } = process.env;
 
 export default class MyDocument extends Document {
   render() {
@@ -30,6 +32,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }

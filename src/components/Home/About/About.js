@@ -1,6 +1,6 @@
+import { FormattedMessage } from 'text-provider';
 import styles from './About.module.scss';
 import { likes, dislikes } from '../../../common/constants';
-import { FormattedMessage } from 'text-provider';
 
 export default function About() {
   return (
@@ -9,7 +9,7 @@ export default function About() {
         <div className="col-lg-5 col-md-6">
           <div className={styles.headerGroup}>
             <h2 className={styles.header}>
-              <span className={styles.headerNum}>01. </span> 
+              <span className={styles.headerNum}>01. </span>
               <FormattedMessage id="ABOUT_HEADING" />
             </h2>
           </div>
@@ -20,7 +20,7 @@ export default function About() {
                 values={{
                   schoolClass: styles.link,
                   intuitClass: styles.link,
-                  openTableClass: styles.link
+                  openTableClass: styles.link,
                 }}
               />
             </p>
@@ -31,7 +31,7 @@ export default function About() {
                     <FormattedMessage id="ABOUT_LIKE" />
                   </p>
                   <ul className={styles.thingsList}>
-                    {likes.map(id => (
+                    {likes.map((id) => (
                       <li key={id} data-testid="About-like">
                         <FormattedMessage id={id} />
                       </li>
@@ -43,7 +43,7 @@ export default function About() {
                     <FormattedMessage id="ABOUT_DISLIKE" />
                   </p>
                   <ul className={styles.thingsList}>
-                    {dislikes.map(id => (
+                    {dislikes.map((id) => (
                       <li key={id} data-testid="About-dislike">
                         <FormattedMessage id={id} />
                       </li>

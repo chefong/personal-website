@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import styles from './ThemeToggle.module.scss';
 import { SunnyOutline, MoonOutline, CafeOutline } from 'react-ionicons';
+import styles from './ThemeToggle.module.scss';
 import { themeOrder, iconSize, iconColors } from '../../common/constants';
 import { store } from '../../store/GlobalProvider';
 import actions from '../../store/actions';
@@ -13,7 +13,7 @@ export default function ThemeToggle() {
   const handleToggleClick = () => {
     let nextThemeIndex = themeOrder.indexOf(theme) + 1;
     if (nextThemeIndex === themeOrder.length) nextThemeIndex = 0;
-    
+
     const nextTheme = themeOrder[nextThemeIndex];
 
     dispatch({ type: actions.SET_THEME, payload: nextTheme });
@@ -43,5 +43,5 @@ export default function ThemeToggle() {
     <div className={styles.container}>
       {getIcon()}
     </div>
-  )
-};
+  );
+}

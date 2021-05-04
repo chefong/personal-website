@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import styles from './Experience.module.scss';
 import { FormattedMessage } from 'text-provider';
+import styles from './Experience.module.scss';
 import { experiences } from '../../../common/constants';
 import { store } from '../../../store/GlobalProvider';
 
@@ -13,12 +13,18 @@ export default function Experience() {
       <div className="row justify-content-center">
         <div className="col-lg-8 col-md-10 col-sm-10">
           <div className={styles.headerGroup}>
-            <h2 className={styles.header}><span className={styles.headerNum}>03.</span> My Experience</h2>
+            <h2 className={styles.header}>
+              <span className={styles.headerNum}>03.</span>
+              {' '}
+              My Experience
+            </h2>
           </div>
         </div>
       </div>
-      {experiences.map(({ imagePath, nameId, positionId, duration, descriptionId }, index) => (
-        <div className={styles.experienceGroup} key={index} data-testid="Experience-item">
+      {experiences.map(({
+        imagePath, nameId, positionId, duration, descriptionId,
+      }) => (
+        <div className={styles.experienceGroup} key={nameId} data-testid="Experience-item">
           <div className="row justify-content-center">
             <div className="col-lg-3 col-md-4 col-sm-4">
               <img
@@ -33,8 +39,11 @@ export default function Experience() {
                   <FormattedMessage id={nameId} />
                 </p>
                 <p className={styles.position}>
-                  <FormattedMessage id={positionId} />{' '}
-                  ({duration})
+                  <FormattedMessage id={positionId} />
+                  {' '}
+                  (
+                  {duration}
+                  )
                 </p>
                 <hr className={styles.line} />
                 <p className={styles.description}>
@@ -46,5 +55,5 @@ export default function Experience() {
         </div>
       ))}
     </section>
-  )
+  );
 }

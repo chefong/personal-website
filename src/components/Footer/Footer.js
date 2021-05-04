@@ -1,6 +1,6 @@
-import styles from './Footer.module.scss';
 import { FormattedMessage } from 'text-provider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './Footer.module.scss';
 import { handles } from '../../common/constants';
 
 export default function Footer() {
@@ -8,8 +8,8 @@ export default function Footer() {
     <div className={`${styles.container} container-fluid`} data-testid="Footer-container">
       <div className="row justify-content-center">
         <div className={styles.iconGroup}>
-          {handles.map(({ icon, link }, index) => (
-            <a className={styles.link} href={link} key={index} target="_blank" data-testid="Footer-icon-link">
+          {handles.map(({ icon, link }) => (
+            <a className={styles.link} href={link} key={link} target="_blank" data-testid="Footer-icon-link" rel="noreferrer">
               <FontAwesomeIcon className={styles.icon} icon={icon} />
             </a>
           ))}
@@ -21,5 +21,5 @@ export default function Footer() {
         </p>
       </div>
     </div>
-  )
+  );
 }

@@ -15,18 +15,19 @@ const Button = ({ children, variation }) => {
   };
 
   return (
-    <button className={classNames(styles.button, getVariationStyle())}>
+    <button type="button" className={classNames(styles.button, getVariationStyle())}>
       {children}
     </button>
   );
 };
 
 Button.defaultProps = {
-  variation: 'primary'
-}
+  variation: 'primary',
+};
 
 Button.propTypes = {
-  variation: PropTypes.oneOf(['primary', 'outline'])
+  variation: PropTypes.oneOf(['primary', 'outline']),
+  children: PropTypes.string.isRequired,
 };
 
 export default Button;

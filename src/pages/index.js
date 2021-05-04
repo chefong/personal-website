@@ -1,10 +1,12 @@
 import { NextSeo } from 'next-seo';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faFileAlt, faWind, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope, faFileAlt, faWind, faPaperPlane,
+} from '@fortawesome/free-solid-svg-icons';
 import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import config from '../next-seo.config';
 import Head from 'next/head';
+import config from '../next-seo.config';
 import Home from '../components/Home/Home';
 
 library.add(fab, faEnvelope, faFileAlt, faPaperPlane, faWind, faSun, faMoon);

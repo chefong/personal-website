@@ -2,22 +2,22 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import Lottie from 'lottie-react';
 import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+} from 'reactstrap';
+import {
   navItems,
   lottieProps,
   reactScrollLinkProps,
   menuOpenSegments,
   menuCloseSegments,
   menuBoxShadow,
-  menuTransition
+  menuTransition,
 } from '../../common/constants';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem
-} from 'reactstrap';
 import styles from './Navigation.module.scss';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
@@ -36,11 +36,8 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
-  const toggle = () => {
-    isOpen ? closeMenu() : openMenu();
-  };
+  const toggle = () => (isOpen ? closeMenu() : openMenu());
 
-  /* istanbul ignore next */
   useEffect(() => window.addEventListener('scroll', () => setScrollPosition(window.scrollY)), []);
 
   return (
@@ -56,7 +53,7 @@ export default function Navigation() {
         }}
       >
         <NavbarBrand href="/" className="ml-2">
-          <img className={styles.logo} src="/imgs/logo.svg" alt=""/>
+          <img className={styles.logo} src="/imgs/logo.svg" alt="" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} className={styles.toggler} data-testid="Navigation-toggle">
           <Lottie
@@ -70,7 +67,9 @@ export default function Navigation() {
             {navItems.map(({ to, num, name }, index) => (
               <NavItem className="ml-sm-3 ml-md-5 mt-2 mb-2" key={index} data-testid="Navigation-item">
                 <Link {...reactScrollLinkProps} className={styles.navLink} to={to}>
-                  <span className={styles.navNum}>{num}</span> {name}
+                  <span className={styles.navNum}>{num}</span>
+                  {' '}
+                  {name}
                 </Link>
               </NavItem>
             ))}

@@ -1,6 +1,6 @@
+import { FormattedMessage } from 'text-provider';
 import styles from './Projects.module.scss';
 import Card from './Card/Card';
-import { FormattedMessage } from 'text-provider';
 import { projects } from '../../../common/constants';
 
 export default function Projects() {
@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="row justify-content-center">
         <div className="col-lg-9 col-md-9">
           <div className="row justify-content-center">
-            {projects.map((project, index) => <Card { ...project } key={index} />)}
+            {projects.map((project) => <Card {...project} key={project.nameId} />)}
           </div>
         </div>
       </div>
