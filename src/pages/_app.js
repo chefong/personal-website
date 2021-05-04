@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './global-styles.css';
 import '../assets/themes.scss';
 import { TextProvider } from 'text-provider';
+import PropTypes from 'prop-types';
 import content from '../common/content.json';
 import { GlobalProvider } from '../store/GlobalProvider';
 
@@ -15,3 +16,8 @@ export default function MyApp({ Component, pageProps }) {
     </TextProvider>
   );
 }
+
+MyApp.propTypes = {
+  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
+  pageProps: PropTypes.object.isRequired,
+};
