@@ -47,3 +47,12 @@
   margin-left: 0;
   margin-top: -8px;
 }
+
+.link {
+  font-weight: bold;
+  color: var(--theme-color);
+}
+
+.link:hover {
+  color: var(--theme-color);
+}

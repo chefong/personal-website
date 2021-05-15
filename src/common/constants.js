@@ -66,7 +66,9 @@ export const experiences = [
     nameId: 'EXPERIENCE_OPENTABLE',
     positionId: 'SOFTWARE_ENGINEER_1',
     duration: 'February 2021 - Present',
-    descriptionId: 'EXPERIENCE_OPENTABLE_DESCRIPTION_2',
+    teamId: 'EXPERIENCE_OPENTABLE_TEAM_2',
+    initiativesId: 'EXPERIENCE_OPENTABLE_INITIATIVES_2',
+    technologiesId: 'EXPERIENCE_OPENTABLE_TECHNOLOGIES_2',
   },
   {
     imagePath: {
@@ -76,7 +78,9 @@ export const experiences = [
     nameId: 'EXPERIENCE_INTUIT',
     positionId: 'SOFTWARE_ENGINEER_1',
     duration: 'July 2020 - February 2021',
-    descriptionId: 'EXPERIENCE_INTUIT_DESCRIPTION',
+    teamId: 'EXPERIENCE_INTUIT_TEAM',
+    initiativesId: 'EXPERIENCE_INTUIT_INITIATIVES',
+    technologiesId: 'EXPERIENCE_INTUIT_TECHNOLOGIES',
   },
   {
     imagePath: {
@@ -86,7 +90,9 @@ export const experiences = [
     nameId: 'EXPERIENCE_OPENTABLE',
     positionId: 'SOFTWARE_ENGINEERING_INTERN',
     duration: 'June 2019 - August 2019',
-    descriptionId: 'EXPERIENCE_OPENTABLE_DESCRIPTION_1',
+    teamId: 'EXPERIENCE_OPENTABLE_TEAM_1',
+    initiativesId: 'EXPERIENCE_OPENTABLE_INITIATIVES_1',
+    technologiesId: 'EXPERIENCE_OPENTABLE_TECHNOLOGIES_1',
   },
 ];
 

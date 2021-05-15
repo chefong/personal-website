@@ -22,7 +22,7 @@ export default function Experience() {
         </div>
       </div>
       {experiences.map(({
-        imagePath, nameId, positionId, duration, descriptionId,
+        imagePath, nameId, positionId, duration, teamId, initiativesId, technologiesId,
       }) => (
         <div className={styles.experienceGroup} key={nameId} data-testid="Experience-item">
           <div className="row justify-content-center">
@@ -47,7 +47,20 @@ export default function Experience() {
                 </p>
                 <hr className={styles.line} />
                 <p className={styles.description}>
-                  <FormattedMessage id={descriptionId} />
+                  <FormattedMessage id={teamId} />
+                  <br />
+                  <br />
+                  Initatives:
+                  {' '}
+                  <FormattedMessage
+                    id={initiativesId}
+                    values={{ linkClass: styles.link }}
+                  />
+                  <br />
+                  <br />
+                  Technologies:
+                  {' '}
+                  <FormattedMessage id={technologiesId} />
                 </p>
               </div>
             </div>
