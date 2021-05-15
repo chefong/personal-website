@@ -28,13 +28,11 @@ export default function Title() {
   const { state } = useContext(store);
   const { theme } = state;
 
-  /* istanbul ignore next */
   const handleResumeHoverIn = (e) => {
     e.preventDefault();
     setResumeHovered(true);
   };
 
-  /* istanbul ignore next */
   const handleResumeHoverOut = (e) => {
     e.preventDefault();
     setResumeHovered(false);
@@ -69,7 +67,7 @@ export default function Title() {
                 </Button>
               </a>
               <a
-                href="/docs/EricOngResume.pdf"
+                href="https://drive.google.com/file/d/1XdYGfHC1Irt0oh5YwNBZSWQhXAxFNGnL/view?usp=sharing"
                 onMouseEnter={handleResumeHoverIn}
                 onMouseLeave={handleResumeHoverOut}
                 className="mr-4 mb-4"
