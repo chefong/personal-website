@@ -1,27 +1,35 @@
 @font-face {
-  font-family: "Geomanist";
-  src: url("/fonts/geomanist/hinted-Geomanist-Regular.ttf");
+  font-family: "Greycliff";
+  src: url("/fonts/greycliff/Greycliff-CF-Regular.otf");
   font-display: auto;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Geomanist";
-  src: url("/fonts/geomanist/hinted-Geomanist-Medium.ttf");
+  font-family: "Greycliff";
+  src: url("/fonts/greycliff/Greycliff-CF-Regular-Oblique.otf");
   font-display: auto;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("/fonts/gt-walsheim-pro/GT-Walsheim-Pro-Regular.ttf");
-  font-display: auto;
+  font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "GT Walsheim Pro";
-  src: url("/fonts/gt-walsheim-pro/GT-Walsheim-Pro-Bold.ttf");
+  font-family: "Greycliff";
+  src: url("/fonts/greycliff/Greycliff-CF-Medium.otf");
   font-display: auto;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Greycliff";
+  src: url("/fonts/greycliff/Greycliff-CF-Bold.otf");
+  font-display: auto;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Greycliff";
+  src: url("/fonts/greycliff/Greycliff-CF-Extra-Bold.otf");
+  font-display: auto;
+  font-weight: 800;
 }

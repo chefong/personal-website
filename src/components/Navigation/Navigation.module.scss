@@ -7,7 +7,7 @@
 }
 
 .navLink {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 1.2em;
   color: var(--theme-page-text) !important;
 
@@ -33,8 +33,6 @@
 }
 
 .toggle {
-  // margin-left: 24px;
-
   @media (max-width: 576px) {
     margin-top: 4px;
     margin-bottom: 8px;

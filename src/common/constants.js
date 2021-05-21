@@ -169,7 +169,7 @@ export const iconColors = {
 export const toastOptions = {
   style: {
     padding: '16px',
-    fontFamily: 'GT Walsheim Pro',
+    fontFamily: 'Greycliff',
     backgroundColor: '#303030',
     color: 'white',
   },
