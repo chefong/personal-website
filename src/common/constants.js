@@ -199,3 +199,17 @@ export const particlesParams = {
   },
   retina_detect: true,
 };
+
+export const gaEvents = {
+  ABOUT_NAV_CLICKED: 'Clicked on About nav item',
+  PROJECTS_NAV_CLICKED: 'Clicked on Projects nav item',
+  EXPERIENCE_NAV_CLICKED: 'Clicked on Experience nav item',
+  THEME_TOGGLE_CLICKED: 'Clicked on Theme toggle',
+  RESUME_CLICKED: 'Clicked on Resume button',
+  CONTACT_ME_CLICKED: 'Clicked on Contact Me button',
+  GITHUB_CLICKED: 'Clicked on GitHub icon',
+  LINKEDIN_CLICKED: 'Clicked on LinkedIn icon',
+  SPOTIFY_CLICKED: 'Clicked on Spotify icon',
+  MEDIUM_CLICKED: 'Clicked on Medium icon',
+  MAIL_CLICKED: 'Clicked on Mail icon',
+};
