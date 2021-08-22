@@ -7,7 +7,8 @@ import Particles from 'react-particles-js';
 import { store } from '../../../store/GlobalProvider';
 import styles from './Title.module.scss';
 import Button from '../../Button/Button';
-import { particlesParams } from '../../../common/constants';
+import { gaEvents, particlesParams } from '../../../common/constants';
+import { logToGA } from '../../../common/utils/ga';
 
 const confettiConfig = {
   angle: 90,
@@ -60,7 +61,7 @@ export default function Title() {
               <FormattedMessage id="TITLE_DESCRIPTION" />
             </p>
             <div className="mt-5">
-              <a href="mailto:ericong18@gmail.com" className="mr-4 mb-4">
+              <a href="mailto:ericong18@gmail.com" className="mr-4 mb-4" onClick={() => logToGA({ action: gaEvents.CONTACT_ME_CLICKED })}>
                 <Button variation="outline">
                   <FontAwesomeIcon className={styles.contactIcon} icon="paper-plane" />
                   <FormattedMessage id="TITLE_CONTACT" />
@@ -70,6 +71,7 @@ export default function Title() {
                 href="https://drive.google.com/file/d/1XdYGfHC1Irt0oh5YwNBZSWQhXAxFNGnL/view?usp=sharing"
                 onMouseEnter={handleResumeHoverIn}
                 onMouseLeave={handleResumeHoverOut}
+                onClick={() => logToGA({ action: gaEvents.RESUME_CLICKED })}
                 className="mr-4 mb-4"
               >
                 <Button variation="primary">

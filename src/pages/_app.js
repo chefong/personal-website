@@ -6,15 +6,12 @@ import { TextProvider } from 'text-provider';
 import PropTypes from 'prop-types';
 import content from '../common/content.json';
 import { GlobalProvider } from '../store/GlobalProvider';
-import logToGA from '../common/utils/ga';
-import { gaEvents } from '../common/constants';
-
-const { PAGE_RENDERED } = gaEvents;
+import { logPageViewToGA } from '../common/utils/ga';
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    logToGA({ action: PAGE_RENDERED });
+    logPageViewToGA('/');
   }, []);
 
   return (

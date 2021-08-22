@@ -201,16 +201,16 @@ export const particlesParams = {
 };
 
 export const gaEvents = {
-  PAGE_RENDERED: 'Rendered page',
-  ABOUT_NAV_CLICKED: 'Clicked on About nav item',
-  PROJECTS_NAV_CLICKED: 'Clicked on Projects nav item',
-  EXPERIENCE_NAV_CLICKED: 'Clicked on Experience nav item',
-  THEME_TOGGLE_CLICKED: 'Clicked on Theme toggle',
-  RESUME_CLICKED: 'Clicked on Resume button',
-  CONTACT_ME_CLICKED: 'Clicked on Contact Me button',
-  GITHUB_CLICKED: 'Clicked on GitHub icon',
-  LINKEDIN_CLICKED: 'Clicked on LinkedIn icon',
-  SPOTIFY_CLICKED: 'Clicked on Spotify icon',
-  MEDIUM_CLICKED: 'Clicked on Medium icon',
-  MAIL_CLICKED: 'Clicked on Mail icon',
+  PAGE_RENDERED: 'page_rendered',
+  ABOUT_NAV_CLICKED: 'about_nav_clicked',
+  PROJECTS_NAV_CLICKED: 'projects_nav_clicked',
+  EXPERIENCE_NAV_CLICKED: 'experience_nav_clicked',
+  THEME_TOGGLE_CLICKED: 'theme_toggle_clicked',
+  RESUME_CLICKED: 'resume_clicked',
+  CONTACT_ME_CLICKED: 'contact_me_clicked',
+  GITHUB_CLICKED: 'github_icon_clicked',
+  LINKEDIN_CLICKED: 'linkedin_icon_clicked',
+  SPOTIFY_CLICKED: 'spotify_icon_clicked',
+  MEDIUM_CLICKED: 'medium_icon_clicked',
+  MAIL_CLICKED: 'mail_icon_clicked',
 };
