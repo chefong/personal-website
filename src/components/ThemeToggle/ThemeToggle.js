@@ -1,9 +1,12 @@
 import { useContext } from 'react';
 import { SunnyOutline, MoonOutline, CafeOutline } from 'react-ionicons';
 import styles from './ThemeToggle.module.scss';
-import { themeOrder, iconSize, iconColors } from '../../common/constants';
+import {
+  themeOrder, iconSize, iconColors, gaEvents,
+} from '../../common/constants';
 import { store } from '../../store/GlobalProvider';
 import actions from '../../store/actions';
+import { logToGA } from '../../common/utils/ga';
 
 export default function ThemeToggle() {
   const { state, dispatch } = useContext(store);
@@ -11,6 +14,8 @@ export default function ThemeToggle() {
   const iconColor = iconColors[theme];
 
   const handleToggleClick = () => {
+    logToGA({ action: gaEvents.THEME_TOGGLE_CLICKED });
+
     let nextThemeIndex = themeOrder.indexOf(theme) + 1;
     if (nextThemeIndex === themeOrder.length) nextThemeIndex = 0;
 

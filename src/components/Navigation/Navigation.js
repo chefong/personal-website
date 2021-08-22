@@ -20,6 +20,7 @@ import {
 } from '../../common/constants';
 import styles from './Navigation.module.scss';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import { logToGA } from '../../common/utils/ga';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +38,10 @@ export default function Navigation() {
   };
 
   const toggle = () => (isOpen ? closeMenu() : openMenu());
+
+  const logNavItemClick = (clickEventId) => {
+    logToGA({ action: clickEventId });
+  };
 
   useEffect(() => window.addEventListener('scroll', () => setScrollPosition(window.scrollY)), []);
 
@@ -64,9 +69,16 @@ export default function Navigation() {
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar data-testid="Navigation-collapse">
           <Nav className="ml-auto mr-5 justify-content-center align-items-md-center" navbar>
-            {navItems.map(({ to, num, name }) => (
+            {navItems.map(({
+              to, num, name, clickEventId,
+            }) => (
               <NavItem className="ml-sm-3 ml-md-5 mt-2 mb-2" key={name} data-testid="Navigation-item">
-                <Link {...reactScrollLinkProps} className={styles.navLink} to={to}>
+                <Link
+                  {...reactScrollLinkProps}
+                  className={styles.navLink}
+                  to={to}
+                  onClick={() => logNavItemClick(clickEventId)}
+                >
                   <span className={styles.navNum}>{num}</span>
                   {' '}
                   {name}

@@ -1,20 +1,38 @@
 import hamburgerMenuAnimation from '../assets/menu-animation.json';
 
+export const gaEvents = {
+  PAGE_RENDERED: 'page_rendered',
+  ABOUT_NAV_CLICKED: 'about_nav_clicked',
+  PROJECTS_NAV_CLICKED: 'projects_nav_clicked',
+  EXPERIENCE_NAV_CLICKED: 'experience_nav_clicked',
+  THEME_TOGGLE_CLICKED: 'theme_toggle_clicked',
+  RESUME_CLICKED: 'resume_clicked',
+  CONTACT_ME_CLICKED: 'contact_me_clicked',
+  GITHUB_CLICKED: 'github_icon_clicked',
+  LINKEDIN_CLICKED: 'linkedin_icon_clicked',
+  SPOTIFY_CLICKED: 'spotify_icon_clicked',
+  MEDIUM_CLICKED: 'medium_icon_clicked',
+  MAIL_CLICKED: 'mail_icon_clicked',
+};
+
 export const navItems = [
   {
     to: 'about',
     num: '01.',
     name: 'About',
+    clickEventId: gaEvents.ABOUT_NAV_CLICKED,
   },
   {
     to: 'projects',
     num: '02.',
     name: 'Projects',
+    clickEventId: gaEvents.PROJECTS_NAV_CLICKED,
   },
   {
     to: 'experience',
     num: '03.',
     name: 'Experience',
+    clickEventId: gaEvents.EXPERIENCE_NAV_CLICKED,
   },
 ];
 
@@ -95,26 +113,31 @@ export const handles = [
     name: 'GitHub',
     icon: ['fab', 'github'],
     link: 'https://github.com/chefong',
+    clickEventId: gaEvents.GITHUB_CLICKED,
   },
   {
     name: 'LinkedIn',
     icon: ['fab', 'linkedin-in'],
     link: 'https://www.linkedin.com/in/ericong18/',
+    clickEventId: gaEvents.LINKEDIN_CLICKED,
   },
   {
     name: 'Spotify',
     icon: ['fab', 'spotify'],
     link: 'https://open.spotify.com/user/ericong18?si=H0kHkFdxQ-GyKIlfLWzDqg',
+    clickEventId: gaEvents.SPOTIFY_CLICKED,
   },
   {
     name: 'Medium',
     icon: ['fab', 'medium'],
     link: 'https://medium.com/@ericong18',
+    clickEventId: gaEvents.MEDIUM_CLICKED,
   },
   {
     name: 'Email',
     icon: 'envelope',
     link: 'mailto:ericong18@gmail.com',
+    clickEventId: gaEvents.MAIL_CLICKED,
   },
 ];
 
@@ -198,19 +221,4 @@ export const particlesParams = {
     },
   },
   retina_detect: true,
-};
-
-export const gaEvents = {
-  PAGE_RENDERED: 'page_rendered',
-  ABOUT_NAV_CLICKED: 'about_nav_clicked',
-  PROJECTS_NAV_CLICKED: 'projects_nav_clicked',
-  EXPERIENCE_NAV_CLICKED: 'experience_nav_clicked',
-  THEME_TOGGLE_CLICKED: 'theme_toggle_clicked',
-  RESUME_CLICKED: 'resume_clicked',
-  CONTACT_ME_CLICKED: 'contact_me_clicked',
-  GITHUB_CLICKED: 'github_icon_clicked',
-  LINKEDIN_CLICKED: 'linkedin_icon_clicked',
-  SPOTIFY_CLICKED: 'spotify_icon_clicked',
-  MEDIUM_CLICKED: 'medium_icon_clicked',
-  MAIL_CLICKED: 'mail_icon_clicked',
 };
