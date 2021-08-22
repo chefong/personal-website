@@ -201,6 +201,7 @@ export const particlesParams = {
 };
 
 export const gaEvents = {
+  PAGE_RENDERED: 'Rendered page',
   ABOUT_NAV_CLICKED: 'Clicked on About nav item',
   PROJECTS_NAV_CLICKED: 'Clicked on Projects nav item',
   EXPERIENCE_NAV_CLICKED: 'Clicked on Experience nav item',
