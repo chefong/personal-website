@@ -23,37 +23,31 @@ export const projects = [
     nameId: 'PROJECTS_PATCH',
     descriptionId: 'PROJECTS_PATCH_DESCRIPTION',
     githubLink: 'https://github.com/willshiao/Patch',
-    winner: true,
   },
   {
     nameId: 'PROJECTS_CHEATERBEATER',
     descriptionId: 'PROJECTS_CHEATERBEATER_DESCRIPTION',
     githubLink: 'https://github.com/willshiao/CheaterBeater',
-    winner: true,
   },
   {
     nameId: 'PROJECTS_BAUT',
     descriptionId: 'PROJECTS_BAUT_DESCRIPTION',
     githubLink: 'https://github.com/KirbyDownB/GEICOChatBot',
-    winner: true,
   },
   {
     nameId: 'PROJECTS_NUTSHELL',
     descriptionId: 'PROJECTS_NUTSHELL_DESCRIPTION',
     githubLink: 'https://github.com/chefong/nutshell',
-    winner: true,
   },
   {
     nameId: 'PROJECTS_STOCK_OVERFLOW',
     descriptionId: 'PROJECTS_STOCK_OVERFLOW_DESCRIPTION',
     githubLink: 'https://github.com/kimjihwan0208/stockoverflow',
-    winner: false,
   },
   {
     nameId: 'PROJECTS_JOYRIDE',
     descriptionId: 'PROJECTS_JOYRIDE_DESCRIPTION',
     githubLink: 'https://github.com/ericong18/joyride',
-    winner: true,
   },
 ];
 

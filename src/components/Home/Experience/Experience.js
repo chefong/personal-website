@@ -50,7 +50,7 @@ export default function Experience() {
                   <FormattedMessage id={teamId} />
                   <br />
                   <br />
-                  Initatives:
+                  Initiatives:
                   {' '}
                   <FormattedMessage
                     id={initiativesId}

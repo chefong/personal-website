@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 import useKeyPress from '../../common/hooks/useKeyPress';
@@ -9,6 +10,12 @@ import styles from './Container.module.scss';
 import { themeColors, toastOptions } from '../../common/constants';
 import { store } from '../../store/GlobalProvider';
 import actions from '../../store/actions';
+
+const toastMessages = {
+  loading: { icon: '⌛' },
+  success: { icon: '🤔' },
+  error: { icon: '😕' },
+};
 
 function getDurationFromWords(content) {
   const words = content.split(' ');
@@ -41,16 +48,12 @@ export default function Container({ children }) {
         },
         error: 'Couldn\'nt get quote.',
       },
-      {
-        loading: { icon: '⌛' },
-        success: { icon: '🤔' },
-        error: { icon: '😕' },
-      },
+      toastMessages,
     );
   });
 
   return (
-    <div className={`${styles.container} ${theme}`}>
+    <div className={classNames(styles.container, theme)}>
       <main>
         <Navigation />
         {children}
