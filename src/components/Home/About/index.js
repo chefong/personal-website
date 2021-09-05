@@ -1,6 +1,6 @@
 import { FormattedMessage } from 'text-provider';
-import styles from './About.module.scss';
-import { likes, dislikes } from '../../../common/constants';
+import styles from './styles.module.scss';
+import { likes, dislikes } from '~/common/constants';
 
 export default function About() {
   return (

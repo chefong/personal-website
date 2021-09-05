@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'text-provider';
 import Confetti from 'react-dom-confetti';
 import Particles from 'react-particles-js';
-import { store } from '../../../store/GlobalProvider';
-import styles from './Title.module.scss';
-import Button from '../../Button/Button';
-import { gaEvents, particlesParams } from '../../../common/constants';
-import { logToGA } from '../../../common/utils/ga';
+import { store } from '~/store/GlobalProvider';
+import styles from './styles.module.scss';
+import Button from '~/components/Button';
+import { gaEvents, particlesParams } from '~/common/constants';
+import { logToGA } from '~/common/utils/ga';
 
 const confettiConfig = {
   angle: 90,

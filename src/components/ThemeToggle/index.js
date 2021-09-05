@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import { SunnyOutline, MoonOutline, CafeOutline } from 'react-ionicons';
-import styles from './ThemeToggle.module.scss';
+import styles from './styles.module.scss';
 import {
   themeOrder, iconSize, iconColors, gaEvents,
-} from '../../common/constants';
-import { store } from '../../store/GlobalProvider';
-import actions from '../../store/actions';
-import { logToGA } from '../../common/utils/ga';
+} from '~/common/constants';
+import { store } from '~/store/GlobalProvider';
+import actions from '~/store/actions';
+import { logToGA } from '~/common/utils/ga';
 
 export default function ThemeToggle() {
   const { state, dispatch } = useContext(store);

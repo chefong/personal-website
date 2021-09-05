@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Page from '../components/Page';
-import Links from '../components/Links';
+import Links from '~/components/Links';
+import Page from '~/components/Page';
 
 export default function LinksPage() {
   return (

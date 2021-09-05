@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'text-provider';
 import PropTypes from 'prop-types';
-import styles from './Card.module.scss';
+import styles from './styles.module.scss';
 
 export default function Card({
   nameId, descriptionId, githubLink,

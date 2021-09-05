@@ -1,4 +1,4 @@
-import hamburgerMenuAnimation from '../assets/menu-animation.json';
+import hamburgerMenuAnimation from '~/assets/menu-animation.json';
 
 export const gaEvents = {
   PAGE_RENDERED: 'page_rendered',
