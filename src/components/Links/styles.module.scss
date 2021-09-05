@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.figure {
+  margin: 0;
+}
+
+.self {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

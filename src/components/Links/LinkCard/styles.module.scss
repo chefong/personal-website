@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  height: 48px;
+  width: 256px;
+  background-color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  text-decoration: none;
+  color: black;
+}
