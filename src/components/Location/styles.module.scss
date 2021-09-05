@@ -1,0 +1,37 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+.container {
+  flex: 1;
+}
+
+.mapContainer {
+  flex: 2;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.table {
+  width: 100%;
+}
+
+.tableRow {
+  border-radius: 8px;
+}
+
+.tableRow:nth-child(even) {
+  background-color: #e9f2fe;
+}
+
+.tableHeader, .tableElement {
+  padding: 8px;
+}

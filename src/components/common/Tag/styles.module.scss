@@ -1,0 +1,15 @@
+@import '../../../assets/colors.scss';
+
+.tag {
+  color: white;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.blue {
+  background-color: $light-blue;
+}
+
+.red {
+  background-color: $light-red;
+}

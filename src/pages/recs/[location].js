@@ -1,14 +1,29 @@
 import { useRouter } from 'next/router';
-import styles from './location.module.scss';
-import Container from '../../components/Container/Container';
+import Head from 'next/head';
+import Page from '~/components/Page';
+import Location from '~/components/Location';
+import locationData from './data.json';
 
-export default function Location() {
+const LocationPage = () => {
   const { query } = useRouter();
   const { location } = query;
 
+  if (!location) return null;
+
+  const { name, locations } = locationData[location] || {};
+  if (!name) return null;
+
   return (
-    <Container>
-      <div className={styles.locationContainer}>Location: {location} </div>
-    </Container>
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>{`Eric's ${name} Recommendations`}</title>
+      </Head>
+      <Page>
+        <Location location={name} locations={locations} />
+      </Page>
+    </>
   );
-}
+};
+
+export default LocationPage;
