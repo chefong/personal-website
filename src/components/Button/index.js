@@ -2,24 +2,11 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 
-const Button = ({ children, variation }) => {
-  const getVariationStyle = () => {
-    switch (variation) {
-      case 'primary':
-        return styles.primary;
-      case 'outline':
-        return styles.outline;
-      default:
-        return null;
-    }
-  };
-
-  return (
-    <button type="button" className={classNames(styles.button, getVariationStyle())}>
-      {children}
-    </button>
-  );
-};
+const Button = ({ children, variation }) => (
+  <button type="button" className={classNames(styles.button, styles[variation])}>
+    {children}
+  </button>
+);
 
 Button.defaultProps = {
   variation: 'primary',
@@ -27,7 +14,12 @@ Button.defaultProps = {
 
 Button.propTypes = {
   variation: PropTypes.oneOf(['primary', 'outline']),
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType(
+    [
+      PropTypes.element,
+      PropTypes.arrayOf(PropTypes.element),
+    ],
+  ).isRequired,
 };
 
 export default Button;
