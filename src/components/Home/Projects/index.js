@@ -1,7 +1,7 @@
 import { FormattedMessage } from 'text-provider';
-import styles from './Projects.module.scss';
-import Card from './Card/Card';
-import { projects } from '../../../common/constants';
+import styles from './styles.module.scss';
+import Card from './Card';
+import { projects } from '~/common/constants';
 
 export default function Projects() {
   return (

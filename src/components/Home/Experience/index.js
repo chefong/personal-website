@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { FormattedMessage } from 'text-provider';
-import styles from './Experience.module.scss';
-import { experiences } from '../../../common/constants';
-import { store } from '../../../store/GlobalProvider';
+import styles from './styles.module.scss';
+import { experiences } from '~/common/constants';
+import { store } from '~/store/GlobalProvider';
 
 export default function Experience() {
   const { state } = useContext(store);

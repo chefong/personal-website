@@ -6,8 +6,8 @@ import {
 import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import Head from 'next/head';
-import config from '../next-seo.config';
-import Home from '../components/Home/Home';
+import config from '~/next-seo.config';
+import Home from '~/components/Home';
 
 library.add(fab, faEnvelope, faFileAlt, faPaperPlane, faWind, faSun, faMoon);
 

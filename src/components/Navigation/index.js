@@ -17,10 +17,10 @@ import {
   menuCloseSegments,
   menuBoxShadow,
   menuTransition,
-} from '../../common/constants';
-import styles from './Navigation.module.scss';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
-import { logToGA } from '../../common/utils/ga';
+} from '~/common/constants';
+import styles from './styles.module.scss';
+import ThemeToggle from '~/components/ThemeToggle';
+import { logToGA } from '~/common/utils/ga';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

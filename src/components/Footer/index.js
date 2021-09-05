@@ -1,8 +1,8 @@
 import { FormattedMessage } from 'text-provider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './Footer.module.scss';
-import { handles } from '../../common/constants';
-import { logToGA } from '../../common/utils/ga';
+import styles from './styles.module.scss';
+import { handles } from '~/common/constants';
+import { logToGA } from '~/common/utils/ga';
 
 export default function Footer() {
   const logFooterIconClick = (footerIconEventId) => {

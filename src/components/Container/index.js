@@ -2,14 +2,14 @@ import { useState, useContext, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Navigation from '../Navigation/Navigation';
-import Footer from '../Footer/Footer';
-import useKeyPress from '../../common/hooks/useKeyPress';
-import getQuote from '../../services/getQuote';
-import styles from './Container.module.scss';
-import { themeColors, toastOptions } from '../../common/constants';
-import { store } from '../../store/GlobalProvider';
-import actions from '../../store/actions';
+import Navigation from '~/components/Navigation';
+import Footer from '~/components/Footer';
+import useKeyPress from '~/common/hooks/useKeyPress';
+import getQuote from '~/services/getQuote';
+import styles from './styles.module.scss';
+import { themeColors, toastOptions } from '~/common/constants';
+import { store } from '~/store/GlobalProvider';
+import actions from '~/store/actions';
 
 const toastMessages = {
   loading: { icon: '⌛' },
