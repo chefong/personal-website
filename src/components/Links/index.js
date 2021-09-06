@@ -20,5 +20,5 @@ export default function Links({ links }) {
 }
 
 Links.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.obj).isRequired,
+  links: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
