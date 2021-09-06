@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Links from '~/components/Links';
 import Page from '~/components/Page';
+import data from './data.json';
+
+const { links } = data;
 
 export default function LinksPage() {
   return (
@@ -10,7 +13,7 @@ export default function LinksPage() {
         <title>Eric Ong</title>
       </Head>
       <Page>
-        <Links />
+        <Links links={links} />
       </Page>
       <style jsx global>
         {`
