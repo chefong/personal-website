@@ -32,6 +32,11 @@
   background-color: #e9f2fe;
 }
 
+.tableRowHovered {
+  background: linear-gradient(90deg, #3788f2, #56CCF2) !important;
+  color: white;
+}
+
 .tableHeader, .tableElement {
   padding: 8px;
 }
