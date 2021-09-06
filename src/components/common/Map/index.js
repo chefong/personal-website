@@ -12,27 +12,30 @@ const Map = ({ coordinates }) => {
     zoom: 12,
   });
 
+  const getPinProps = (hovered) => ({
+    size: hovered ? 30 : 20,
+    fill: hovered ? 'highlighted' : 'default',
+  });
+
   const markers = useMemo(() => coordinates.map(
     ({ latitude, longitude, hovered }) => (
       <Marker longitude={longitude} latitude={latitude}>
-        <Pin size={hovered ? 30 : 20} fill={hovered ? 'highlighted' : 'default'} />
+        <Pin {...getPinProps(hovered)} />
       </Marker>
     ),
   ), [coordinates]);
 
   return (
-    <section>
-      <ReactMapGL
-        {...viewport}
-        width="100%"
-        height="100vh"
-        mapStyle="mapbox://styles/ericong18/ckt8vnfqz0s7917rzryp74qqh"
-        onViewportChange={(nextViewport) => setViewport(nextViewport)}
-        mapboxApiAccessToken={accessToken}
-      >
-        {markers}
-      </ReactMapGL>
-    </section>
+    <ReactMapGL
+      height="100vh"
+      width="100%"
+      {...viewport}
+      mapStyle="mapbox://styles/ericong18/ckt8vnfqz0s7917rzryp74qqh"
+      onViewportChange={(nextViewport) => setViewport(nextViewport)}
+      mapboxApiAccessToken={accessToken}
+    >
+      {markers}
+    </ReactMapGL>
   );
 };
 

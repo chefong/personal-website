@@ -9,6 +9,7 @@
 
 .container {
   flex: 1;
+  padding: 16px;
 }
 
 .mapContainer {
@@ -39,4 +40,18 @@
 
 .tableHeader, .tableElement {
   padding: 8px;
+}
+
+@media (max-width: 576px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .container {
+    flex: auto;
+  }
+
+  .mapContainer {
+    flex: auto;
+  }
 }

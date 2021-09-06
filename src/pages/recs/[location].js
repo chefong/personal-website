@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Page from '~/components/Page';
+import FullScreenPage from '~/components/Page/FullScreenPage';
 import Location from '~/components/Location';
 import locationData from './data.json';
 
@@ -19,9 +19,9 @@ const LocationPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>{`Eric's ${name} Recommendations`}</title>
       </Head>
-      <Page>
+      <FullScreenPage>
         <Location location={name} locations={locations} />
-      </Page>
+      </FullScreenPage>
     </>
   );
 };

@@ -1,17 +1,18 @@
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 
-const Page = ({ children, style }) => (
-  <div className={styles.page} style={style}>{children}</div>
+const Page = ({ children, className }) => (
+  <div className={classNames(styles.page, className)}>{children}</div>
 );
 
 Page.propTypes = {
   children: PropTypes.element.isRequired,
-  style: PropTypes.object,
+  className: PropTypes.string,
 };
 
 Page.defaultProps = {
-  style: {},
+  className: '',
 };
 
 export default Page;
