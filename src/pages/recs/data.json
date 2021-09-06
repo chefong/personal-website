@@ -4,18 +4,34 @@
     "locations": [
       {
         "name": "Spark Social SF",
+        "coordinates": {
+          "latitude": 37.77141993771724,
+          "longitude": -122.3916187153408
+        },
         "type": "food"
       },
       {
         "name": "Lady Luck Cafe",
+        "coordinates": {
+          "latitude": 37.795863647282005,
+          "longitude": -122.40655177493736
+        },
         "type": "food"
       },
       {
         "name": "Sutro Baths",
+        "coordinates": {
+          "latitude": 37.78059701397234,
+          "longitude": -122.5136607307617
+        },
         "type": "attraction"
       },
       {
         "name": "Strawberry Hill at Golden Gate Park",
+        "coordinates": {
+          "latitude": 37.76921568473589,
+          "longitude": -122.47536284405852
+        },
         "type": "attraction"
       }
     ]

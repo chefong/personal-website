@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './styles.module.scss';
+import Map from '~/components/common/Map';
 import Tag from '~/components/common/Tag';
 
 const locationTypeColors = {
@@ -15,6 +16,10 @@ const Location = ({ location, locations }) => {
   const toggleRowHover = (index, value) => {
     setRowHovered((prevRowHovered) => ({ ...prevRowHovered, [index]: value }));
   };
+
+  const locationCoordinates = locations.map(({ coordinates }, index) => (
+    { ...coordinates, hovered: rowHovered[index] }
+  ));
 
   return (
     <div className={styles.content}>
@@ -53,7 +58,9 @@ const Location = ({ location, locations }) => {
           </tbody>
         </table>
       </div>
-      <div className={styles.mapContainer}>Map will go here</div>
+      <div className={styles.mapContainer}>
+        <Map coordinates={locationCoordinates} />
+      </div>
     </div>
   );
 };
