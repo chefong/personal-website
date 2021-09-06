@@ -7,15 +7,15 @@ const accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
 
 const Map = ({ coordinates }) => {
   const [viewport, setViewport] = useState({
-    latitude: 37.7851,
-    longitude: -122.4387,
+    latitude: 37.7722,
+    longitude: -122.4441,
     zoom: 12,
   });
 
   const markers = useMemo(() => coordinates.map(
     ({ latitude, longitude, hovered }) => (
       <Marker longitude={longitude} latitude={latitude}>
-        <Pin size={hovered ? 30 : 20} />
+        <Pin size={hovered ? 30 : 20} fill={hovered ? 'highlighted' : 'default'} />
       </Marker>
     ),
   ), [coordinates]);

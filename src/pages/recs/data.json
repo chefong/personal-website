@@ -33,6 +33,78 @@
           "longitude": -122.47536284405852
         },
         "type": "attraction"
+      },
+      {
+        "name": "El Techo",
+        "coordinates": {
+          "latitude": 37.757169767347484,
+          "longitude": -122.41680858675531
+        },
+        "type": "food"
+      },
+      {
+        "name": "Spire by Andy Goldsworthy",
+        "coordinates": {
+          "latitude": 37.7943649121899,
+          "longitude": -122.45864861010224
+        },
+        "type": "attraction"
+      },
+      {
+        "name": "Good Mong Kok Bakery",
+        "coordinates": {
+          "latitude": 37.795565193221584,
+          "longitude": -122.40766935590406
+        },
+        "type": "food"
+      },
+      {
+        "name": "Ghiradelli Square",
+        "coordinates": {
+          "latitude": 37.805671998180955,
+          "longitude": -122.42247756962827
+        },
+        "type": "attraction"
+      },
+      {
+        "name": "Municipal Pier",
+        "coordinates": {
+          "latitude": 37.810656196322626,
+          "longitude": -122.42437226149329
+        },
+        "type": "attraction"
+      },
+      {
+        "name": "Salesforce Park",
+        "coordinates": {
+          "latitude": 37.789527943748844,
+          "longitude": -122.39595723967282
+        },
+        "type": "attraction"
+      },
+      {
+        "name": "Pier 7",
+        "coordinates": {
+          "latitude": 37.79992062607446,
+          "longitude": -122.39465681892023
+        },
+        "type": "attraction"
+      },
+      {
+        "name": "Japantown Peace Plaza",
+        "coordinates": {
+          "latitude": 37.7853176032225,
+          "longitude": -122.42967538559192
+        },
+        "type": "attraction"
+      },
+      {
+        "name": "Mission Dolores Park",
+        "coordinates": {
+          "latitude": 37.75954706025289,
+          "longitude": -122.42698250080778
+        },
+        "type": "attraction"
       }
     ]
   }
