@@ -6,27 +6,31 @@ const ICON = `M20.2,15.7L20.2,15.7c1.1-1.6,1.8-3.6,1.8-5.7c0-5.6-4.5-10-10-10S2,
   C20.1,15.8,20.2,15.8,20.2,15.7z`;
 
 const pinStyle = {
-  stroke: 'none',
+    stroke: 'none',
 };
 
 const colors = {
-  default: '#d00',
-  highlighted: '#D4AF37',
+    default: '#d00',
+    highlighted: '#D4AF37',
 };
 
 const Pin = ({ size, fill }) => (
-  <svg height={size} viewBox="0 0 24 24" style={{ ...pinStyle, fill: colors[fill] }}>
-    <path d={ICON} />
-  </svg>
+    <svg
+        height={size}
+        viewBox="0 0 24 24"
+        style={{ ...pinStyle, fill: colors[fill] }}
+    >
+        <path d={ICON} />
+    </svg>
 );
 
 Pin.propTypes = {
-  size: PropTypes.number,
-  fill: PropTypes.string.isRequired,
+    size: PropTypes.number,
+    fill: PropTypes.string.isRequired,
 };
 
 Pin.defaultProps = {
-  size: 20,
+    size: 20,
 };
 
 export default memo(Pin);

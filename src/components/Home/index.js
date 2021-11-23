@@ -5,12 +5,12 @@ import Title from './Title';
 import Container from '~/components/Container';
 
 export default function Home() {
-  return (
-    <Container>
-      <Title />
-      <About />
-      <Projects />
-      <Experience />
-    </Container>
-  );
+    return (
+        <Container>
+            <Title />
+            <About />
+            <Projects />
+            <Experience />
+        </Container>
+    );
 }

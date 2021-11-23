@@ -7,16 +7,16 @@ const store = createContext({});
 const { Provider } = store;
 
 function GlobalProvider({ children }) {
-  const [state, dispatch] = useReducer(reducer, makeInitialState());
+    const [state, dispatch] = useReducer(reducer, makeInitialState());
 
-  return <Provider value={{ state, dispatch }}>{children}</Provider>;
+    return <Provider value={{ state, dispatch }}>{children}</Provider>;
 }
 
 export { store, GlobalProvider };
 
 GlobalProvider.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+    ]).isRequired,
 };

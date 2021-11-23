@@ -1,7 +1,7 @@
 export default function makeInitialState() {
-  const initialState = {
-    theme: null,
-  };
+    const initialState = {
+        theme: null,
+    };
 
-  return initialState;
+    return initialState;
 }

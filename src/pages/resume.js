@@ -1,12 +1,12 @@
 export default function Resume() {
-  return null;
+    return null;
 }
 
 export async function getServerSideProps({ res }) {
-  res.writeHead(301, {
-    Location: '/docs/EricOngResume.pdf',
-  });
-  res.end();
+    res.writeHead(301, {
+        Location: '/docs/EricOngResume.pdf',
+    });
+    res.end();
 
-  return { props: {} };
+    return { props: {} };
 }

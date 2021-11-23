@@ -10,20 +10,21 @@ import { logPageViewToGA } from '../common/utils/ga';
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    logPageViewToGA('/');
-  }, []);
+    useEffect(() => {
+        logPageViewToGA('/');
+    }, []);
 
-  return (
-    <TextProvider globalText={content}>
-      <GlobalProvider>
-        <Component {...pageProps} />
-      </GlobalProvider>
-    </TextProvider>
-  );
+    return (
+        <TextProvider globalText={content}>
+            <GlobalProvider>
+                <Component {...pageProps} />
+            </GlobalProvider>
+        </TextProvider>
+    );
 }
 
 MyApp.propTypes = {
-  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
-  pageProps: PropTypes.object.isRequired,
+    Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
+        .isRequired,
+    pageProps: PropTypes.object.isRequired,
 };
