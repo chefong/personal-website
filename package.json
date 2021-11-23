@@ -8,7 +8,8 @@
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "lint": "eslint '**/*.{js,jsx}'"
   },
   "dependencies": {
     "@babel/preset-env": "^7.12.11",
@@ -38,7 +39,8 @@
     "reactstrap": "^8.7.1",
     "sass": "^1.32.5",
     "styled-components": "^5.2.1",
-    "text-provider": "0.0.37"
+    "text-provider": "0.0.37",
+    "tsparticles": "^1.37.4"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
