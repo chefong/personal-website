@@ -1,10 +1,21 @@
 import { useContext } from 'react';
 import { SunnyOutline, MoonOutline, CafeOutline } from 'react-ionicons';
 import styles from './styles.module.scss';
-import { themeOrder, iconSize, iconColors, gaEvents } from '~/common/constants';
 import { store } from '~/store/GlobalProvider';
 import actions from '~/store/actions';
 import { logToGA } from '~/common/utils/ga';
+import colors from '~/common/constants/colors';
+import gaEvents from '~/common/constants/gaEvents';
+
+const iconColors = {
+    light: colors.dark,
+    dark: colors.light,
+    tan: colors.dark,
+};
+
+const themeOrder = ['light', 'tan', 'dark'];
+
+const iconSize = '28px';
 
 export default function ThemeToggle() {
     const { state, dispatch } = useContext(store);
@@ -33,12 +44,12 @@ export default function ThemeToggle() {
 
     const getIcon = () => {
         switch (theme) {
-        case 'tan':
-            return <CafeOutline {...iconProps} />;
-        case 'dark':
+            case 'tan':
+                return <CafeOutline {...iconProps} />;
+            case 'dark':
                 return <MoonOutline {...iconProps} />;
             default:
-            return <SunnyOutline {...iconProps} />;
+                return <SunnyOutline {...iconProps} />;
         }
     };
 

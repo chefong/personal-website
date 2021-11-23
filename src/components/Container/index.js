@@ -7,9 +7,18 @@ import Navigation from '~/components/Navigation';
 import Footer from '~/components/Footer';
 import useKeyPress from '~/common/hooks/useKeyPress';
 import getQuote from '~/services/getQuote';
-import { themeColors, toastOptions } from '~/common/constants';
 import { store } from '~/store/GlobalProvider';
 import actions from '~/store/actions';
+import colors from '~/common/constants/colors';
+
+const baseToastOptions = {
+    style: {
+        padding: '16px',
+        fontFamily: 'Greycliff',
+        backgroundColor: '#303030',
+        color: 'white',
+    },
+};
 
 const toastMessages = {
     loading: { icon: '⌛' },
@@ -48,21 +57,23 @@ export default function Container({ children }) {
 
                     return content;
                 },
-                error: "Couldn'nt get quote.",
+                error: "Couldn't get quote.",
             },
             toastMessages,
         );
     });
+
+    const toastOptions = {
+        ...baseToastOptions,
+        duration: toastDuration,
+    };
 
     return (
         <div className={classNames(styles.container, theme)}>
             <main>
                 <Navigation />
                 {children}
-                <Toaster
-                    toastOptions={{ ...toastOptions, duration: toastDuration }}
-                    position="bottom-center"
-                />
+                <Toaster toastOptions={toastOptions} position="bottom-center" />
             </main>
             <footer>
                 <Footer />
@@ -70,7 +81,7 @@ export default function Container({ children }) {
             <style jsx global>
                 {`
                     body {
-                        background: ${themeColors[theme]};
+                        background: ${colors[theme]};
                     }
                 `}
             </style>

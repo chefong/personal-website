@@ -7,8 +7,8 @@ import Particles from 'react-particles-js';
 import styles from './styles.module.scss';
 import { store } from '~/store/GlobalProvider';
 import Button from '~/components/Button';
-import { gaEvents, particlesParams } from '~/common/constants';
 import { logToGA } from '~/common/utils/ga';
+import gaEvents from '~/common/constants/gaEvents';
 
 const confettiConfig = {
     angle: 90,
@@ -22,6 +22,37 @@ const confettiConfig = {
     height: '10px',
     perspective: '500px',
     colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
+};
+
+const particlesParams = {
+    particles: {
+        number: {
+            value: 80,
+            density: {
+                enable: true,
+                value_area: 1500,
+            },
+        },
+        line_linked: {
+            enable: true,
+            opacity: 0.02,
+        },
+        move: {
+            direction: 'right',
+            speed: 0.05,
+        },
+        size: {
+            value: 1.25,
+        },
+        opacity: {
+            anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.05,
+            },
+        },
+    },
+    retina_detect: true,
 };
 
 export default function Title() {

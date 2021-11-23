@@ -1,8 +1,8 @@
 import { FormattedMessage } from 'text-provider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './styles.module.scss';
-import { handles } from '~/common/constants';
 import { logToGA } from '~/common/utils/ga';
+import socials from '~/common/constants/socials';
 
 export default function Footer() {
     const logFooterIconClick = (footerIconEventId) => {
@@ -16,7 +16,7 @@ export default function Footer() {
         >
             <div className="row justify-content-center">
                 <div className={styles.iconGroup}>
-                    {handles.map(({ icon, link, clickEventId }) => (
+                    {socials.map(({ icon, link, clickEventId }) => (
                         <a
                             className={styles.link}
                             href={link}

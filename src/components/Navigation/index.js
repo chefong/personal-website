@@ -10,17 +10,32 @@ import {
     NavItem,
 } from 'reactstrap';
 import styles from './styles.module.scss';
-import {
-    navItems,
-    lottieProps,
-    reactScrollLinkProps,
-    menuOpenSegments,
-    menuCloseSegments,
-    menuBoxShadow,
-    menuTransition,
-} from '~/common/constants';
 import ThemeToggle from '~/components/ThemeToggle';
 import { logToGA } from '~/common/utils/ga';
+import hamburgerMenuAnimation from '~/assets/menu-animation.json';
+import navItems from '~/common/constants/navItems';
+
+const lottieProps = {
+    loop: false,
+    autoplay: false,
+    animationData: hamburgerMenuAnimation,
+};
+
+const reactScrollLinkProps = {
+    smooth: true,
+    offset: -150,
+    duration: 750,
+};
+
+// Segment frames for menu open and close
+const menuOpenSegments = [30, 70];
+const menuCloseSegments = [100, 140];
+
+// Box shadow styling for when the nav menu is open
+const menuBoxShadow = '0px 4px 28px rgba(0, 0, 0, 0.06)';
+
+// Menu transition styling for menu
+const menuTransition = 'all 0.5s ease';
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
