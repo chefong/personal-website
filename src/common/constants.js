@@ -225,7 +225,6 @@ export const particlesParams = {
                 opacity_min: 0.05,
             },
         },
-        },
     },
     retina_detect: true,
 };
