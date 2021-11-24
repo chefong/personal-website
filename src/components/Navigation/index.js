@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-scroll';
 import Lottie from 'lottie-react';
 import {
     Collapse,
@@ -9,22 +8,17 @@ import {
     Nav,
     NavItem,
 } from 'reactstrap';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 import ThemeToggle from '~/components/ThemeToggle';
 import { logToGA } from '~/common/utils/ga';
 import hamburgerMenuAnimation from '~/assets/menu-animation.json';
-import navItems from '~/common/constants/navItems';
 
 const lottieProps = {
     loop: false,
     autoplay: false,
     animationData: hamburgerMenuAnimation,
-};
-
-const reactScrollLinkProps = {
-    smooth: true,
-    offset: -150,
-    duration: 750,
 };
 
 // Segment frames for menu open and close
@@ -37,7 +31,10 @@ const menuBoxShadow = '0px 4px 28px rgba(0, 0, 0, 0.06)';
 // Menu transition styling for menu
 const menuTransition = 'all 0.5s ease';
 
-export default function Navigation() {
+// Accounts for the navbar height when scrolling to the section element
+const navbarOffset = 112;
+
+export default function Navigation({ navItems }) {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
     const menuIconEl = useRef(null);
@@ -54,8 +51,15 @@ export default function Navigation() {
 
     const toggle = () => (isOpen ? closeMenu() : openMenu());
 
-    const logNavItemClick = (clickEventId) => {
+    const handleNavItemClick = (clickEventId, sectionEl) => {
         logToGA({ action: clickEventId });
+
+        closeMenu();
+
+        window.scrollTo({
+            top: sectionEl.current?.offsetTop - navbarOffset,
+            behavior: 'smooth',
+        });
     };
 
     useEffect(
@@ -102,23 +106,20 @@ export default function Navigation() {
                         className="ml-auto mr-5 justify-content-center align-items-md-center"
                         navbar
                     >
-                        {navItems.map(({ to, num, name, clickEventId }) => (
+                        {navItems.map(({ num, name, clickEventId, ref }) => (
                             <NavItem
-                                className="ml-sm-3 ml-md-5 mt-2 mb-2"
+                                className={classNames(
+                                    'ml-sm-3 ml-md-5 mt-2 mb-2',
+                                    styles.navLink,
+                                )}
                                 key={name}
                                 data-testid="Navigation-item"
+                                onClick={() =>
+                                    handleNavItemClick(clickEventId, ref)
+                                }
                             >
-                                <Link
-                                    {...reactScrollLinkProps}
-                                    className={styles.navLink}
-                                    to={to}
-                                    onClick={() =>
-                                        logNavItemClick(clickEventId)
-                                    }
-                                >
-                                    <span className={styles.navNum}>{num}</span>{' '}
-                                    {name}
-                                </Link>
+                                <span className={styles.navNum}>{num}</span>{' '}
+                                {name}
                             </NavItem>
                         ))}
                         <NavItem className={`${styles.toggle} ml-sm-3 ml-md-5`}>
@@ -130,3 +131,7 @@ export default function Navigation() {
         </div>
     );
 }
+
+Navigation.propTypes = {
+    navItems: PropTypes.object.isRequired,
+};

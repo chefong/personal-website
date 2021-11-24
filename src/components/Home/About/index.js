@@ -1,13 +1,15 @@
 import { FormattedMessage } from 'text-provider';
+import { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import { dislikes, likes } from '~/common/constants/interests';
 
-export default function About() {
+const About = (props, ref) => {
     return (
         <section
             className={`${styles.section} container-fluid`}
             id="about"
             data-testid="About-container"
+            ref={ref}
         >
             <div className="row justify-content-center align-items-center">
                 <div className="col-lg-5 col-md-6">
@@ -76,4 +78,6 @@ export default function About() {
             </div>
         </section>
     );
-}
+};
+
+export default forwardRef(About);

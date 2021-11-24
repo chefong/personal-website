@@ -11,6 +11,11 @@
   font-size: 1.2em;
   color: var(--theme-page-text) !important;
 
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   @media (max-width: 576px) {
     margin-left: 16px;
   }

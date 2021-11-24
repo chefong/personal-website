@@ -1,10 +1,10 @@
-import { useContext } from 'react';
+import { forwardRef, useContext } from 'react';
 import { FormattedMessage } from 'text-provider';
 import styles from './styles.module.scss';
 import { store } from '~/store/GlobalProvider';
 import experiences from '~/common/constants/experiences';
 
-export default function Experience() {
+const Experience = (props, ref) => {
     const { state } = useContext(store);
     const { theme } = state;
 
@@ -13,6 +13,7 @@ export default function Experience() {
             className={`${styles.section} container-fluid`}
             id="experience"
             data-testid="Experience-container"
+            ref={ref}
         >
             <div className="row justify-content-center">
                 <div className="col-lg-8 col-md-10 col-sm-10">
@@ -83,4 +84,6 @@ export default function Experience() {
             )}
         </section>
     );
-}
+};
+
+export default forwardRef(Experience);

@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext, useEffect, useRef } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -10,6 +10,7 @@ import getQuote from '~/services/getQuote';
 import { store } from '~/store/GlobalProvider';
 import actions from '~/store/actions';
 import colors from '~/common/constants/colors';
+import gaEvents from '~/common/constants/gaEvents';
 
 const baseToastOptions = {
     style: {
@@ -37,6 +38,34 @@ export default function Container({ children }) {
     const { state, dispatch } = useContext(store);
     const { theme } = state;
     const [toastDuration, setToastDuration] = useState(5000);
+
+    const aboutSectionEl = useRef(null);
+    const projectsSectionEl = useRef(null);
+    const experiencesSectionEl = useRef(null);
+
+    const navItems = [
+        {
+            to: 'about',
+            num: '01.',
+            name: 'About',
+            clickEventId: gaEvents.ABOUT_NAV_CLICKED,
+            ref: aboutSectionEl,
+        },
+        {
+            to: 'projects',
+            num: '02.',
+            name: 'Projects',
+            clickEventId: gaEvents.PROJECTS_NAV_CLICKED,
+            ref: projectsSectionEl,
+        },
+        {
+            to: 'experience',
+            num: '03.',
+            name: 'Experience',
+            clickEventId: gaEvents.EXPERIENCE_NAV_CLICKED,
+            ref: experiencesSectionEl,
+        },
+    ];
 
     useEffect(() => {
         const siteTheme = localStorage.getItem('siteTheme') || 'light';
@@ -71,8 +100,12 @@ export default function Container({ children }) {
     return (
         <div className={classNames(styles.container, theme)}>
             <main>
-                <Navigation />
-                {children}
+                <Navigation navItems={navItems} />
+                {children(
+                    aboutSectionEl,
+                    projectsSectionEl,
+                    experiencesSectionEl,
+                )}
                 <Toaster toastOptions={toastOptions} position="bottom-center" />
             </main>
             <footer>
