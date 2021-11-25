@@ -6,8 +6,8 @@ import { store } from '~/store/GlobalProvider';
 const experiences = [
     {
         imagePath: {
-            light: 'imgs/experience/opentable.png',
-            dark: 'imgs/experience/opentable-white.png',
+            light: 'imgs/experience/opentable.svg',
+            dark: 'imgs/experience/opentable-white.svg',
         },
         nameId: 'EXPERIENCE_OPENTABLE',
         positionId: 'EXPERIENCE_OPENTABLE_ROLE',
@@ -39,8 +39,8 @@ const experiences = [
     },
     {
         imagePath: {
-            light: 'imgs/experience/opentable.png',
-            dark: 'imgs/experience/opentable-white.png',
+            light: 'imgs/experience/opentable.svg',
+            dark: 'imgs/experience/opentable-white.svg',
         },
         nameId: 'EXPERIENCE_OPENTABLE',
         positionId: 'EXPERIENCE_OPENTABLE_INTERN_ROLE',
