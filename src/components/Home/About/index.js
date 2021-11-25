@@ -41,6 +41,7 @@ const About = (props, ref) => {
                                             <li
                                                 key={id}
                                                 data-testid="About-like"
+                                                className={styles.thing}
                                             >
                                                 <FormattedMessage id={id} />
                                             </li>
@@ -56,6 +57,7 @@ const About = (props, ref) => {
                                             <li
                                                 key={id}
                                                 data-testid="About-dislike"
+                                                className={styles.thing}
                                             >
                                                 <FormattedMessage id={id} />
                                             </li>

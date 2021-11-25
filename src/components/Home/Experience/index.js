@@ -2,7 +2,57 @@ import { forwardRef, useContext } from 'react';
 import { FormattedMessage } from 'text-provider';
 import styles from './styles.module.scss';
 import { store } from '~/store/GlobalProvider';
-import experiences from '~/common/constants/experiences';
+
+const experiences = [
+    {
+        imagePath: {
+            light: 'imgs/experience/opentable.png',
+            dark: 'imgs/experience/opentable-white.png',
+        },
+        nameId: 'EXPERIENCE_OPENTABLE',
+        positionId: 'EXPERIENCE_OPENTABLE_ROLE',
+        duration: 'February 2021 - Present',
+        teamId: 'EXPERIENCE_OPENTABLE_TEAM',
+        initiativeIds: [
+            'EXPERIENCE_OPENTABLE_INITIATIVES_1',
+            'EXPERIENCE_OPENTABLE_INITIATIVES_2',
+            'EXPERIENCE_OPENTABLE_INITIATIVES_3',
+        ],
+        technologiesId: 'EXPERIENCE_OPENTABLE_TECHNOLOGIES_2',
+    },
+    {
+        imagePath: {
+            light: '/imgs/experience/intuit.svg',
+            dark: '/imgs/experience/intuit-white.svg',
+        },
+        nameId: 'EXPERIENCE_INTUIT',
+        positionId: 'EXPERIENCE_INTUIT_ROLE',
+        duration: 'July 2020 - February 2021',
+        teamId: 'EXPERIENCE_INTUIT_TEAM',
+        initiativeIds: [
+            'EXPERIENCE_INTUIT_INITIATIVES_1',
+            'EXPERIENCE_INTUIT_INITIATIVES_2',
+            'EXPERIENCE_INTUIT_INITIATIVES_3',
+            'EXPERIENCE_INTUIT_INITIATIVES_4',
+        ],
+        technologiesId: 'EXPERIENCE_INTUIT_TECHNOLOGIES',
+    },
+    {
+        imagePath: {
+            light: 'imgs/experience/opentable.png',
+            dark: 'imgs/experience/opentable-white.png',
+        },
+        nameId: 'EXPERIENCE_OPENTABLE',
+        positionId: 'EXPERIENCE_OPENTABLE_INTERN_ROLE',
+        duration: 'June 2019 - August 2019',
+        teamId: 'EXPERIENCE_OPENTABLE_TEAM_INTERN',
+        initiativeIds: [
+            'EXPERIENCE_OPENTABLE_INITIATIVES_INTERN_1',
+            'EXPERIENCE_OPENTABLE_INITIATIVES_INTERN_2',
+        ],
+        technologiesId: 'EXPERIENCE_OPENTABLE_TECHNOLOGIES_1',
+    },
+];
 
 const Experience = (props, ref) => {
     const { state } = useContext(store);
@@ -32,7 +82,7 @@ const Experience = (props, ref) => {
                     positionId,
                     duration,
                     teamId,
-                    initiativesId,
+                    initiativeIds,
                     technologiesId,
                 }) => (
                     <div
@@ -64,18 +114,22 @@ const Experience = (props, ref) => {
                                     <hr className={styles.line} />
                                     <p className={styles.description}>
                                         <FormattedMessage id={teamId} />
-                                        <br />
-                                        <br />
-                                        Initiatives:{' '}
-                                        <FormattedMessage
-                                            id={initiativesId}
-                                            values={{ linkClass: styles.link }}
-                                        />
-                                        <br />
-                                        <br />
-                                        Technologies:{' '}
-                                        <FormattedMessage id={technologiesId} />
                                     </p>
+                                    <ul className={styles.initiativesList}>
+                                        {initiativeIds.map((initiativeId) => (
+                                            <li
+                                                key={initiativeId}
+                                                className={styles.initiative}
+                                            >
+                                                <FormattedMessage
+                                                    id={initiativeId}
+                                                    values={{
+                                                        linkClass: styles.link,
+                                                    }}
+                                                />
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
                         </div>

@@ -56,3 +56,20 @@
 .link:hover {
   color: var(--theme-color);
 }
+
+.initiativesList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 24px;
+}
+
+.initiative {
+  &::before {
+    content: "﹣";
+    color: var(--theme-color);
+    display: inline-block;
+    width: 24px;
+    margin-left: -24px;
+    padding: 0;
+  }
+}
