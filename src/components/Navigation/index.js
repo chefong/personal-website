@@ -82,45 +82,46 @@ export default function Navigation({ navItems }) {
                 transition: menuTransition,
             }}
         >
-            <NavbarBrand href="/" className="ml-2">
-                <img className={styles.logo} src="/imgs/logo.svg" alt="" />
-            </NavbarBrand>
-            <NavbarToggler
-                onClick={toggle}
-                className={styles.toggler}
-                data-testid="Navigation-toggle"
-            >
-                <Lottie
-                    {...lottieProps}
-                    lottieRef={menuIconEl}
-                    className={styles.menuIcon}
-                />
-            </NavbarToggler>
-            <Collapse isOpen={isOpen} navbar data-testid="Navigation-collapse">
-                <Nav
-                    className="ml-auto mr-5 justify-content-center align-items-md-center"
-                    navbar
+            <div className={styles.navbarContainer}>
+                <NavbarBrand className={styles.navbarBrand} href="/">
+                    <img className={styles.logo} src="/imgs/logo.svg" alt="" />
+                </NavbarBrand>
+                <NavbarToggler
+                    onClick={toggle}
+                    className={styles.toggler}
+                    data-testid="Navigation-toggle"
                 >
-                    {navItems.map(({ num, name, clickEventId, ref }) => (
-                        <NavItem
-                            className={classNames(
-                                'ml-sm-3 ml-md-5 mt-2 mb-2',
-                                styles.navLink,
-                            )}
-                            key={name}
-                            data-testid="Navigation-item"
-                            onClick={() =>
-                                handleNavItemClick(clickEventId, ref)
-                            }
-                        >
-                            <span className={styles.navNum}>{num}</span> {name}
+                    <Lottie
+                        {...lottieProps}
+                        lottieRef={menuIconEl}
+                        className={styles.menuIcon}
+                    />
+                </NavbarToggler>
+                <Collapse
+                    isOpen={isOpen}
+                    navbar
+                    data-testid="Navigation-collapse"
+                >
+                    <Nav className={styles.nav} navbar>
+                        {navItems.map(({ num, name, clickEventId, ref }) => (
+                            <NavItem
+                                className={styles.navLink}
+                                key={name}
+                                data-testid="Navigation-item"
+                                onClick={() =>
+                                    handleNavItemClick(clickEventId, ref)
+                                }
+                            >
+                                <span className={styles.navNum}>{num}</span>{' '}
+                                {name}
+                            </NavItem>
+                        ))}
+                        <NavItem className={styles.toggle}>
+                            <ThemeToggle />
                         </NavItem>
-                    ))}
-                    <NavItem className={`${styles.toggle} ml-sm-3 ml-md-5`}>
-                        <ThemeToggle />
-                    </NavItem>
-                </Nav>
-            </Collapse>
+                    </Nav>
+                </Collapse>
+            </div>
         </Navbar>
     );
 }
