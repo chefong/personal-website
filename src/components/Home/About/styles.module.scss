@@ -1,5 +1,17 @@
 .section {
-  margin: 10em auto;
+
+}
+
+.content {
+  display: flex;
+}
+
+.descriptionContainer {
+  flex: 3;
+}
+
+.imageContainer {
+  flex: 2
 }
 
 .link {
@@ -14,10 +26,7 @@
 .header {
   color: var(--theme-page-text);
   font-weight: 800;
-}
-
-.headerGroup {
-  font-weight: bold;
+  margin: 0 0 32px 0;
 }
 
 .headerNum {
@@ -26,6 +35,15 @@
 
 .thingsGroup {
   margin-top: 1.5em;
+}
+
+.things {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thingsGroup {
+  flex: 1;
 }
 
 .thingsHeader {
@@ -56,7 +74,7 @@
 }
 
 .hero {
-  width: 75%;
+  width: 320px;
   display: block;
   margin: 0 auto;
 }

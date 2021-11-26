@@ -1,5 +1,4 @@
 import { useState, useContext } from 'react';
-// import { Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'text-provider';
 import Confetti from 'react-dom-confetti';
@@ -71,71 +70,59 @@ export default function Title() {
     };
 
     return (
-        <section
-            className={`${styles.section} container-fluid`}
-            data-testid="Title-container"
-        >
+        <section className={styles.section} data-testid="Title-container">
             {theme === 'dark' && (
                 <Particles
                     canvasClassName={styles.particles}
                     params={particlesParams}
                 />
             )}
-            <div className="h-100 row justify-content-center align-items-center">
-                <div className="col-lg-8 col-md-6">
-                    <div>
-                        <p className={styles.subtitle}>
-                            <FormattedMessage id="TITLE_GREETING" />
-                        </p>
-                        <h1 className={styles.name}>
-                            <FormattedMessage id="NAME" />
-                            <span className={styles.period}>.</span>
-                        </h1>
-                        <p className={styles.description}>
-                            <FormattedMessage id="TITLE_DESCRIPTION" />
-                        </p>
-                        <div className="mt-5">
-                            <a
-                                href="mailto:ericong18@gmail.com"
-                                className="mr-4 mb-4"
-                                onClick={() =>
-                                    logToGA({
-                                        action: gaEvents.CONTACT_ME_CLICKED,
-                                    })
-                                }
-                            >
-                                <Button variation="outline">
-                                    <FontAwesomeIcon
-                                        className={styles.contactIcon}
-                                        icon="paper-plane"
-                                    />
-                                    <FormattedMessage id="TITLE_CONTACT" />
-                                </Button>
-                            </a>
-                            <a
-                                href="https://drive.google.com/file/d/1XdYGfHC1Irt0oh5YwNBZSWQhXAxFNGnL/view?usp=sharing"
-                                onMouseEnter={handleResumeHoverIn}
-                                onMouseLeave={handleResumeHoverOut}
-                                onClick={() =>
-                                    logToGA({ action: gaEvents.RESUME_CLICKED })
-                                }
-                                className="mr-4 mb-4"
-                            >
-                                <Button variation="primary">
-                                    <FontAwesomeIcon
-                                        className={styles.resumeIcon}
-                                        icon="file-alt"
-                                    />
-                                    <FormattedMessage id="TITLE_RESUME" />
-                                    <Confetti
-                                        active={resumeHovered}
-                                        config={confettiConfig}
-                                    />
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div className={styles.content}>
+                <h2 className={styles.subtitle}>
+                    <FormattedMessage id="TITLE_GREETING" />
+                </h2>
+                <h1 className={styles.name}>
+                    <FormattedMessage id="NAME" />
+                    <span className={styles.period}>.</span>
+                </h1>
+                <p className={styles.description}>
+                    <FormattedMessage id="TITLE_DESCRIPTION" />
+                </p>
+            </div>
+            <div className={styles.buttonGroup}>
+                <a
+                    href="mailto:ericong18@gmail.com"
+                    className={styles.link}
+                    onClick={() =>
+                        logToGA({
+                            action: gaEvents.CONTACT_ME_CLICKED,
+                        })
+                    }
+                >
+                    <Button variation="outline">
+                        <FontAwesomeIcon
+                            className={styles.icon}
+                            icon="paper-plane"
+                        />
+                        <FormattedMessage id="TITLE_CONTACT" />
+                    </Button>
+                </a>
+                <a
+                    href="https://drive.google.com/file/d/1XdYGfHC1Irt0oh5YwNBZSWQhXAxFNGnL/view?usp=sharing"
+                    className={styles.link}
+                    onMouseEnter={handleResumeHoverIn}
+                    onMouseLeave={handleResumeHoverOut}
+                    onClick={() => logToGA({ action: gaEvents.RESUME_CLICKED })}
+                >
+                    <Button variation="primary">
+                        <FontAwesomeIcon
+                            className={styles.icon}
+                            icon="file-alt"
+                        />
+                        <FormattedMessage id="TITLE_RESUME" />
+                    </Button>
+                    <Confetti active={resumeHovered} config={confettiConfig} />
+                </a>
             </div>
         </section>
     );

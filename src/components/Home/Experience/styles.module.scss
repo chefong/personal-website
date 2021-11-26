@@ -1,10 +1,12 @@
 .section {
-  margin: 10em auto;
+  max-width: 1152px;
+  margin: 0 auto;
 }
 
 .header {
   color: var(--theme-page-text);
   font-weight: 800;
+  margin: 0 0 32px 0;
 }
 
 .headerGroup {
@@ -16,19 +18,32 @@
   color: var(--theme-color);
 }
 
-.experienceGroup {
-  margin-bottom: 4em;
+.experiences {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.experience:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 .companyImage {
   display: block;
   margin: 0 auto;
-  width: 256px;
   margin-bottom: 16px;
+  width: 320px;
 }
 
 .companyInfo {
   color: var(--theme-page-text);
+  flex: 1;
 }
 
 .name {

@@ -4,6 +4,9 @@
   border-radius: 8px;
   height: 48px;
   transition: all ease 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .button:focus {

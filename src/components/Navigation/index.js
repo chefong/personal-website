@@ -71,64 +71,57 @@ export default function Navigation({ navItems }) {
     );
 
     return (
-        <div data-testid="Navigation-container">
-            <Navbar
-                light
-                expand="md"
-                fixed="top"
-                className={styles.navbar}
-                style={{
-                    boxShadow:
-                        scrollPosition > 0 || isOpen ? menuBoxShadow : 'none',
-                    transition: menuTransition,
-                }}
+        <Navbar
+            light
+            expand="md"
+            fixed="top"
+            className={styles.navbar}
+            style={{
+                boxShadow:
+                    scrollPosition > 0 || isOpen ? menuBoxShadow : 'none',
+                transition: menuTransition,
+            }}
+        >
+            <NavbarBrand href="/" className="ml-2">
+                <img className={styles.logo} src="/imgs/logo.svg" alt="" />
+            </NavbarBrand>
+            <NavbarToggler
+                onClick={toggle}
+                className={styles.toggler}
+                data-testid="Navigation-toggle"
             >
-                <NavbarBrand href="/" className="ml-2">
-                    <img className={styles.logo} src="/imgs/logo.svg" alt="" />
-                </NavbarBrand>
-                <NavbarToggler
-                    onClick={toggle}
-                    className={styles.toggler}
-                    data-testid="Navigation-toggle"
-                >
-                    <Lottie
-                        {...lottieProps}
-                        lottieRef={menuIconEl}
-                        className={styles.menuIcon}
-                    />
-                </NavbarToggler>
-                <Collapse
-                    isOpen={isOpen}
+                <Lottie
+                    {...lottieProps}
+                    lottieRef={menuIconEl}
+                    className={styles.menuIcon}
+                />
+            </NavbarToggler>
+            <Collapse isOpen={isOpen} navbar data-testid="Navigation-collapse">
+                <Nav
+                    className="ml-auto mr-5 justify-content-center align-items-md-center"
                     navbar
-                    data-testid="Navigation-collapse"
                 >
-                    <Nav
-                        className="ml-auto mr-5 justify-content-center align-items-md-center"
-                        navbar
-                    >
-                        {navItems.map(({ num, name, clickEventId, ref }) => (
-                            <NavItem
-                                className={classNames(
-                                    'ml-sm-3 ml-md-5 mt-2 mb-2',
-                                    styles.navLink,
-                                )}
-                                key={name}
-                                data-testid="Navigation-item"
-                                onClick={() =>
-                                    handleNavItemClick(clickEventId, ref)
-                                }
-                            >
-                                <span className={styles.navNum}>{num}</span>{' '}
-                                {name}
-                            </NavItem>
-                        ))}
-                        <NavItem className={`${styles.toggle} ml-sm-3 ml-md-5`}>
-                            <ThemeToggle />
+                    {navItems.map(({ num, name, clickEventId, ref }) => (
+                        <NavItem
+                            className={classNames(
+                                'ml-sm-3 ml-md-5 mt-2 mb-2',
+                                styles.navLink,
+                            )}
+                            key={name}
+                            data-testid="Navigation-item"
+                            onClick={() =>
+                                handleNavItemClick(clickEventId, ref)
+                            }
+                        >
+                            <span className={styles.navNum}>{num}</span> {name}
                         </NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar>
-        </div>
+                    ))}
+                    <NavItem className={`${styles.toggle} ml-sm-3 ml-md-5`}>
+                        <ThemeToggle />
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
     );
 }
 

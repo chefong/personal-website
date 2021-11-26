@@ -1,5 +1,12 @@
 .container {
-  max-width: 1600px;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Greycliff";
+}
+
+.main {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 256px;
 }

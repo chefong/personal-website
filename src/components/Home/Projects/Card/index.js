@@ -5,22 +5,20 @@ import styles from './styles.module.scss';
 
 export default function Card({ nameId, descriptionId, githubLink }) {
     return (
-        <div className="col-lg-4 col-md-6">
-            <div className={styles.cardInfo}>
-                <a href={githubLink} target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon
-                        className={styles.github}
-                        icon={['fab', 'github']}
-                    />
-                </a>
-                <p className={styles.name}>
-                    <FormattedMessage id={nameId} />
-                </p>
-                <p className={styles.description}>
-                    <FormattedMessage id={descriptionId} />
-                </p>
-            </div>
-        </div>
+        <li className={styles.cardInfo}>
+            <a href={githubLink} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon
+                    className={styles.github}
+                    icon={['fab', 'github']}
+                />
+            </a>
+            <p className={styles.name}>
+                <FormattedMessage id={nameId} />
+            </p>
+            <p className={styles.description}>
+                <FormattedMessage id={descriptionId} />
+            </p>
+        </li>
     );
 }
 

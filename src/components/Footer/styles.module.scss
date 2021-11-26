@@ -1,7 +1,9 @@
-.container {
-  margin-top: 4em;
-  padding-top: 4em;
-  padding-bottom: 4em;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 128px 0 0 0;
 }
 
 .link {
@@ -24,7 +26,7 @@
 }
 
 .message {
-  margin-top: 3em;
   color: #808080;
   font-size: 14px;
+  margin: 32px 0;
 }

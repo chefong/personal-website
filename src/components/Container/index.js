@@ -98,19 +98,17 @@ export default function Container({ children }) {
     };
 
     return (
-        <div className={classNames(styles.container, theme)}>
-            <main>
-                <Navigation navItems={navItems} />
+        <section className={classNames(styles.container, theme)}>
+            <Navigation navItems={navItems} />
+            <main className={styles.main}>
                 {children(
                     aboutSectionEl,
                     projectsSectionEl,
                     experiencesSectionEl,
                 )}
-                <Toaster toastOptions={toastOptions} position="bottom-center" />
             </main>
-            <footer>
-                <Footer />
-            </footer>
+            <Footer />
+            <Toaster toastOptions={toastOptions} position="bottom-center" />
             <style jsx global>
                 {`
                     body {
@@ -118,7 +116,7 @@ export default function Container({ children }) {
                     }
                 `}
             </style>
-        </div>
+        </section>
     );
 }
 

@@ -1,16 +1,17 @@
-.section {
-  margin: 10em auto;
-}
-
-.headerGroup {
-  margin-bottom: 2em;
-}
-
 .header {
   color: var(--theme-page-text);
   font-weight: 800;
+  margin: 0 0 32px 0;
 }
 
 .headerNum {
   color: var(--theme-color);
+}
+
+.cards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
