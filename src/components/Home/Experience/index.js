@@ -9,6 +9,7 @@ const experiences = [
             light: 'imgs/experience/opentable.svg',
             dark: 'imgs/experience/opentable-white.svg',
         },
+        companyUrl: 'https://www.opentable.com/',
         nameId: 'EXPERIENCE_OPENTABLE',
         positionId: 'EXPERIENCE_OPENTABLE_ROLE',
         duration: 'February 2021 - Present',
@@ -25,6 +26,7 @@ const experiences = [
             light: '/imgs/experience/intuit.svg',
             dark: '/imgs/experience/intuit-white.svg',
         },
+        companyUrl: 'https://www.intuit.com/',
         nameId: 'EXPERIENCE_INTUIT',
         positionId: 'EXPERIENCE_INTUIT_ROLE',
         duration: 'July 2020 - February 2021',
@@ -42,6 +44,7 @@ const experiences = [
             light: 'imgs/experience/opentable.svg',
             dark: 'imgs/experience/opentable-white.svg',
         },
+        companyUrl: 'https://www.opentable.com/',
         nameId: 'EXPERIENCE_OPENTABLE',
         positionId: 'EXPERIENCE_OPENTABLE_INTERN_ROLE',
         duration: 'June 2019 - August 2019',
@@ -83,7 +86,7 @@ const Experience = (props, ref) => {
                     duration,
                     teamId,
                     initiativeIds,
-                    technologiesId,
+                    companyUrl,
                 }) => (
                     <div
                         className={styles.experienceGroup}
@@ -104,12 +107,22 @@ const Experience = (props, ref) => {
                             </div>
                             <div className="col-lg-5 col-md-6 col-sm-6">
                                 <div className={styles.companyInfo}>
-                                    <p className={styles.name}>
-                                        <FormattedMessage id={nameId} />
-                                    </p>
-                                    <p className={styles.position}>
-                                        <FormattedMessage id={positionId} /> (
-                                        {duration})
+                                    <h3 className={styles.position}>
+                                        <FormattedMessage id={positionId} />
+                                        <span className={styles.at}>
+                                            {' @ '}
+                                        </span>
+                                        <a
+                                            href={companyUrl}
+                                            className={styles.company}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <FormattedMessage id={nameId} />
+                                        </a>
+                                    </h3>
+                                    <p className={styles.duration}>
+                                        {duration}
                                     </p>
                                     <hr className={styles.line} />
                                     <p className={styles.description}>

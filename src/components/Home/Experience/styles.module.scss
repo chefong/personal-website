@@ -33,11 +33,30 @@
 
 .name {
   font-weight: bold;
+  margin: 0;
+}
+
+.at {
+  color: var(--theme-color);
+}
+
+.company {
+  color: var(--theme-color);
+
+  &:hover {
+    cursor: pointer;
+    color: var(--theme-color)
+  }
 }
 
 .position {
-  font-style: italic;
-  margin-top: -12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.duration {
+  margin: 0 0 24px 0;
+  font-size: 16px;
 }
 
 .line {
@@ -65,7 +84,7 @@
 
 .initiative {
   &::before {
-    content: "﹣";
+    content: "✓";
     color: var(--theme-color);
     display: inline-block;
     width: 24px;
