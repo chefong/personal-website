@@ -45,7 +45,7 @@
   "EXPERIENCE_OPENTABLE_INITIATIVES_INTERN_1": "Worked on an internal tool that streamlined the creation process for Editorial Lists (such as <a href='https://www.opentable.com/lists/neil-patrick-harris/new-york-city' class={linkClass} target='_blank'>this</a>)",
   "EXPERIENCE_OPENTABLE_INITIATIVES_INTERN_2": "Helped with creating the Gallery Photos microapp in GuestCenter (now called OpenTable for Restaurants), which gives restaurants the ability to manage their own photos",
   "EXPERIENCE_OPENTABLE_INITIATIVES_1": "Created an internal tool for moderating flagged diner photos, currently used by an external team of support contractors",
-  "EXPERIENCE_OPENTABLE_INITIATIVES_2": "Translated user feedback and requests into shipped, feature improvements for an internal tool for moderating restaurant photos",
+  "EXPERIENCE_OPENTABLE_INITIATIVES_2": "Transformed user feedback and requests into shipped, feature improvements for an internal tool for moderating restaurant photos",
   "EXPERIENCE_OPENTABLE_INITIATIVES_3": "Worked on improving a restaurant menu management tool to support managing multiple restaurants, which currently lives in OpenTable for Restaurants",
   "EXPERIENCE_OPENTABLE_TECHNOLOGIES_1": "React, TypeScript, Jest, OpenComponents, Git, TeamCity, TDD.",
   "EXPERIENCE_OPENTABLE_TECHNOLOGIES_2": "React, TypeScript, Node.js, Express, Jest, OpenComponents, Git, TeamCity.",
