@@ -62,13 +62,11 @@ const About = (props, ref) => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.imageContainer}>
-                    <img
-                        className={styles.hero}
-                        src="/imgs/about/memoji.png"
-                        alt="Eric Ong"
-                    />
-                </div>
+                <img
+                    className={styles.hero}
+                    src="/imgs/about/memoji.png"
+                    alt="Eric Ong"
+                />
             </div>
         </section>
     );

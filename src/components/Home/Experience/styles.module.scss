@@ -88,3 +88,13 @@
     padding: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .experience {
+    flex-direction: column;
+  }
+
+  .companyImage {
+    width: 256px;
+  }
+}

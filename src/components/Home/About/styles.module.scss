@@ -10,10 +10,6 @@
   flex: 3;
 }
 
-.imageContainer {
-  flex: 2
-}
-
 .link {
   font-weight: bold;
   color: var(--theme-color);
@@ -31,10 +27,6 @@
 
 .headerNum {
   color: var(--theme-color);
-}
-
-.thingsGroup {
-  margin-top: 1.5em;
 }
 
 .things {
@@ -71,10 +63,25 @@
 
 .description {
   color: var(--theme-page-text);
+  margin: 0 0 32px 0;
 }
 
 .hero {
-  width: 320px;
-  display: block;
   margin: 0 auto;
+  width: 256px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .things {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
