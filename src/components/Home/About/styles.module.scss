@@ -40,6 +40,8 @@
 }
 
 .thing {
+  color: var(--theme-page-text);
+
   &::before {
     content: "﹣";
     color: var(--theme-color);
